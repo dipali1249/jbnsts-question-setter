@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JBNSTS Practice Exam — Class X (Set 1) — English + Bengali</title>
+<style>
+:root{ --ink:#17171a; --muted:#8a8a93; --line:#e8e7e2; --accent:#3b3bf0; --bg:#faf9f6; --good:#1a7f37; --bad:#cf222e; }
+*{box-sizing:border-box; margin:0; padding:0;}
+body{font-family:"Noto Sans Bengali","Nirmala UI","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.55; padding:0 20px;}
+.screen{max-width:700px; margin:0 auto; min-height:100vh; display:flex; flex-direction:column;}
+.hidden{display:none !important;}
+button{font-family:inherit; cursor:pointer;}
+#start-screen{justify-content:center; text-align:center;}
+.kicker{color:var(--muted); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; margin-bottom:14px;}
+#start-screen h1{font-size:1.75rem; letter-spacing:-.02em; margin-bottom:8px;}
+#start-screen h1.en{font-size:1.15rem; color:var(--muted); font-weight:600;}
+.meta{color:var(--muted); font-size:.95rem; margin-bottom:10px;}
+.bigbtn{background:var(--ink); color:#fff; border:none; font-size:1rem; font-weight:600;
+  padding:15px 46px; border-radius:999px; margin-top:22px;}
+.bigbtn:hover{transform:translateY(-2px); opacity:.92;}
+.bar{height:3px; background:var(--line); border-radius:2px; margin:26px 0 6px; overflow:hidden;}
+.bar i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease;}
+.toprow{display:flex; justify-content:space-between; align-items:baseline; padding:6px 0 24px; gap:10px;}
+.count{color:var(--muted); font-size:.85rem; font-weight:600; letter-spacing:.06em;}
+.timer{font-variant-numeric:tabular-nums; font-weight:700; font-size:1.05rem; color:var(--muted);}
+.timer.warn{color:#b45309;} .timer.danger{color:var(--bad); animation:blink 1s infinite;}
+@keyframes blink{50%{opacity:.45;}}
+.jumpbtn{background:none; border:none; color:var(--muted); font-size:.78rem; font-weight:700; letter-spacing:.06em; padding:4px 0;}
+.jumpbtn:hover{color:var(--ink); text-decoration:underline;}
+.qwrap{flex:1; animation:slide .28s ease;}
+@keyframes slide{from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:none;}}
+.qtext .bn{font-size:1.3rem; font-weight:700; letter-spacing:-.01em;}
+.qtext .en{font-size:.98rem; color:var(--muted); font-weight:500; margin-top:5px;}
+.qsub{color:var(--muted); font-size:.83rem; margin:12px 0 22px;}
+.opts{display:flex; flex-direction:column;}
+.opt{display:flex; gap:14px; align-items:flex-start; text-align:left; width:100%; border:none;
+  background:none; padding:13px 10px; font-size:1.05rem; border-bottom:1px solid var(--line); color:var(--ink);}
+.opt:first-child{border-top:1px solid var(--line);}
+.opt:hover{background:#f1f0ea;}
+.opt.sel{background:#eef0ff;}
+.opt .key{flex:0 0 22px; font-size:.75rem; font-weight:700; color:var(--muted); padding-top:4px;}
+.opt.sel .key{color:var(--accent);}
+.opt .bn{display:block; font-weight:600;}
+.opt .en{display:block; font-size:.85rem; color:var(--muted);}
+.navrow{display:flex; justify-content:space-between; padding:22px 0 40px;}
+.linkbtn{background:none; border:none; color:var(--muted); font-size:.9rem; font-weight:600;}
+.linkbtn:hover{color:var(--ink); text-decoration:underline;}
+.nextbtn{background:var(--ink); color:#fff; border:none; padding:12px 26px; border-radius:999px; font-weight:600;}
+.nextbtn:hover{opacity:.9;}
+#overview-screen,#result-screen{padding-top:40px;}
+#overview-screen h2,#result-screen h2{font-size:1.5rem; margin-bottom:8px;}
+.ov-sub{color:var(--muted); margin-bottom:24px; font-size:.95rem;}
+.grid{display:grid; grid-template-columns:repeat(6,1fr); gap:10px; margin-bottom:30px;}
+.gcell{aspect-ratio:1; border:1px solid var(--line); background:#fff; border-radius:10px; font-weight:700; font-size:.95rem;}
+.gcell.done{background:var(--ink); color:#fff; border-color:var(--ink);}
+.gcell.cur{outline:2px solid var(--accent);}
+.ov-actions{display:flex; gap:16px; align-items:center;}
+.pct{font-size:4rem; font-weight:800; letter-spacing:-.03em; margin:10px 0;}
+.pct small{font-size:1.5rem; color:var(--muted);}
+.verdict{font-size:1.1rem; font-weight:700; margin-bottom:6px;}
+.verdict.pass{color:var(--good);} .verdict.fail{color:var(--bad);}
+.rnote{color:var(--muted); font-size:.9rem; margin-bottom:28px;}
+.review{display:flex; flex-direction:column; gap:16px; margin-bottom:30px;}
+.rev{border:1px solid var(--line); border-radius:12px; padding:14px 16px; background:#fff;}
+.rev .q{font-weight:600; margin-bottom:8px; display:flex; justify-content:space-between; gap:12px;}
+.rev .q .en{display:block; font-weight:500; color:var(--muted); font-size:.88rem; margin-top:3px;}
+.tag{font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; padding:2px 8px; border-radius:999px; white-space:nowrap; height:fit-content;}
+.tag.ok{background:#e6f4ea; color:var(--good);} .tag.no{background:#fbe9ea; color:var(--bad);}
+.line{font-size:.9rem; color:#444; margin-bottom:3px;}
+.ans-ok{color:var(--good); font-weight:600;} .ans-no{color:var(--bad); font-weight:600;}
+.exp{font-size:.9rem; color:#555; margin-top:8px; padding-top:8px; border-top:1px dashed var(--line);}
+.exp .en{color:var(--muted); font-size:.85rem;}
+.src{font-size:.75rem; color:var(--muted); margin-top:6px;}
+.weak{border:1px solid var(--line); border-radius:12px; padding:16px; background:#fff; margin-bottom:30px;}
+.weak h3{font-size:1rem; margin-bottom:10px;}
+.weak ul{list-style:none; display:flex; flex-wrap:wrap; gap:8px;}
+.weak li{background:#fbe9ea; color:var(--bad); font-size:.82rem; font-weight:600; padding:5px 12px; border-radius:999px;}
+.weak p{font-size:.9rem; color:#555;}
+.again{background:none; border:1px solid var(--line); padding:12px 26px; border-radius:999px; font-weight:600; margin-bottom:50px;}
+.again:hover{background:#f1f0ea;}
+</style>
+</head>
+<body>
+<div id="start-screen" class="screen">
+  <div>
+    <div class="kicker">Examination / পরীক্ষা</div>
+    <h1 id="s-title-bn"></h1>
+    <h1 id="s-title" class="en"></h1>
+    <div class="meta" id="s-meta"></div>
+    <button class="bigbtn" onclick="startExam()">Begin &rarr;</button>
+  </div>
+</div>
+<div id="exam-screen" class="screen hidden">
+  <div class="bar"><i id="prog"></i></div>
+  <div class="toprow">
+    <span class="count" id="q-count"></span>
+    <button class="jumpbtn" onclick="showOverview('Jump to any question')">All questions</button>
+    <span class="timer" id="timer">--:--</span>
+  </div>
+  <div class="qwrap">
+    <div class="qtext" id="q-text"></div>
+    <div class="qsub" id="q-sub"></div>
+    <div class="opts" id="opts"></div>
+  </div>
+  <div class="navrow">
+    <button class="linkbtn" id="prev" onclick="go(-1)">&larr; Previous</button>
+    <button class="nextbtn" id="next" onclick="nextOrFinish()">Next &rarr;</button>
+  </div>
+</div>
+<div id="overview-screen" class="screen hidden">
+  <h2 id="ov-title">Almost done</h2>
+  <div class="ov-sub" id="ov-sub"></div>
+  <div class="grid" id="grid"></div>
+  <div class="ov-actions">
+    <button class="bigbtn" onclick="finish(false)">Submit exam</button>
+    <button class="linkbtn" onclick="backToExam()">&larr; Back to questions</button>
+  </div>
+</div>
+<div id="result-screen" class="screen hidden">
+  <div>
+    <div class="kicker" id="r-kicker">Result</div>
+    <div class="pct"><span id="r-pct">0</span><small>%</small></div>
+    <div class="verdict" id="verdict"></div>
+    <div class="rnote" id="r-note"></div>
+    <div class="weak" id="weak"></div>
+    <div class="review" id="review"></div>
+    <button class="again" onclick="location.reload()">Retake exam</button>
+  </div>
+</div>
+<script>
+const EXAM = {"title": "JBNSTS Junior Talent Search - Practice Exam (Class 10, Set 1)", "subtitle": "Class 10 syllabus | all Indian boards | Physical Science - Life Science - Mathematics", "durationMinutes": 180, "passPercent": 40, "negativeMark": 0.5, "autoAdvance": true, "questions": [{"subject": "Mathematics", "topic": "Real Numbers", "board": "CBSE", "q": "The decimal expansion of 13/125 is:", "options": ["Terminating", "Non-terminating recurring", "Non-terminating non-recurring", "Cannot be determined"], "answer": 0, "explain": "125 = 5^3, so the denominator is of the form 2^a 5^b; hence the decimal terminates.", "marks": 2, "bn_q": "13/125 এর দশমিক বিস্তার হলো:", "bn_options": ["সমাপ্ত", "অ-সমাপ্ত পুনরাবৃত্ত", "অ-সমাপ্ত অ-পুনরাবৃত্ত", "নির্ধারণ করা যায় না"], "bn_explain": "125 = 5^3, তাই হরটি 2^a 5^b আকারের; সুতরাং দশমিকটি সমাপ্ত হয়।", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Real Numbers", "board": "ICSE", "q": "The LCM of 12 and 18 is:", "options": ["6", "36", "72", "216"], "answer": 1, "explain": "12 = 2^2 x 3, 18 = 2 x 3^2; LCM = 2^2 x 3^2 = 36.", "marks": 2, "bn_q": "12 এবং 18 এর লঘিষ্ঠ সাধারণ গুণিতক হলো:", "bn_options": ["6", "36", "72", "216"], "bn_explain": "12 = 2^2 x 3, 18 = 2 x 3^2; লঘিষ্ঠ সাধারণ গুণিতক = 2^2 x 3^2 = 36.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Polynomials", "board": "WBBSE", "q": "If alpha and beta are the zeroes of x^2 - 5x + 6, then alpha + beta equals:", "options": ["-5", "5", "6", "-6"], "answer": 1, "explain": "For ax^2+bx+c, sum of zeroes = -b/a = 5.", "marks": 2, "bn_q": "যদি আলফা এবং বিটা x^2 - 5x + 6 এর শূন্য হয়, তবে আলফা + বিটা সমান:", "bn_options": ["-5", "5", "6", "-6"], "bn_explain": "ax^2+bx+c এর জন্য, শূন্যগুলোর যোগফল = -b/a = 5.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Quadratic Equations", "board": "Maharashtra", "q": "The discriminant of 2x^2 - 4x + 3 = 0 is:", "options": ["8", "-8", "40", "-40"], "answer": 1, "explain": "D = b^2 - 4ac = 16 - 24 = -8, so the equation has no real roots.", "marks": 2, "bn_q": "2x^2 - 4x + 3 = 0 এর ভেদাঙ্ক হলো:", "bn_options": ["8", "-8", "40", "-40"], "bn_explain": "D = b^2 - 4ac = 16 - 24 = -8, তাই সমীকরণটির কোনো বাস্তব মূল নেই।", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Arithmetic Progressions", "board": "Karnataka", "q": "The 7th term of the AP 3, 7, 11, ... is:", "options": ["23", "27", "31", "19"], "answer": 1, "explain": "a = 3, d = 4; a7 = a + 6d = 3 + 24 = 27.", "marks": 2, "bn_q": "3, 7, 11, ... AP এর 7ম পদ হলো:", "bn_options": ["23", "27", "31", "19"], "bn_explain": "a = 3, d = 4; a7 = a + 6d = 3 + 24 = 27.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Coordinate Geometry", "board": "CBSE", "q": "The distance between the points (0, 0) and (3, 4) is:", "options": ["5", "7", "sqrt(7)", "25"], "answer": 0, "explain": "Distance = sqrt(3^2 + 4^2) = sqrt(25) = 5.", "marks": 2, "bn_q": "(0, 0) এবং (3, 4) বিন্দু দুটির মধ্যবর্তী দূরত্ব হলো:", "bn_options": ["5", "7", "sqrt(7)", "25"], "bn_explain": "দূরত্ব = sqrt(3^2 + 4^2) = sqrt(25) = 5.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Trigonometry", "board": "Tamil Nadu", "q": "The value of sin30 + cos60 is:", "options": ["0", "1/2", "1", "sqrt(3)/2"], "answer": 2, "explain": "sin30 = 1/2 and cos60 = 1/2, so the sum is 1.", "marks": 2, "bn_q": "sin30 + cos60 এর মান হলো:", "bn_options": ["0", "1/2", "1", "sqrt(3)/2"], "bn_explain": "sin30 = 1/2 এবং cos60 = 1/2, তাই যোগফল হলো 1.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Trigonometry", "board": "UP", "q": "If tan(theta) = 3/4, then sin(theta) equals:", "options": ["3/5", "4/5", "5/3", "4/3"], "answer": 0, "explain": "Opposite 3, adjacent 4, hypotenuse 5; sin = 3/5.", "marks": 2, "bn_q": "যদি tan(theta) = 3/4 হয়, তবে sin(theta) সমান:", "bn_options": ["3/5", "4/5", "5/3", "4/3"], "bn_explain": "বিপরীত বাহু 3, সন্নিহিত বাহু 4, অতিভুজ 5; sin = 3/5.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Circles", "board": "ICSE", "q": "The length of the tangent from a point 13 cm from the centre of a circle of radius 5 cm is:", "options": ["8 cm", "12 cm", "18 cm", "sqrt(194) cm"], "answer": 1, "explain": "Tangent = sqrt(13^2 - 5^2) = sqrt(144) = 12 cm.", "marks": 2, "bn_q": "5 cm ব্যাসার্ধের একটি বৃত্তের কেন্দ্র থেকে 13 cm দূরে অবস্থিত একটি বিন্দু থেকে অঙ্কিত স্পর্শকের দৈর্ঘ্য হলো:", "bn_options": ["8 cm", "12 cm", "18 cm", "sqrt(194) cm"], "bn_explain": "স্পর্শক = sqrt(13^2 - 5^2) = sqrt(144) = 12 cm.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Circles", "board": "WBBSE", "q": "The angle subtended by a diameter at any point on the circle is:", "options": ["45 degrees", "60 degrees", "90 degrees", "180 degrees"], "answer": 2, "explain": "The angle in a semicircle is a right angle (90 degrees).", "marks": 2, "bn_q": "বৃত্তের যেকোনো বিন্দুতে একটি ব্যাস দ্বারা উৎপন্ন কোণ হলো:", "bn_options": ["45 ডিগ্রি", "60 ডিগ্রি", "90 ডিগ্রি", "180 ডিগ্রি"], "bn_explain": "একটি অর্ধবৃত্তের কোণ হলো সমকোণ (90 ডিগ্রি)।", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Surface Areas and Volumes", "board": "CBSE", "q": "The volume of a sphere of radius 3 cm is:", "options": ["9pi cm^3", "27pi cm^3", "36pi cm^3", "12pi cm^3"], "answer": 2, "explain": "V = (4/3)pi r^3 = (4/3)pi x 27 = 36pi cm^3.", "marks": 2, "bn_q": "3 cm ব্যাসার্ধের একটি গোলকের আয়তন হলো:", "bn_options": ["9pi cm^3", "27pi cm^3", "36pi cm^3", "12pi cm^3"], "bn_explain": "V = (4/3)pi r^3 = (4/3)pi x 27 = 36pi cm^3.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Triangles", "board": "Maharashtra", "q": "If two triangles are similar and their corresponding sides are in the ratio 2:3, the ratio of their areas is:", "options": ["2:3", "4:9", "3:2", "8:27"], "answer": 1, "explain": "Ratio of areas = square of the ratio of sides = (2/3)^2 = 4:9.", "marks": 2, "bn_q": "যদি দুটি ত্রিভুজ সদৃশ হয় এবং তাদের অনুরূপ বাহুগুলোর অনুপাত 2:3 হয়, তবে তাদের ক্ষেত্রফলের অনুপাত হলো:", "bn_options": ["2:3", "4:9", "3:2", "8:27"], "bn_explain": "ক্ষেত্রফলের অনুপাত = বাহুর অনুপাতের বর্গ = (2/3)^2 = 4:9.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Pair of Linear Equations", "board": "Karnataka", "q": "The solution of x + y = 5 and x - y = 1 is:", "options": ["x = 3, y = 2", "x = 2, y = 3", "x = 4, y = 1", "x = 1, y = 4"], "answer": 0, "explain": "Adding: 2x = 6 so x = 3; then y = 2.", "marks": 2, "bn_q": "x + y = 5 এবং x - y = 1 এর সমাধান হলো:", "bn_options": ["x = 3, y = 2", "x = 2, y = 3", "x = 4, y = 1", "x = 1, y = 4"], "bn_explain": "যোগ করলে: 2x = 6 তাই x = 3; তারপর y = 2.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Statistics", "board": "UP", "q": "The mean of the first five natural numbers is:", "options": ["2", "2.5", "3", "4"], "answer": 2, "explain": "(1+2+3+4+5)/5 = 15/5 = 3.", "marks": 2, "bn_q": "প্রথম পাঁচটি স্বাভাবিক সংখ্যার গড় হলো:", "bn_options": ["2", "2.5", "3", "4"], "bn_explain": "(1+2+3+4+5)/5 = 15/5 = 3.", "subject_bn": "গণিত"}, {"subject": "Mathematics", "topic": "Probability", "board": "CBSE", "q": "A fair coin is tossed once. The probability of getting a head is:", "options": ["0", "1/4", "1/2", "1"], "answer": 2, "explain": "One favourable outcome out of two equally likely outcomes = 1/2.", "marks": 2, "bn_q": "একটি নিরপেক্ষ কয়েন একবার টস করা হলো। হেড পাওয়ার সম্ভাবনা হলো:", "bn_options": ["0", "1/4", "1/2", "1"], "bn_explain": "দুটি সমান সম্ভাব্য ফলাফলের মধ্যে একটি অনুকূল ফলাফল = 1/2.", "subject_bn": "গণিত"}, {"subject": "Physical Science", "topic": "Chemical Reactions", "board": "CBSE", "q": "In the reaction 2H2 + O2 -> 2H2O, the ratio of hydrogen to oxygen molecules reacting is:", "options": ["1:1", "2:1", "1:2", "2:3"], "answer": 1, "explain": "Two molecules of H2 combine with one molecule of O2, so the ratio is 2:1.", "marks": 2, "bn_q": "2H2 + O2 -> 2H2O বিক্রিয়ায়, বিক্রিয়াশীল হাইড্রোজেন ও অক্সিজেনের অণুর অনুপাত হলো:", "bn_options": ["1:1", "2:1", "1:2", "2:3"], "bn_explain": "H2 এর দুটি অণু O2 এর একটি অণুর সাথে যুক্ত হয়, তাই অনুপাতটি হলো 2:1.", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Acids, Bases and Salts", "board": "ICSE", "q": "The pH of a neutral aqueous solution at 25 degrees C is:", "options": ["0", "7", "14", "1"], "answer": 1, "explain": "A neutral solution has equal H+ and OH- concentrations, giving pH = 7.", "marks": 2, "bn_q": "25 ডিগ্রি C তাপমাত্রায় একটি নিরপেক্ষ জলীয় দ্রবণের pH হলো:", "bn_options": ["0", "7", "14", "1"], "bn_explain": "একটি নিরপেক্ষ দ্রবণে H+ এবং OH- এর ঘনত্ব সমান থাকে, যার ফলে pH = 7 হয়।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Metals and Non-metals", "board": "WBBSE", "q": "Which of the following metals is the most reactive?", "options": ["Gold", "Copper", "Potassium", "Silver"], "answer": 2, "explain": "Potassium lies highest in the reactivity series among these metals.", "marks": 2, "bn_q": "নিচের কোন ধাতু সবচেয়ে বেশি বিক্রিয়াশীল?", "bn_options": ["সোনা", "তামা", "পটাশিয়াম", "রূপা"], "bn_explain": "এই ধাতুগুলোর মধ্যে বিক্রিয়াশীলতার ক্রমানুসারে পটাশিয়াম সবার ওপরে রয়েছে।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Metals and Non-metals", "board": "Maharashtra", "q": "Rusting of iron requires the presence of:", "options": ["Oxygen only", "Moisture only", "Both oxygen and moisture", "Neither"], "answer": 2, "explain": "Rusting (corrosion) needs both oxygen and water/moisture.", "marks": 2, "bn_q": "লোহার মরিচা ধরতে নিচের কোনটির উপস্থিতি প্রয়োজন:", "bn_options": ["শুধু অক্সিজেন", "শুধু আর্দ্রতা", "অক্সিজেন এবং আর্দ্রতা উভয়ই", "কোনোটিই নয়"], "bn_explain": "মরিচা ধরতে (corrosion) অক্সিজেন এবং জল/আর্দ্রতা উভয়ই প্রয়োজন।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Carbon Compounds", "board": "CBSE", "q": "The molecular formula of methane is:", "options": ["CH3", "C2H6", "CH4", "C2H4"], "answer": 2, "explain": "Methane has one carbon and four hydrogen atoms: CH4.", "marks": 2, "bn_q": "মিথেনের আণবিক সংকেত হলো:", "bn_options": ["CH3", "C2H6", "CH4", "C2H4"], "bn_explain": "মিথেনে একটি কার্বন এবং চারটি হাইড্রোজেন পরমাণু থাকে: CH4।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Periodic Classification", "board": "Tamil Nadu", "q": "In the modern periodic table, elements are arranged in order of increasing:", "options": ["Atomic mass", "Atomic number", "Density", "Valency"], "answer": 1, "explain": "The modern periodic table is based on increasing atomic number.", "marks": 2, "bn_q": "আধুনিক পর্যায় সারণিতে মৌলগুলোকে ক্রমবর্ধমান ক্রমানুসারে সাজানো হয়:", "bn_options": ["পারমাণবিক ভর", "পারমাণবিক সংখ্যা", "ঘনত্ব", "যোজনী"], "bn_explain": "আধুনিক পর্যায় সারণি ক্রমবর্ধমান পারমাণবিক সংখ্যার ওপর ভিত্তি করে তৈরি।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Periodic Classification", "board": "UP", "q": "The number of electrons in a Na+ ion (Na has atomic number 11) is:", "options": ["11", "12", "10", "13"], "answer": 2, "explain": "Na loses one electron to become Na+, leaving 11 - 1 = 10 electrons.", "marks": 2, "bn_q": "একটি Na+ আয়নে (Na-এর পারমাণবিক সংখ্যা 11) ইলেকট্রনের সংখ্যা হলো:", "bn_options": ["11", "12", "10", "13"], "bn_explain": "Na একটি ইলেকট্রন হারিয়ে Na+ হয়, ফলে 11 - 1 = 10টি ইলেকট্রন থাকে।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Electricity", "board": "CBSE", "q": "By Ohm's law, if V = 6 V and R = 2 ohm, the current I is:", "options": ["2 A", "3 A", "12 A", "0.33 A"], "answer": 1, "explain": "I = V/R = 6/2 = 3 A.", "marks": 2, "bn_q": "ওহমের সূত্র অনুযায়ী, যদি V = 6 V এবং R = 2 ohm হয়, তবে কারেন্ট I হলো:", "bn_options": ["2 A", "3 A", "12 A", "0.33 A"], "bn_explain": "I = V/R = 6/2 = 3 A।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Electricity", "board": "Karnataka", "q": "The SI unit of electrical resistance is the:", "options": ["Volt", "Ampere", "Ohm", "Watt"], "answer": 2, "explain": "Resistance is measured in ohms.", "marks": 2, "bn_q": "বৈদ্যুতিক রোধের এসআই (SI) একক হলো:", "bn_options": ["ভোল্ট", "অ্যাম্পিয়ার", "ওহম", "ওয়াট"], "bn_explain": "রোধ ওহম এককে মাপা হয়।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Electricity", "board": "WBBSE", "q": "In a series circuit, which quantity remains the same through every component?", "options": ["Voltage", "Current", "Resistance", "Power"], "answer": 1, "explain": "In a series circuit the same current flows through each component.", "marks": 2, "bn_q": "একটি শ্রেণি সংযোগে (series circuit) প্রতিটি উপাদানের মধ্য দিয়ে কোন রাশিটি একই থাকে?", "bn_options": ["বিভব অন্তর (Voltage)", "কারেন্ট", "রোধ", "ক্ষমতা"], "bn_explain": "একটি শ্রেণি সংযোগে প্রতিটি উপাদানের মধ্য দিয়ে একই কারেন্ট প্রবাহিত হয়।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Light - Reflection and Refraction", "board": "ICSE", "q": "The focal length of a plane mirror is:", "options": ["Zero", "Infinite", "Equal to its size", "Negative"], "answer": 1, "explain": "A plane mirror has infinite radius of curvature, so its focal length is infinite.", "marks": 2, "bn_q": "একটি সমতল আয়নার ফোকাস দূরত্ব হলো:", "bn_options": ["শূন্য", "অসীম", "এর আকারের সমান", "ঋণাত্মক"], "bn_explain": "একটি সমতল আয়নার বক্রতার ব্যাসার্ধ অসীম, তাই এর ফোকাস দূরত্বও অসীম।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Light - Reflection and Refraction", "board": "Maharashtra", "q": "The power of a lens of focal length 0.5 m is:", "options": ["0.5 D", "2 D", "5 D", "50 D"], "answer": 1, "explain": "P = 1/f (in metres) = 1/0.5 = 2 dioptre.", "marks": 2, "bn_q": "0.5 m ফোকাস দূরত্বের একটি লেন্সের ক্ষমতা হলো:", "bn_options": ["0.5 D", "2 D", "5 D", "50 D"], "bn_explain": "P = 1/f (মিটারে) = 1/0.5 = 2 ডাইঅপট্র।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Light - Reflection and Refraction", "board": "CBSE", "q": "An object placed at infinity before a concave mirror forms its image:", "options": ["At the focus", "At the centre of curvature", "Behind the mirror", "At infinity"], "answer": 0, "explain": "Rays from infinity are parallel; a concave mirror focuses them at the focus.", "marks": 2, "bn_q": "একটি অবতল আয়নার সামনে অসীম দূরত্বে কোনো বস্তু রাখলে তার প্রতিবিম্ব কোথায় তৈরি হয়:", "bn_options": ["ফোকাসে", "বক্রতার কেন্দ্রে", "আয়নার পেছনে", "অসীম দূরত্বে"], "bn_explain": "অসীম দূরত্ব থেকে আসা রশ্মিগুলো সমান্তরাল হয়; একটি অবতল আয়না সেগুলোকে ফোকাসে ফোকাস করে।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Magnetic Effects of Current", "board": "Tamil Nadu", "q": "Outside a bar magnet, the magnetic field lines run:", "options": ["From south to north", "From north to south", "Randomly", "In closed loops only inside"], "answer": 1, "explain": "Outside the magnet, field lines go from the north pole to the south pole.", "marks": 2, "bn_q": "একটি দণ্ড চুম্বকের বাইরে, চৌম্বক ক্ষেত্রের রেখাগুলো কোন দিকে যায়:", "bn_options": ["দক্ষিণ থেকে উত্তর", "উত্তর থেকে দক্ষিণ", "এলোমেলোভাবে", "শুধুমাত্র ভেতরে বদ্ধ লুপে"], "bn_explain": "চুম্বকের বাইরে, ক্ষেত্রের রেখাগুলো উত্তর মেরু থেকে দক্ষিণ মেরুর দিকে যায়।", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Physical Science", "topic": "Chemical Reactions", "board": "UP", "q": "Adding silver nitrate solution to sodium chloride solution gives a white precipitate of:", "options": ["NaNO3", "AgCl", "AgNO3", "NaCl"], "answer": 1, "explain": "AgNO3 + NaCl -> AgCl (white precipitate) + NaNO3.", "marks": 2, "bn_q": "সোডিয়াম ক্লোরাইড দ্রবণে সিলভার নাইট্রেট দ্রবণ যোগ করলে নিচের কোনটির সাদা অধঃক্ষেপ পাওয়া যায়:", "bn_options": ["NaNO3", "AgCl", "AgNO3", "NaCl"], "bn_explain": "AgNO3 + NaCl -> AgCl (সাদা অধঃক্ষেপ) + NaNO3.", "subject_bn": "ভৌতবিজ্ঞান"}, {"subject": "Life Science", "topic": "Life Processes", "board": "CBSE", "q": "In plant cells, photosynthesis takes place in the:", "options": ["Mitochondria", "Chloroplast", "Nucleus", "Ribosome"], "answer": 1, "explain": "Chloroplasts contain chlorophyll, where light energy is used to make food.", "marks": 2, "bn_q": "উদ্ভিদ কোষে, সালোকসংশ্লেষণ কোথায় ঘটে:", "bn_options": ["মাইটোকন্ড্রিয়া", "ক্লোরোপ্লাস্ট", "নিউক্লিয়াস", "রাইবোজোম"], "bn_explain": "ক্লোরোপ্লাস্টে ক্লোরোফিল থাকে, যেখানে আলোর শক্তি ব্যবহার করে খাদ্য তৈরি হয়।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Life Processes", "board": "ICSE", "q": "The universal donor blood group is:", "options": ["AB positive", "A positive", "O negative", "B negative"], "answer": 2, "explain": "O negative blood has no A, B or Rh antigens, so it can be given to almost anyone.", "marks": 2, "bn_q": "সার্বজনীন দাতা রক্ত গ্রুপ হলো:", "bn_options": ["AB পজিটিভ", "A পজিটিভ", "O নেগেটিভ", "B নেগেটিভ"], "bn_explain": "O নেগেটিভ রক্তে কোনো A, B বা Rh অ্যান্টিজেন থাকে না, তাই এটি প্রায় যে কাউকে দেওয়া যায়।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Respiration", "board": "WBBSE", "q": "In the human lungs, exchange of gases takes place in the:", "options": ["Bronchi", "Trachea", "Alveoli", "Diaphragm"], "answer": 2, "explain": "Alveoli are thin-walled air sacs where oxygen and carbon dioxide are exchanged.", "marks": 2, "bn_q": "মানুষের ফুসফুসে, গ্যাস বিনিময় কোথায় ঘটে:", "bn_options": ["ব্রঙ্কাই", "শ্বাসনালি", "অ্যালভিওলি", "ডায়াফ্রাম"], "bn_explain": "অ্যালভিওলি হলো পাতলা দেয়ালের বায়ুর থলি যেখানে অক্সিজেন এবং কার্বন ডাই অক্সাইড বিনিময় হয়।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Control and Coordination", "board": "Maharashtra", "q": "The hormone that prepares the body for 'fight or flight' is:", "options": ["Insulin", "Adrenaline", "Thyroxine", "Oestrogen"], "answer": 1, "explain": "Adrenaline, from the adrenal glands, raises heart rate and energy supply in emergencies.", "marks": 2, "bn_q": "'লড়াই করো বা পালিয়ে বাঁচো' (fight or flight)-এর জন্য শরীরকে প্রস্তুত করার হরমোন হলো:", "bn_options": ["ইনসুলিন", "অ্যাড্রেনালিন", "থাইরক্সিন", "ইস্ট্রোজেন"], "bn_explain": "অ্যাড্রেনাল গ্রন্থি থেকে আসা অ্যাড্রেনালিন জরুরি অবস্থায় হৃদস্পন্দন এবং শক্তির সরবরাহ বাড়ায়।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Control and Coordination", "board": "Karnataka", "q": "Reflex actions are controlled mainly by the:", "options": ["Brain", "Spinal cord", "Cerebellum", "Medulla"], "answer": 1, "explain": "A reflex arc is completed through the spinal cord without involving the brain's thinking.", "marks": 2, "bn_q": "রিফ্লেক্স ক্রিয়াগুলো মূলত কী দ্বারা নিয়ন্ত্রিত হয়:", "bn_options": ["মস্তিষ্ক", "মেরুদণ্ড", "সেরিবেলাম", "মেডুলা"], "bn_explain": "মস্তিষ্কের চিন্তাভাবনা ছাড়াই মেরুদণ্ডের মাধ্যমে একটি রিফ্লেক্স আর্ক সম্পন্ন হয়।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Control and Coordination", "board": "CBSE", "q": "Insulin, which controls blood sugar, is secreted by the:", "options": ["Liver", "Pancreas", "Kidney", "Thyroid"], "answer": 1, "explain": "The pancreas secretes insulin, which lowers blood glucose levels.", "marks": 2, "bn_q": "ইনসুলিন, যা রক্তের শর্করা নিয়ন্ত্রণ করে, তা কোথায় নিঃসৃত হয়:", "bn_options": ["লিভার", "অগ্ন্যাশয়", "কিডনি", "থাইরয়েড"], "bn_explain": "অগ্ন্যাশয় ইনসুলিন নিঃসরণ করে, যা রক্তের গ্লুকোজের মাত্রা কমায়।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Control and Coordination", "board": "Tamil Nadu", "q": "Bending of a plant shoot towards light (phototropism) is caused by:", "options": ["Auxin", "Insulin", "Adrenaline", "Thyroxine"], "answer": 0, "explain": "Auxin accumulates on the shaded side and makes that side elongate more.", "marks": 2, "bn_q": "আলোর দিকে উদ্ভিদের কাণ্ডের বাঁকানো (phototropism) এর কারণে ঘটে:", "bn_options": ["Auxin", "Insulin", "Adrenaline", "Thyroxine"], "bn_explain": "Auxin ছায়াযুক্ত দিকে জমা হয় এবং সেই দিকটিকে বেশি লম্বা করে।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Excretion", "board": "UP", "q": "The structural and functional unit of the kidney is the:", "options": ["Neuron", "Nephron", "Alveolus", "Villus"], "answer": 1, "explain": "Each kidney contains about a million nephrons that filter blood and form urine.", "marks": 2, "bn_q": "কিডনির গঠনগত এবং কার্যকরী একক হলো:", "bn_options": ["Neuron", "Nephron", "Alveolus", "Villus"], "bn_explain": "প্রতিটি কিডনিতে প্রায় দশ লক্ষ নেফ্রন থাকে যা রক্ত ছেঁকে প্রস্রাব তৈরি করে।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Heredity and Evolution", "board": "WBBSE", "q": "The number of chromosomes in a normal human body cell is:", "options": ["23", "44", "46", "48"], "answer": 2, "explain": "Humans have 23 pairs = 46 chromosomes in body cells.", "marks": 2, "bn_q": "একটি স্বাভাবিক মানবদেহের কোষে ক্রোমোজোমের সংখ্যা হলো:", "bn_options": ["23", "44", "46", "48"], "bn_explain": "মানুষের শরীরের কোষে 23 জোড়া = 46 টি ক্রোমোজোম থাকে।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Heredity and Evolution", "board": "ICSE", "q": "In humans, the sex of a child is determined by the:", "options": ["Mother's chromosomes", "Father's chromosomes", "Diet during pregnancy", "Blood group"], "answer": 1, "explain": "The father contributes either an X or a Y chromosome, deciding the sex.", "marks": 2, "bn_q": "মানুষের ক্ষেত্রে, শিশুর লিঙ্গ নির্ধারিত হয়:", "bn_options": ["মায়ের ক্রোমোজোম দ্বারা", "বাবার ক্রোমোজোম দ্বারা", "গর্ভাবস্থায় খাদ্যাভ্যাস দ্বারা", "রক্তের গ্রুপ দ্বারা"], "bn_explain": "বাবা একটি X অথবা Y ক্রোমোজোম প্রদান করেন, যা লিঙ্গ নির্ধারণ করে।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Heredity and Evolution", "board": "CBSE", "q": "Mendel carried out his experiments on inheritance using:", "options": ["Fruit flies", "Pea plants", "Maize", "Mice"], "answer": 1, "explain": "Mendel used the garden pea (Pisum sativum) with clear contrasting traits.", "marks": 2, "bn_q": "মেন্ডেল উত্তরাধিকারের ওপর তার পরীক্ষাগুলো করেছিলেন:", "bn_options": ["Fruit flies", "Pea plants", "Maize", "Mice"], "bn_explain": "মেন্ডেল স্পষ্ট বিপরীত বৈশিষ্ট্যযুক্ত বাগানের মটর (Pisum sativum) ব্যবহার করেছিলেন।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Reproduction", "board": "Maharashtra", "q": "In humans, fertilisation normally takes place in the:", "options": ["Uterus", "Ovary", "Fallopian tube", "Vagina"], "answer": 2, "explain": "The sperm meets the egg in the fallopian tube; the zygote then moves to the uterus.", "marks": 2, "bn_q": "মানুষের ক্ষেত্রে, নিষেক সাধারণত কোথায় ঘটে:", "bn_options": ["Uterus", "Ovary", "Fallopian tube", "Vagina"], "bn_explain": "শুক্রাণু ডিম্বাণুর সাথে ফ্যালোপিয়ান টিউবে মিলিত হয়; এরপর জাইগোট জরায়ুতে চলে যায়।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Life Processes", "board": "Karnataka", "q": "The end products of photosynthesis are:", "options": ["Carbon dioxide and water", "Glucose and oxygen", "Glucose and carbon dioxide", "Oxygen and water"], "answer": 1, "explain": "6CO2 + 6H2O -> glucose + 6O2 in the presence of light and chlorophyll.", "marks": 2, "bn_q": "সালোকসংশ্লেষণের শেষ উৎপাদগুলো হলো:", "bn_options": ["Carbon dioxide এবং জল", "Glucose এবং অক্সিজেন", "Glucose এবং Carbon dioxide", "অক্সিজেন এবং জল"], "bn_explain": "আলো এবং ক্লোরোফিলের উপস্থিতিতে 6CO2 + 6H2O -> glucose + 6O2।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Our Environment", "board": "UP", "q": "In an ecosystem, the flow of energy is:", "options": ["Cyclic", "Unidirectional", "Bidirectional", "Random"], "answer": 1, "explain": "Energy passes one way from producers to consumers and is lost as heat at each level.", "marks": 2, "bn_q": "একটি বাস্তুতন্ত্রে, শক্তির প্রবাহ হলো:", "bn_options": ["চক্রাকার", "একমুখী", "দ্বিমুখী", "এলোমেলো"], "bn_explain": "শক্তি উৎপাদক থেকে গ্রাহকের দিকে একমুখীভাবে প্রবাহিত হয় এবং প্রতিটি স্তরে তাপ হিসেবে অপচয় হয়।", "subject_bn": "জীবনবিজ্ঞান"}, {"subject": "Life Science", "topic": "Our Environment", "board": "WBBSE", "q": "Which of the following is a biodegradable waste?", "options": ["Plastic bag", "Vegetable peels", "Aluminium can", "Glass bottle"], "answer": 1, "explain": "Vegetable peels are broken down by microorganisms, so they are biodegradable.", "marks": 2, "bn_q": "নিচের কোনটি পচনশীল বর্জ্য?", "bn_options": ["Plastic bag", "Vegetable peels", "Aluminium can", "Glass bottle"], "bn_explain": "সবজির খোসা অণুজীব দ্বারা ভেঙে যায়, তাই এগুলো পচনশীল।", "subject_bn": "জীবনবিজ্ঞান"}], "title_bn": "JBNSTS জুনিয়র ট্যালেন্ট সার্চ — অনুশীলন পরীক্ষা (দশম শ্রেণি, সেট ১)", "subtitle_bn": "দশম শ্রেণির সিলেবাস | ভারতের সমস্ত বোর্ড | ভৌতবিজ্ঞান - জীবনবিজ্ঞান - গণিত"};
+
+const $ = id => document.getElementById(id);
+const n = EXAM.questions.length;
+const totalMarks = EXAM.questions.reduce((s,q)=>s+(q.marks||1),0);
+let cur=0, answers=new Array(n).fill(null), timeLeft=0, timerId=null, startedAt=0;
+function init(){
+  $("s-title-bn").textContent = EXAM.title_bn;
+  $("s-title").textContent = EXAM.title;
+  $("s-meta").innerHTML = `${EXAM.subtitle_bn}<br>${EXAM.subtitle}<br>${n} questions &middot; ${totalMarks} marks &middot; ${EXAM.durationMinutes} minutes &middot; +2 correct / -0.5 wrong &middot; pass ${EXAM.passPercent}%`;
+}
+function startExam(){
+  $("start-screen").classList.add("hidden");
+  $("exam-screen").classList.remove("hidden");
+  timeLeft = EXAM.durationMinutes*60; startedAt = Date.now();
+  timerId = setInterval(tick,1000); tick(); render();
+}
+function tick(){
+  const t=$("timer"); t.textContent = fmt(timeLeft);
+  t.className = "timer" + (timeLeft<=60?" danger": timeLeft<=300?" warn":"");
+  if(timeLeft<=0){ finish(true); return; } timeLeft--;
+}
+const fmt = s => String(Math.floor(Math.max(0,s)/60)).padStart(2,"0")+":"+String(Math.max(0,s)%60).padStart(2,"0");
+function render(){
+  const q=EXAM.questions[cur];
+  $("q-count").textContent = `Question ${cur+1} / ${n}`;
+  $("prog").style.width = ((cur+1)/n*100)+"%";
+  $("q-text").innerHTML = `<div class="bn">${q.bn_q}</div><div class="en">${q.q}</div>`;
+  $("q-sub").textContent = `${q.subject_bn} · ${q.subject} · ${q.topic} · ${q.board}`;
+  $("opts").innerHTML = q.options.map((o,i)=>
+    `<button class="opt ${answers[cur]===i?'sel':''}" onclick="choose(${i})">
+       <span class="key">${"ABCD"[i]}</span>
+       <span><span class="bn">${q.bn_options[i]}</span><span class="en">${o}</span></span></button>`).join("");
+  $("prev").style.visibility = cur===0 ? "hidden":"visible";
+  $("next").textContent = cur===n-1 ? "Finish" : "Next";
+}
+function choose(i){ answers[cur]=i; render(); if(EXAM.autoAdvance && cur<n-1){ setTimeout(()=>go(1),180); } }
+function go(d){ cur=Math.min(n-1,Math.max(0,cur+d)); render(); window.scrollTo(0,0); }
+function nextOrFinish(){ if(cur===n-1) showOverview("Almost done"); else go(1); }
+function showOverview(heading){
+  $("exam-screen").classList.add("hidden"); $("overview-screen").classList.remove("hidden");
+  $("ov-title").textContent = heading;
+  const left = answers.filter(a=>a===null).length;
+  $("ov-sub").textContent = left ? `${left} question(s) still unanswered.` : "All questions answered. Submit when ready.";
+  $("grid").innerHTML = EXAM.questions.map((_,i)=>
+    `<button class="gcell ${answers[i]!==null?'done':''} ${i===cur?'cur':''}" onclick="jumpFromOverview(${i})">${i+1}</button>`).join("");
+  window.scrollTo(0,0);
+}
+function backToExam(){ $("overview-screen").classList.add("hidden"); $("exam-screen").classList.remove("hidden"); }
+function jumpFromOverview(i){ cur=i; backToExam(); render(); }
+function finish(auto){
+  clearInterval(timerId);
+  let score=0; const results=[], weak=[];
+  EXAM.questions.forEach((q,i)=>{
+    const ok = answers[i]===q.answer; results.push(ok);
+    if(ok) score += (q.marks||1); else if(answers[i]!==null) score -= (EXAM.negativeMark||0);
+    if(!ok && answers[i]!==null) weak.push(`${q.subject_bn}: ${q.topic}`);
+    else if(answers[i]===null) weak.push(`${q.subject_bn}: ${q.topic} (not attempted)`);
+  });
+  const pct = Math.max(0, Math.round(score/totalMarks*100));
+  const passed = pct >= EXAM.passPercent;
+  $("r-kicker").textContent = auto ? "Time's up - auto-submitted" : "Result";
+  $("r-pct").textContent = pct;
+  const v=$("verdict"); v.textContent = passed ? "Passed" : "Not passed this time"; v.className = "verdict " + (passed?"pass":"fail");
+  const used = Math.min(Math.round((Date.now()-startedAt)/1000), EXAM.durationMinutes*60);
+  $("r-note").textContent = `${score} of ${totalMarks} marks (negative marking applied) · pass mark ${EXAM.passPercent}% · time used ${fmt(used)}`;
+  const uniq=[...new Set(weak)];
+  $("weak").innerHTML = uniq.length
+    ? `<h3>Weaker portions to revise / দুর্বল অংশ</h3><ul>${uniq.map(w=>`<li>${w}</li>`).join("")}</ul>`
+    : `<h3>Weaker portions to revise / দুর্বল অংশ</h3><p>None - you got every attempted question right. Excellent.</p>`;
+  $("review").innerHTML = EXAM.questions.map((q,i)=>`
+    <div class="rev">
+      <div class="q"><span><span>Q${i+1}. ${q.bn_q}</span><span class="en">${q.q}</span></span><span class="tag ${results[i]?'ok':'no'}">${results[i]?'correct':'wrong'}</span></div>
+      <div class="line">Your answer: <span class="${results[i]?'ans-ok':'ans-no'}">${answers[i]!=null?q.bn_options[answers[i]]+" ("+q.options[answers[i]]+")":"- not answered -"}</span></div>
+      ${results[i]?"":`<div class="line">Correct answer: <span class="ans-ok">${q.bn_options[q.answer]} (${q.options[q.answer]})</span></div>`}
+      ${q.explain?`<div class="exp"><div>${q.bn_explain}</div><div class="en">${q.explain}</div></div>`:""}
+      <div class="src">${q.subject_bn} · ${q.subject} · ${q.topic} · ${q.board}</div>
+    </div>`).join("");
+  $("exam-screen").classList.add("hidden"); $("overview-screen").classList.add("hidden");
+  $("result-screen").classList.remove("hidden"); window.scrollTo(0,0);
+}
+init();
+
+</script>
+</body>
+</html>
