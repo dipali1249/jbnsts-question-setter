@@ -1,458 +1,908 @@
 {
-  "updated": "2026-10-08",
-  "last_set": 1,
-  "max_repeats_allowed": 3,
-  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
-  "questions": [
-    {
-      "fp": "the decimal expansion of 13/125 is:",
-      "subject": "Mathematics",
-      "topic": "Real Numbers",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the lcm of 12 and 18 is:",
-      "subject": "Mathematics",
-      "topic": "Real Numbers",
-      "board": "ICSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "if alpha and beta are the zeroes of x^2 - 5x + 6, then alpha + beta equals:",
-      "subject": "Mathematics",
-      "topic": "Polynomials",
-      "board": "WBBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the discriminant of 2x^2 - 4x + 3 = 0 is:",
-      "subject": "Mathematics",
-      "topic": "Quadratic Equations",
-      "board": "Maharashtra",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the 7th term of the ap 3, 7, 11, ... is:",
-      "subject": "Mathematics",
-      "topic": "Arithmetic Progressions",
-      "board": "Karnataka",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the distance between the points (0, 0) and (3, 4) is:",
-      "subject": "Mathematics",
-      "topic": "Coordinate Geometry",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the value of sin30 + cos60 is:",
-      "subject": "Mathematics",
-      "topic": "Trigonometry",
-      "board": "Tamil Nadu",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "if tan(theta) = 3/4, then sin(theta) equals:",
-      "subject": "Mathematics",
-      "topic": "Trigonometry",
-      "board": "UP",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the length of the tangent from a point 13 cm from the centre of a circle of radius 5 cm is",
-      "subject": "Mathematics",
-      "topic": "Circles",
-      "board": "ICSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the angle subtended by a diameter at any point on the circle is:",
-      "subject": "Mathematics",
-      "topic": "Circles",
-      "board": "WBBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the volume of a sphere of radius 3 cm is:",
-      "subject": "Mathematics",
-      "topic": "Surface Areas and Volumes",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "if two triangles are similar and their corresponding sides are in the ratio 2:3, the ratio",
-      "subject": "Mathematics",
-      "topic": "Triangles",
-      "board": "Maharashtra",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the solution of x + y = 5 and x - y = 1 is:",
-      "subject": "Mathematics",
-      "topic": "Pair of Linear Equations",
-      "board": "Karnataka",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the mean of the first five natural numbers is:",
-      "subject": "Mathematics",
-      "topic": "Statistics",
-      "board": "UP",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "a fair coin is tossed once. the probability of getting a head is:",
-      "subject": "Mathematics",
-      "topic": "Probability",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "in the reaction 2h2 + o2 -> 2h2o, the ratio of hydrogen to oxygen molecules reacting is:",
-      "subject": "Physical Science",
-      "topic": "Chemical Reactions",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the ph of a neutral aqueous solution at 25 degrees c is:",
-      "subject": "Physical Science",
-      "topic": "Acids, Bases and Salts",
-      "board": "ICSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "which of the following metals is the most reactive?",
-      "subject": "Physical Science",
-      "topic": "Metals and Non-metals",
-      "board": "WBBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "rusting of iron requires the presence of:",
-      "subject": "Physical Science",
-      "topic": "Metals and Non-metals",
-      "board": "Maharashtra",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the molecular formula of methane is:",
-      "subject": "Physical Science",
-      "topic": "Carbon Compounds",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "in the modern periodic table, elements are arranged in order of increasing:",
-      "subject": "Physical Science",
-      "topic": "Periodic Classification",
-      "board": "Tamil Nadu",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the number of electrons in a na+ ion (na has atomic number 11) is:",
-      "subject": "Physical Science",
-      "topic": "Periodic Classification",
-      "board": "UP",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "by ohm's law, if v = 6 v and r = 2 ohm, the current i is:",
-      "subject": "Physical Science",
-      "topic": "Electricity",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the si unit of electrical resistance is the:",
-      "subject": "Physical Science",
-      "topic": "Electricity",
-      "board": "Karnataka",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "in a series circuit, which quantity remains the same through every component?",
-      "subject": "Physical Science",
-      "topic": "Electricity",
-      "board": "WBBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the focal length of a plane mirror is:",
-      "subject": "Physical Science",
-      "topic": "Light - Reflection and Refraction",
-      "board": "ICSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the power of a lens of focal length 0.5 m is:",
-      "subject": "Physical Science",
-      "topic": "Light - Reflection and Refraction",
-      "board": "Maharashtra",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "an object placed at infinity before a concave mirror forms its image:",
-      "subject": "Physical Science",
-      "topic": "Light - Reflection and Refraction",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "outside a bar magnet, the magnetic field lines run:",
-      "subject": "Physical Science",
-      "topic": "Magnetic Effects of Current",
-      "board": "Tamil Nadu",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "adding silver nitrate solution to sodium chloride solution gives a white precipitate of:",
-      "subject": "Physical Science",
-      "topic": "Chemical Reactions",
-      "board": "UP",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "in plant cells, photosynthesis takes place in the:",
-      "subject": "Life Science",
-      "topic": "Life Processes",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the universal donor blood group is:",
-      "subject": "Life Science",
-      "topic": "Life Processes",
-      "board": "ICSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "in the human lungs, exchange of gases takes place in the:",
-      "subject": "Life Science",
-      "topic": "Respiration",
-      "board": "WBBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the hormone that prepares the body for 'fight or flight' is:",
-      "subject": "Life Science",
-      "topic": "Control and Coordination",
-      "board": "Maharashtra",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "reflex actions are controlled mainly by the:",
-      "subject": "Life Science",
-      "topic": "Control and Coordination",
-      "board": "Karnataka",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "insulin, which controls blood sugar, is secreted by the:",
-      "subject": "Life Science",
-      "topic": "Control and Coordination",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "bending of a plant shoot towards light (phototropism) is caused by:",
-      "subject": "Life Science",
-      "topic": "Control and Coordination",
-      "board": "Tamil Nadu",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the structural and functional unit of the kidney is the:",
-      "subject": "Life Science",
-      "topic": "Excretion",
-      "board": "UP",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the number of chromosomes in a normal human body cell is:",
-      "subject": "Life Science",
-      "topic": "Heredity and Evolution",
-      "board": "WBBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "in humans, the sex of a child is determined by the:",
-      "subject": "Life Science",
-      "topic": "Heredity and Evolution",
-      "board": "ICSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "mendel carried out his experiments on inheritance using:",
-      "subject": "Life Science",
-      "topic": "Heredity and Evolution",
-      "board": "CBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "in humans, fertilisation normally takes place in the:",
-      "subject": "Life Science",
-      "topic": "Reproduction",
-      "board": "Maharashtra",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "the end products of photosynthesis are:",
-      "subject": "Life Science",
-      "topic": "Life Processes",
-      "board": "Karnataka",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "in an ecosystem, the flow of energy is:",
-      "subject": "Life Science",
-      "topic": "Our Environment",
-      "board": "UP",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    },
-    {
-      "fp": "which of the following is a biodegradable waste?",
-      "subject": "Life Science",
-      "topic": "Our Environment",
-      "board": "WBBSE",
-      "count": 1,
-      "sets": [
-        1
-      ]
-    }
-  ]
+ "updated": "2026-10-09",
+ "last_set": 2,
+ "max_repeats_allowed": 3,
+ "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
+ "questions": [
+  {
+   "fp": "the decimal expansion of 13/125 is:",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the lcm of 12 and 18 is:",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "if alpha and beta are the zeroes of x^2 - 5x + 6, then alpha + beta equals:",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the discriminant of 2x^2 - 4x + 3 = 0 is:",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the 7th term of the ap 3, 7, 11, ... is:",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the distance between the points (0, 0) and (3, 4) is:",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the value of sin30 + cos60 is:",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "if tan(theta) = 3/4, then sin(theta) equals:",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the length of the tangent from a point 13 cm from the centre of a circle of radius 5 cm is",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the angle subtended by a diameter at any point on the circle is:",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the volume of a sphere of radius 3 cm is:",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "if two triangles are similar and their corresponding sides are in the ratio 2:3, the ratio",
+   "subject": "Mathematics",
+   "topic": "Triangles",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the solution of x + y = 5 and x - y = 1 is:",
+   "subject": "Mathematics",
+   "topic": "Pair of Linear Equations",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the mean of the first five natural numbers is:",
+   "subject": "Mathematics",
+   "topic": "Statistics",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "a fair coin is tossed once. the probability of getting a head is:",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "in the reaction 2h2 + o2 -> 2h2o, the ratio of hydrogen to oxygen molecules reacting is:",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the ph of a neutral aqueous solution at 25 degrees c is:",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "which of the following metals is the most reactive?",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "rusting of iron requires the presence of:",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the molecular formula of methane is:",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "in the modern periodic table, elements are arranged in order of increasing:",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the number of electrons in a na+ ion (na has atomic number 11) is:",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "by ohm's law, if v = 6 v and r = 2 ohm, the current i is:",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the si unit of electrical resistance is the:",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "in a series circuit, which quantity remains the same through every component?",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the focal length of a plane mirror is:",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the power of a lens of focal length 0.5 m is:",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "an object placed at infinity before a concave mirror forms its image:",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "outside a bar magnet, the magnetic field lines run:",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Current",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "adding silver nitrate solution to sodium chloride solution gives a white precipitate of:",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "in plant cells, photosynthesis takes place in the:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the universal donor blood group is:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "in the human lungs, exchange of gases takes place in the:",
+   "subject": "Life Science",
+   "topic": "Respiration",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the hormone that prepares the body for 'fight or flight' is:",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "reflex actions are controlled mainly by the:",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "insulin, which controls blood sugar, is secreted by the:",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "bending of a plant shoot towards light (phototropism) is caused by:",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the structural and functional unit of the kidney is the:",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the number of chromosomes in a normal human body cell is:",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "in humans, the sex of a child is determined by the:",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "mendel carried out his experiments on inheritance using:",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "in humans, fertilisation normally takes place in the:",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the end products of photosynthesis are:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "in an ecosystem, the flow of energy is:",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "which of the following is a biodegradable waste?",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    1
+   ]
+  },
+  {
+   "fp": "the hcf of 96 and 404 is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the product of a non-zero rational number and an irrational number is always",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "if x = 2 is a zero of the polynomial x^2 + kx - 6, then k equals",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the sum of the roots of the equation 2x^2 - 7x + 3 = 0 is",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "how many terms of the ap 1, 3, 5, 7, ... give a sum of 100?",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the distance between the points (2, -3) and (10, y) is 10. the value(s) of y is/are",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the value of sec^2(theta) - tan^2(theta) is",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "a ladder 10 m long rests against a wall making an angle of 60 degrees with the ground. the height reached on the wall is",
+   "subject": "Mathematics",
+   "topic": "Heights and Distances",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "two circles of radii 5 cm and 3 cm touch each other externally. the distance between their centres is",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the curved surface area of a cylinder of radius 7 cm and height 10 cm is (take pi = 22/7)",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the mode of the data 2, 3, 3, 4, 5, 3, 2 is",
+   "subject": "Mathematics",
+   "topic": "Statistics",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "a bag contains 3 red and 5 black balls. one ball is drawn at random. the probability that it is red is",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "in triangle abc, de is parallel to bc with d on ab and e on ac. if ad/db = 2/3, then ae/ec equals",
+   "subject": "Mathematics",
+   "topic": "Triangles",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "for what value of k do the equations 3x + ky = 9 and 6x + 4y = 18 have infinitely many solutions?",
+   "subject": "Mathematics",
+   "topic": "Pair of Linear Equations",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the largest number that divides 245 and 1029, leaving a remainder of 5 in each case, is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the reaction fe + cuso4 -> feso4 + cu is an example of a",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "baking soda is chemically known as",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "which of the following non-metals is a good conductor of electricity?",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the functional group -cooh is present in",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "an element with atomic number 11 belongs to which group of the modern periodic table?",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the bond formed by the sharing of electrons between two atoms is called",
+   "subject": "Physical Science",
+   "topic": "Chemical Bonding",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "a wire of resistance r is cut into two equal halves. the resistance of each half is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "an electric heater draws a current of 5 a when connected to a 220 v supply. its power is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the direction of the magnetic field around a straight current-carrying conductor is given by",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Current",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the image formed by a plane mirror is",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "when a ray of light passes from air into water, it",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the ability of the eye lens to change its focal length to focus on near and far objects is called",
+   "subject": "Physical Science",
+   "topic": "Human Eye",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "a car starts from rest and accelerates uniformly at 2 m/s^2 for 5 s. the distance covered is",
+   "subject": "Physical Science",
+   "topic": "Force and Motion",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the acceleration due to gravity (g) of the earth is independent of",
+   "subject": "Physical Science",
+   "topic": "Gravitation",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "ultrasonic sound waves have a frequency",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "in humans, the digestion of proteins begins in the",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "in a cell, aerobic respiration takes place in the",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "in plants, xylem tissue transports",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the main nitrogenous waste present in human urine is",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the gap between two adjacent neurons across which nerve impulses pass is called the",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "deficiency of iodine in the diet causes",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "in the human female, the embryo normally develops in the",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the transfer of pollen grains from the anther to the stigma of the same flower is called",
+   "subject": "Life Science",
+   "topic": "Reproduction in Plants",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "when a pure tall pea plant (tt) is crossed with a pure dwarf pea plant (tt), the f1 generation is",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the basic unit of heredity that is passed from parents to offspring is the",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "in the food chain grass -> grasshopper -> frog -> snake, the frog occupies the",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the greenhouse gas mainly responsible for global warming is",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "which of the following is a renewable source of energy?",
+   "subject": "Life Science",
+   "topic": "Natural Resources",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "the 'three r's' of environmental protection stand for",
+   "subject": "Life Science",
+   "topic": "Management of Natural Resources",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  },
+  {
+   "fp": "which of the following diseases is caused by a virus?",
+   "subject": "Life Science",
+   "topic": "Human Health and Diseases",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    2
+   ]
+  }
+ ]
 }
