@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JBNSTS Practice Exam — Class X (Set 2) — English + Bengali</title>
+<style>
+:root{ --ink:#17171a; --muted:#8a8a93; --line:#e8e7e2; --accent:#3b3bf0; --bg:#faf9f6; --good:#1a7f37; --bad:#cf222e; }
+*{box-sizing:border-box; margin:0; padding:0;}
+body{font-family:"Noto Sans Bengali","Nirmala UI","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.55; padding:0 20px;}
+.screen{max-width:700px; margin:0 auto; min-height:100vh; display:flex; flex-direction:column;}
+.hidden{display:none !important;}
+button{font-family:inherit; cursor:pointer;}
+#start-screen{justify-content:center; text-align:center;}
+.kicker{color:var(--muted); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; margin-bottom:14px;}
+#start-screen h1{font-size:1.75rem; letter-spacing:-.02em; margin-bottom:8px;}
+#start-screen h1.en{font-size:1.15rem; color:var(--muted); font-weight:600;}
+.meta{color:var(--muted); font-size:.95rem; margin-bottom:10px;}
+.bigbtn{background:var(--ink); color:#fff; border:none; font-size:1rem; font-weight:600;
+  padding:15px 46px; border-radius:999px; margin-top:22px;}
+.bigbtn:hover{transform:translateY(-2px); opacity:.92;}
+.bar{height:3px; background:var(--line); border-radius:2px; margin:26px 0 6px; overflow:hidden;}
+.bar i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease;}
+.toprow{display:flex; justify-content:space-between; align-items:baseline; padding:6px 0 24px; gap:10px;}
+.count{color:var(--muted); font-size:.85rem; font-weight:600; letter-spacing:.06em;}
+.timer{font-variant-numeric:tabular-nums; font-weight:700; font-size:1.05rem; color:var(--muted);}
+.timer.warn{color:#b45309;} .timer.danger{color:var(--bad); animation:blink 1s infinite;}
+@keyframes blink{50%{opacity:.45;}}
+.jumpbtn{background:none; border:none; color:var(--muted); font-size:.78rem; font-weight:700; letter-spacing:.06em; padding:4px 0;}
+.jumpbtn:hover{color:var(--ink); text-decoration:underline;}
+.qwrap{flex:1; animation:slide .28s ease;}
+@keyframes slide{from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:none;}}
+.qtext .bn{font-size:1.3rem; font-weight:700; letter-spacing:-.01em;}
+.qtext .en{font-size:.98rem; color:var(--muted); font-weight:500; margin-top:5px;}
+.qsub{color:var(--muted); font-size:.83rem; margin:12px 0 22px;}
+.opts{display:flex; flex-direction:column;}
+.opt{display:flex; gap:14px; align-items:flex-start; text-align:left; width:100%; border:none;
+  background:none; padding:13px 10px; font-size:1.05rem; border-bottom:1px solid var(--line); color:var(--ink);}
+.opt:first-child{border-top:1px solid var(--line);}
+.opt:hover{background:#f1f0ea;}
+.opt.sel{background:#eef0ff;}
+.opt .key{flex:0 0 22px; font-size:.75rem; font-weight:700; color:var(--muted); padding-top:4px;}
+.opt.sel .key{color:var(--accent);}
+.opt .bn{display:block; font-weight:600;}
+.opt .en{display:block; font-size:.85rem; color:var(--muted);}
+.navrow{display:flex; justify-content:space-between; padding:22px 0 40px;}
+.linkbtn{background:none; border:none; color:var(--muted); font-size:.9rem; font-weight:600;}
+.linkbtn:hover{color:var(--ink); text-decoration:underline;}
+.nextbtn{background:var(--ink); color:#fff; border:none; padding:12px 26px; border-radius:999px; font-weight:600;}
+.nextbtn:hover{opacity:.9;}
+#overview-screen,#result-screen{padding-top:40px;}
+#overview-screen h2,#result-screen h2{font-size:1.5rem; margin-bottom:8px;}
+.ov-sub{color:var(--muted); margin-bottom:24px; font-size:.95rem;}
+.grid{display:grid; grid-template-columns:repeat(6,1fr); gap:10px; margin-bottom:30px;}
+.gcell{aspect-ratio:1; border:1px solid var(--line); background:#fff; border-radius:10px; font-weight:700; font-size:.95rem;}
+.gcell.done{background:var(--ink); color:#fff; border-color:var(--ink);}
+.gcell.cur{outline:2px solid var(--accent);}
+.ov-actions{display:flex; gap:16px; align-items:center;}
+.pct{font-size:4rem; font-weight:800; letter-spacing:-.03em; margin:10px 0;}
+.pct small{font-size:1.5rem; color:var(--muted);}
+.verdict{font-size:1.1rem; font-weight:700; margin-bottom:6px;}
+.verdict.pass{color:var(--good);} .verdict.fail{color:var(--bad);}
+.rnote{color:var(--muted); font-size:.9rem; margin-bottom:28px;}
+.review{display:flex; flex-direction:column; gap:16px; margin-bottom:30px;}
+.rev{border:1px solid var(--line); border-radius:12px; padding:14px 16px; background:#fff;}
+.rev .q{font-weight:600; margin-bottom:8px; display:flex; justify-content:space-between; gap:12px;}
+.rev .q .en{display:block; font-weight:500; color:var(--muted); font-size:.88rem; margin-top:3px;}
+.tag{font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; padding:2px 8px; border-radius:999px; white-space:nowrap; height:fit-content;}
+.tag.ok{background:#e6f4ea; color:var(--good);} .tag.no{background:#fbe9ea; color:var(--bad);}
+.line{font-size:.9rem; color:#444; margin-bottom:3px;}
+.ans-ok{color:var(--good); font-weight:600;} .ans-no{color:var(--bad); font-weight:600;}
+.exp{font-size:.9rem; color:#555; margin-top:8px; padding-top:8px; border-top:1px dashed var(--line);}
+.exp .en{color:var(--muted); font-size:.85rem;}
+.src{font-size:.75rem; color:var(--muted); margin-top:6px;}
+.weak{border:1px solid var(--line); border-radius:12px; padding:16px; background:#fff; margin-bottom:30px;}
+.weak h3{font-size:1rem; margin-bottom:10px;}
+.weak ul{list-style:none; display:flex; flex-wrap:wrap; gap:8px;}
+.weak li{background:#fbe9ea; color:var(--bad); font-size:.82rem; font-weight:600; padding:5px 12px; border-radius:999px;}
+.weak p{font-size:.9rem; color:#555;}
+.again{background:none; border:1px solid var(--line); padding:12px 26px; border-radius:999px; font-weight:600; margin-bottom:50px;}
+.again:hover{background:#f1f0ea;}
+</style>
+</head>
+<body>
+<div id="start-screen" class="screen">
+  <div>
+    <div class="kicker">Examination / পরীক্ষা</div>
+    <h1 id="s-title-bn"></h1>
+    <h1 id="s-title" class="en"></h1>
+    <div class="meta" id="s-meta"></div>
+    <button class="bigbtn" onclick="startExam()">Begin &rarr;</button>
+  </div>
+</div>
+<div id="exam-screen" class="screen hidden">
+  <div class="bar"><i id="prog"></i></div>
+  <div class="toprow">
+    <span class="count" id="q-count"></span>
+    <button class="jumpbtn" onclick="showOverview('Jump to any question')">All questions</button>
+    <span class="timer" id="qtimer" title="Per-question timer">04:00</span>
+    <span class="timer" id="timer">--:--</span>
+  </div>
+  <div class="qwrap">
+    <div class="qtext" id="q-text"></div>
+    <div class="qsub" id="q-sub"></div>
+    <div class="opts" id="opts"></div>
+  </div>
+  <div class="navrow">
+    <button class="linkbtn" id="prev" onclick="go(-1)">&larr; Previous</button>
+    <button class="nextbtn" id="next" onclick="nextOrFinish()">Next &rarr;</button>
+  </div>
+</div>
+<div id="overview-screen" class="screen hidden">
+  <h2 id="ov-title">Almost done</h2>
+  <div class="ov-sub" id="ov-sub"></div>
+  <div class="grid" id="grid"></div>
+  <div class="ov-actions">
+    <button class="bigbtn" onclick="finish(false)">Submit exam</button>
+    <button class="linkbtn" onclick="backToExam()">&larr; Back to questions</button>
+  </div>
+</div>
+<div id="result-screen" class="screen hidden">
+  <div>
+    <div class="kicker" id="r-kicker">Result</div>
+    <div class="pct"><span id="r-pct">0</span><small>%</small></div>
+    <div class="verdict" id="verdict"></div>
+    <div class="rnote" id="r-note"></div>
+    <div class="weak" id="weak"></div>
+    <div class="review" id="review"></div>
+    <button class="again" onclick="location.reload()">Retake exam</button>
+  </div>
+</div>
+<script>
+const EXAM = {"title":"JBNSTS Junior Talent Search - Practice Exam (Class 10, Set 2)","title_bn":"JBNSTS জুনিয়র ট্যালেন্ট সার্চ — অনুশীলন পরীক্ষা (দশম শ্রেণি, সেট ২)","subtitle":"Class 10 syllabus | all Indian boards | Mathematics - Physical Science - Life Science","subtitle_bn":"দশম শ্রেণির সিলেবাস | ভারতের সমস্ত বোর্ড | গণিত - ভৌতবিজ্ঞান - জীবনবিজ্ঞান","durationMinutes":180,"passPercent":40,"negativeMark":0.5,"autoAdvance":true,"questions":[{"subject":"Mathematics","subject_bn":"গণিত","topic":"Real Numbers","topic_bn":"বাস্তব সংখ্যা","board":"CBSE","q":"The HCF of 96 and 404 is","bn_q":"96 এবং 404 এর গসাগু হল","options":["12","8","2","4"],"bn_options":["12","8","2","4"],"answer":3,"explain":"96 = 2^5 x 3 and 404 = 2^2 x 101, so HCF = 2^2 = 4.","bn_explain":"96 = 2^5 x 3 এবং 404 = 2^2 x 101, তাই গসাগু = 2^2 = 4।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Real Numbers","topic_bn":"বাস্তব সংখ্যা","board":"WBBSE","q":"The product of a non-zero rational number and an irrational number is always","bn_q":"একটি অশূন্য মূলদ সংখ্যা এবং একটি অমূলদ সংখ্যার গুণফল সর্বদা","options":["An integer","Irrational","Rational","Zero"],"bn_options":["একটি পূর্ণসংখ্যা","অমূলদ","মূলদ","শূন্য"],"answer":1,"explain":"A non-zero rational multiplied by an irrational is always irrational.","bn_explain":"একটি অশূন্য মূলদ সংখ্যাকে অমূলদ দিয়ে গুণ করলে গুণফল সর্বদা অমূলদ হয়।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Polynomials","topic_bn":"বহুপদী","board":"ICSE","q":"If x = 2 is a zero of the polynomial x^2 + kx - 6, then k equals","bn_q":"যদি x = 2 বহুপদী x^2 + kx - 6 এর একটি শূন্য হয়, তবে k এর মান","options":["-2","1","2","-1"],"bn_options":["-2","1","2","-1"],"answer":1,"explain":"Putting x = 2: 4 + 2k - 6 = 0, so 2k = 2 and k = 1.","bn_explain":"x = 2 বসালে: 4 + 2k - 6 = 0, তাই 2k = 2 এবং k = 1।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Quadratic Equations","topic_bn":"দ্বিঘাত সমীকরণ","board":"Maharashtra","q":"The sum of the roots of the equation 2x^2 - 7x + 3 = 0 is","bn_q":"2x^2 - 7x + 3 = 0 সমীকরণের মূল দুটির যোগফল হল","options":["-7/2","-3/2","7/2","3/2"],"bn_options":["-7/2","-3/2","7/2","3/2"],"answer":2,"explain":"Sum of roots = -b/a = -(-7)/2 = 7/2.","bn_explain":"মূলের যোগফল = -b/a = -(-7)/2 = 7/2।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Arithmetic Progressions","topic_bn":"সমান্তর প্রগতি","board":"Tamil Nadu","q":"How many terms of the AP 1, 3, 5, 7, ... give a sum of 100?","bn_q":"1, 3, 5, 7, ... সমান্তর প্রগতির কতটি পদ নিলে যোগফল 100 হবে?","options":["20","5","100","10"],"bn_options":["20","5","100","10"],"answer":3,"explain":"The sum of the first n odd numbers is n^2; n^2 = 100 gives n = 10.","bn_explain":"প্রথম n সংখ্যক অযুগ্ম সংখ্যার যোগফল n^2; n^2 = 100 হলে n = 10।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Coordinate Geometry","topic_bn":"স্থানাঙ্ক জ্যামিতি","board":"Karnataka","q":"The distance between the points (2, -3) and (10, y) is 10. The value(s) of y is/are","bn_q":"(2, -3) এবং (10, y) বিন্দু দুটির দূরত্ব 10। y এর মান হল","options":["3 or -9","-9","3","9"],"bn_options":["3 অথবা -9","-9","3","9"],"answer":0,"explain":"8^2 + (y+3)^2 = 100, so (y+3)^2 = 36 and y = 3 or y = -9.","bn_explain":"8^2 + (y+3)^2 = 100, তাই (y+3)^2 = 36 এবং y = 3 অথবা y = -9।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Trigonometry","topic_bn":"ত্রিকোণমিতি","board":"CBSE","q":"The value of sec^2(theta) - tan^2(theta) is","bn_q":"sec^2(theta) - tan^2(theta) এর মান হল","options":["0","-1","1","2"],"bn_options":["0","-1","1","2"],"answer":2,"explain":"From the identity 1 + tan^2(theta) = sec^2(theta), the difference equals 1.","bn_explain":"1 + tan^2(theta) = sec^2(theta) অভেদ থেকে পার্থক্যটি 1 হয়।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Heights and Distances","topic_bn":"উচ্চতা ও দূরত্ব","board":"ICSE","q":"A ladder 10 m long rests against a wall making an angle of 60 degrees with the ground. The height reached on the wall is","bn_q":"10 m লম্বা একটি মই ভূমির সঙ্গে 60 ডিগ্রি কোণ করে দেয়ালে হেলান দেওয়া আছে। দেয়ালে ওঠা উচ্চতা","options":["5 sqrt(3) m","5 sqrt(2) m","10 sqrt(3) m","5 m"],"bn_options":["5 sqrt(3) m","5 sqrt(2) m","10 sqrt(3) m","5 m"],"answer":0,"explain":"sin 60 = h/10, so h = 10 x (sqrt3/2) = 5 sqrt(3) m.","bn_explain":"sin 60 = h/10, তাই h = 10 x (sqrt3/2) = 5 sqrt(3) m।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Circles","topic_bn":"বৃত্ত","board":"WBBSE","q":"Two circles of radii 5 cm and 3 cm touch each other externally. The distance between their centres is","bn_q":"5 cm ও 3 cm ব্যাসার্ধের দুটি বৃত্ত পরস্পরকে বাহ্যিকভাবে স্পর্শ করে। তাদের কেন্দ্র দুটির দূরত্ব","options":["2 cm","4 cm","15 cm","8 cm"],"bn_options":["2 cm","4 cm","15 cm","8 cm"],"answer":3,"explain":"For external contact, distance between centres = r1 + r2 = 5 + 3 = 8 cm.","bn_explain":"বাহ্যিক স্পর্শের ক্ষেত্রে কেন্দ্রের দূরত্ব = r1 + r2 = 5 + 3 = 8 cm।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Surface Areas and Volumes","topic_bn":"পৃষ্ঠতল ও আয়তন","board":"CBSE","q":"The curved surface area of a cylinder of radius 7 cm and height 10 cm is (take pi = 22/7)","bn_q":"7 cm ব্যাসার্ধ ও 10 cm উচ্চতার একটি চোঙের বক্রপৃষ্ঠের ক্ষেত্রফল (pi = 22/7 ধরে)","options":["220 cm^2","1540 cm^2","3080 cm^2","440 cm^2"],"bn_options":["220 cm^2","1540 cm^2","3080 cm^2","440 cm^2"],"answer":3,"explain":"CSA = 2 pi r h = 2 x (22/7) x 7 x 10 = 440 cm^2.","bn_explain":"বক্রপৃষ্ঠের ক্ষেত্রফল = 2 pi r h = 2 x (22/7) x 7 x 10 = 440 cm^2।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Statistics","topic_bn":"পরিসংখ্যান","board":"ICSE","q":"The mode of the data 2, 3, 3, 4, 5, 3, 2 is","bn_q":"2, 3, 3, 4, 5, 3, 2 তথ্যের সংখ্যাগুরু মান হল","options":["3","4","5","2"],"bn_options":["3","4","5","2"],"answer":0,"explain":"3 occurs three times, more often than any other value, so the mode is 3.","bn_explain":"3 তিনবার আছে, অন্য যেকোনো মানের চেয়ে বেশি, তাই সংখ্যাগুরু মান 3।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Probability","topic_bn":"সম্ভাবনা","board":"Karnataka","q":"A bag contains 3 red and 5 black balls. One ball is drawn at random. The probability that it is red is","bn_q":"একটি থলেতে 3টি লাল ও 5টি কালো বল আছে। একটি বল এলোমেলোভাবে তোলা হল। বলটি লাল হওয়ার সম্ভাবনা","options":["3/5","3/8","1/8","5/8"],"bn_options":["3/5","3/8","1/8","5/8"],"answer":1,"explain":"Total balls = 8 and red balls = 3, so the probability = 3/8.","bn_explain":"মোট বল = 8 এবং লাল বল = 3, তাই সম্ভাবনা = 3/8।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Triangles","topic_bn":"ত্রিভুজ","board":"WBBSE","q":"In triangle ABC, DE is parallel to BC with D on AB and E on AC. If AD/DB = 2/3, then AE/EC equals","bn_q":"ত্রিভুজ ABC-তে DE, BC-এর সমান্তরাল; D, AB-এর উপর ও E, AC-এর উপর অবস্থিত। যদি AD/DB = 2/3 হয়, তবে AE/EC সমান","options":["2/3","4/9","3/2","2/5"],"bn_options":["2/3","4/9","3/2","2/5"],"answer":0,"explain":"By the Basic Proportionality Theorem (Thales), AE/EC = AD/DB = 2/3.","bn_explain":"মৌলিক সমানুপাতিকতা উপপাদ্য (থ্যালেস) অনুসারে, AE/EC = AD/DB = 2/3।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Pair of Linear Equations","topic_bn":"রৈখিক সমীকরণের জোড়া","board":"UP","q":"For what value of k do the equations 3x + ky = 9 and 6x + 4y = 18 have infinitely many solutions?","bn_q":"k এর কোন মানের জন্য 3x + ky = 9 এবং 6x + 4y = 18 সমীকরণ দুটির অসীম সংখ্যক সমাধান থাকবে?","options":["3","2","4","1"],"bn_options":["3","2","4","1"],"answer":1,"explain":"Infinitely many solutions need 3/6 = k/4 = 9/18, so k/4 = 1/2 and k = 2.","bn_explain":"অসীম সমাধানের জন্য 3/6 = k/4 = 9/18 প্রয়োজন, তাই k/4 = 1/2 এবং k = 2।","marks":2},{"subject":"Mathematics","subject_bn":"গণিত","topic":"Real Numbers","topic_bn":"বাস্তব সংখ্যা","board":"Tamil Nadu","q":"The largest number that divides 245 and 1029, leaving a remainder of 5 in each case, is","bn_q":"245 এবং 1029 কে ভাগ করলে প্রতিটি ক্ষেত্রে 5 ভাগশেষ থাকে, এমন বৃহত্তম সংখ্যা হল","options":["8","16","15","5"],"bn_options":["8","16","15","5"],"answer":1,"explain":"The number divides 245-5 = 240 and 1029-5 = 1024; HCF(240, 1024) = 16.","bn_explain":"সংখ্যাটি 245-5 = 240 এবং 1029-5 = 1024 কে ভাগ করে; গসাগু(240, 1024) = 16।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Chemical Reactions","topic_bn":"রাসায়নিক বিক্রিয়া","board":"CBSE","q":"The reaction Fe + CuSO4 -> FeSO4 + Cu is an example of a","bn_q":"Fe + CuSO4 -> FeSO4 + Cu বিক্রিয়াটি একটি উদাহরণ","options":["Combination reaction","Double displacement reaction","Displacement reaction","Decomposition reaction"],"bn_options":["সংযোজন বিক্রিয়া","দ্বি-প্রতিস্থাপন বিক্রিয়া","প্রতিস্থাপন বিক্রিয়া","বিয়োজন বিক্রিয়া"],"answer":2,"explain":"Iron displaces copper from copper sulphate, so it is a displacement reaction.","bn_explain":"লোহা কপার সালফেট থেকে তামাকে প্রতিস্থাপন করে, তাই এটি একটি প্রতিস্থাপন বিক্রিয়া।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Acids, Bases and Salts","topic_bn":"অ্যাসিড, ক্ষারক ও লবণ","board":"ICSE","q":"Baking soda is chemically known as","bn_q":"বেকিং সোডার রাসায়নিক নাম হল","options":["Sodium chloride","Sodium carbonate","Sodium hydroxide","Sodium hydrogencarbonate"],"bn_options":["সোডিয়াম ক্লোরাইড","সোডিয়াম কার্বনেট","সোডিয়াম হাইড্রোক্সাইড","সোডিয়াম হাইড্রোজেন কার্বনেট"],"answer":3,"explain":"Baking soda is NaHCO3, i.e. sodium hydrogencarbonate (sodium bicarbonate).","bn_explain":"বেকিং সোডা হল NaHCO3, অর্থাৎ সোডিয়াম হাইড্রোজেন কার্বনেট।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Metals and Non-metals","topic_bn":"ধাতু ও অধাতু","board":"WBBSE","q":"Which of the following non-metals is a good conductor of electricity?","bn_q":"নিচের কোন অধাতুটি বিদ্যুতের ভালো পরিবাহী?","options":["Phosphorus","Graphite","Iodine","Sulphur"],"bn_options":["ফসফরাস","গ্রাফাইট","আয়োডিন","সালফার"],"answer":1,"explain":"Graphite, an allotrope of carbon, has free electrons and conducts electricity well.","bn_explain":"গ্রাফাইট, কার্বনের একটি রূপভেদ, মুক্ত ইলেকট্রন থাকায় বিদ্যুৎ ভালোভাবে পরিবহন করে।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Carbon Compounds","topic_bn":"কার্বন যৌগ","board":"CBSE","q":"The functional group -COOH is present in","bn_q":"-COOH কার্যকরী মূলকটি থাকে","options":["Aldehydes","Ketones","Carboxylic acids","Alcohols"],"bn_options":["অ্যালডিহাইডে","কিটোনে","কার্বক্সিলিক অ্যাসিডে","অ্যালকোহলে"],"answer":2,"explain":"-COOH is the carboxylic acid group; for example, acetic acid CH3COOH.","bn_explain":"-COOH হল কার্বক্সিলিক অ্যাসিড মূলক; যেমন অ্যাসিটিক অ্যাসিড CH3COOH।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Periodic Classification","topic_bn":"পর্যায়বৃত্ত শ্রেণীবিভাগ","board":"Karnataka","q":"An element with atomic number 11 belongs to which group of the modern periodic table?","bn_q":"পারমাণবিক সংখ্যা 11 বিশিষ্ট একটি মৌল আধুনিক পর্যায় সারণির কোন শ্রেণিতে আছে?","options":["Group 1","Group 17","Group 11","Group 2"],"bn_options":["শ্রেণি 1","শ্রেণি 17","শ্রেণি 11","শ্রেণি 2"],"answer":0,"explain":"Sodium (Z = 11) has the configuration 2, 8, 1; one valence electron puts it in group 1.","bn_explain":"সোডিয়ামের (Z = 11) ইলেকট্রন বিন্যাস 2, 8, 1; একটি যোজ্যতা ইলেকট্রন থাকায় এটি শ্রেণি 1-এ।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Chemical Bonding","topic_bn":"রাসায়নিক বন্ধন","board":"Tamil Nadu","q":"The bond formed by the sharing of electrons between two atoms is called","bn_q":"দুটি পরমাণুর মধ্যে ইলেকট্রন ভাগাভাগির মাধ্যমে গঠিত বন্ধনকে বলা হয়","options":["Covalent bond","Hydrogen bond","Metallic bond","Ionic bond"],"bn_options":["সমযোজী বন্ধন","হাইড্রোজেন বন্ধন","ধাতব বন্ধন","আয়নিক বন্ধন"],"answer":0,"explain":"Sharing of electrons gives a covalent bond; transfer of electrons gives an ionic bond.","bn_explain":"ইলেকট্রন ভাগাভাগি হলে সমযোজী বন্ধন হয়; ইলেকট্রন স্থানান্তর হলে আয়নিক বন্ধন হয়।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Electricity","topic_bn":"বিদ্যুৎ","board":"UP","q":"A wire of resistance R is cut into two equal halves. The resistance of each half is","bn_q":"R রোধের একটি তারকে দুটি সমান অর্ধে কাটা হল। প্রতিটি অর্ধের রোধ","options":["2R","R/2","R","R/4"],"bn_options":["2R","R/2","R","R/4"],"answer":1,"explain":"Resistance is proportional to length, so halving the length halves the resistance to R/2.","bn_explain":"রোধ দৈর্ঘ্যের সমানুপাতিক, তাই দৈর্ঘ্য অর্ধেক হলে রোধ অর্ধেক হয়ে R/2 হয়।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Electricity","topic_bn":"বিদ্যুৎ","board":"ICSE","q":"An electric heater draws a current of 5 A when connected to a 220 V supply. Its power is","bn_q":"একটি বৈদ্যুতিক হিটার 220 V সরবরাহে যুক্ত হলে 5 A প্রবাহ নেয়। এর ক্ষমতা","options":["225 W","2200 W","44 W","1100 W"],"bn_options":["225 W","2200 W","44 W","1100 W"],"answer":3,"explain":"Power P = V x I = 220 x 5 = 1100 W.","bn_explain":"ক্ষমতা P = V x I = 220 x 5 = 1100 W।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Magnetic Effects of Current","topic_bn":"তড়িৎ প্রবাহের চৌম্বক ক্রিয়া","board":"Maharashtra","q":"The direction of the magnetic field around a straight current-carrying conductor is given by","bn_q":"একটি সোজা তড়িৎ-বহনকারী পরিবাহীর চারপাশে চৌম্বক ক্ষেত্রের দিক নির্ণয় করা হয়","options":["Lenz's law","Fleming's left-hand rule","Fleming's right-hand rule","Right-hand thumb rule"],"bn_options":["লেঞ্জের সূত্র","ফ্লেমিংয়ের বাম হাতের নিয়ম","ফ্লেমিংয়ের ডান হাতের নিয়ম","ডান হাতের বুড়ো আঙুলের নিয়ম"],"answer":3,"explain":"The right-hand thumb rule (Maxwell's corkscrew rule) gives the field direction around a straight conductor.","bn_explain":"ডান হাতের বুড়ো আঙুলের নিয়ম (ম্যাক্সওয়েলের কর্কস্ক্রু নিয়ম) সোজা পরিবাহীর চারপাশে ক্ষেত্রের দিক দেয়।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Light - Reflection and Refraction","topic_bn":"আলো - প্রতিফলন ও প্রতিসরণ","board":"WBBSE","q":"The image formed by a plane mirror is","bn_q":"একটি সমতল দর্পণে গঠিত প্রতিবিম্ব হয়","options":["Virtual, erect and of the same size","Real and inverted","Real, erect and magnified","Virtual and diminished"],"bn_options":["অসদ, সোজা এবং সমান আকারের","সদ এবং উল্টো","সদ, সোজা এবং বিবর্ধিত","অসদ এবং ক্ষুদ্রতর"],"answer":0,"explain":"A plane mirror forms a virtual, erect image of the same size as the object.","bn_explain":"সমতল দর্পণ বস্তুর সমান আকারের একটি অসদ, সোজা প্রতিবিম্ব গঠন করে।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Light - Reflection and Refraction","topic_bn":"আলো - প্রতিফলন ও প্রতিসরণ","board":"CBSE","q":"When a ray of light passes from air into water, it","bn_q":"আলোর রশ্মি বায়ু থেকে জলে প্রবেশ করলে তা","options":["Reflects back into air","Bends towards the normal","Goes straight, undeviated","Bends away from the normal"],"bn_options":["বায়ুতে ফিরে প্রতিফলিত হয়","অভিলম্বের দিকে বেঁকে যায়","অবিচ্যুতভাবে সোজা যায়","অভিলম্ব থেকে দূরে বেঁকে যায়"],"answer":1,"explain":"Water is denser than air, so the ray slows down and bends towards the normal.","bn_explain":"জল বায়ুর চেয়ে ঘন, তাই রশ্মি ধীর হয় এবং অভিলম্বের দিকে বেঁকে যায়।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Human Eye","topic_bn":"মানুষের চোখ","board":"ICSE","q":"The ability of the eye lens to change its focal length to focus on near and far objects is called","bn_q":"কাছের ও দূরের বস্তুর উপর ফোকাস করতে চোখের লেন্সের ফোকাস দূরত্ব পরিবর্তনের ক্ষমতাকে বলা হয়","options":["Power of accommodation","Presbyopia","Refraction","Dispersion"],"bn_options":["সমন্বয় ক্ষমতা","প্রেসবায়োপিয়া","প্রতিসরণ","বিচ্ছুরণ"],"answer":0,"explain":"The ciliary muscles change the lens curvature; this is called the power of accommodation.","bn_explain":"সিলিয়ারি পেশি লেন্সের বক্রতা পরিবর্তন করে; একেই সমন্বয় ক্ষমতা বলা হয়।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Force and Motion","topic_bn":"বল ও গতি","board":"Karnataka","q":"A car starts from rest and accelerates uniformly at 2 m/s^2 for 5 s. The distance covered is","bn_q":"একটি গাড়ি স্থির অবস্থা থেকে শুরু করে 5 s ধরে 2 m/s^2 সমত্বরণে চলে। অতিক্রান্ত দূরত্ব","options":["10 m","5 m","25 m","50 m"],"bn_options":["10 m","5 m","25 m","50 m"],"answer":2,"explain":"s = ut + (1/2)at^2 = 0 + (1/2) x 2 x 25 = 25 m.","bn_explain":"গতির সমীকরণ s = ut + (1/2)at^2 = 0 + (1/2) x 2 x 25 = 25 m।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Gravitation","topic_bn":"মহাকর্ষ","board":"Tamil Nadu","q":"The acceleration due to gravity (g) of the Earth is independent of","bn_q":"পৃথিবীর অভিকর্ষজ ত্বরণ (g) কোনটির উপর নির্ভর করে না?","options":["The mass of the Earth","The gravitational constant G","The radius of the Earth","The mass of the falling body"],"bn_options":["পৃথিবীর ভর","মহাকর্ষীয় ধ্রুবক G","পৃথিবীর ব্যাসার্ধ","পতনশীল বস্তুর ভর"],"answer":3,"explain":"g = GM/R^2 depends on M (Earth) and R, not on the mass of the falling body.","bn_explain":"g = GM/R^2 নির্ভর করে M (পৃথিবী) ও R-এর উপর, পতনশীল বস্তুর ভরের উপর নয়।","marks":2},{"subject":"Physical Science","subject_bn":"ভৌতবিজ্ঞান","topic":"Sound","topic_bn":"শব্দ","board":"UP","q":"Ultrasonic sound waves have a frequency","bn_q":"অতিস্বনক শব্দ তরঙ্গের কম্পাঙ্ক","options":["Between 20 Hz and 20000 Hz","Below 20 Hz","Above 20000 Hz","Exactly 200 Hz"],"bn_options":["20 Hz থেকে 20000 Hz এর মধ্যে","20 Hz এর কম","20000 Hz এর বেশি","ঠিক 200 Hz"],"answer":2,"explain":"Sound above 20 kHz is ultrasonic; the audible range is 20 Hz to 20 kHz.","bn_explain":"20 kHz এর বেশি কম্পাঙ্কের শব্দ অতিস্বনক; শ্রবণসীমা 20 Hz থেকে 20 kHz।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Life Processes","topic_bn":"জীবনপ্রক্রিয়া","board":"CBSE","q":"In humans, the digestion of proteins begins in the","bn_q":"মানুষের ক্ষেত্রে প্রোটিনের পরিপাক শুরু হয়","options":["Oesophagus","Stomach","Mouth","Small intestine"],"bn_options":["খাদ্যনালিতে","পেটে","মুখে","ক্ষুদ্রান্ত্রে"],"answer":1,"explain":"Pepsin in the acidic stomach begins protein digestion; starch digestion starts in the mouth.","bn_explain":"আম্লিক পেটে পেপসিন প্রোটিনের পরিপাক শুরু করে; স্টার্চের পরিপাক মুখে শুরু হয়।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Life Processes","topic_bn":"জীবনপ্রক্রিয়া","board":"ICSE","q":"In a cell, aerobic respiration takes place in the","bn_q":"একটি কোষে সবাত শ্বসন ঘটে","options":["Chloroplast","Nucleus","Ribosome","Mitochondria"],"bn_options":["ক্লোরোপ্লাস্টে","নিউক্লিয়াসে","রাইবোজোমে","মাইটোকন্ড্রিয়ায়"],"answer":3,"explain":"Mitochondria are the site of aerobic respiration, releasing energy as ATP.","bn_explain":"মাইটোকন্ড্রিয়া সবাত শ্বসনের স্থান, যা ATP আকারে শক্তি মুক্ত করে।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Life Processes","topic_bn":"জীবনপ্রক্রিয়া","board":"WBBSE","q":"In plants, xylem tissue transports","bn_q":"উদ্ভিদে জাইলেম টিস্যু পরিবহন করে","options":["Hormones","Food","Oxygen","Water and minerals"],"bn_options":["হরমোন","খাদ্য","অক্সিজেন","জল ও খনিজ"],"answer":3,"explain":"Xylem carries water and minerals upward from the roots; phloem carries food.","bn_explain":"জাইলেম মূল থেকে জল ও খনিজ উপরের দিকে বহন করে; ফ্লোয়েম খাদ্য বহন করে।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Excretion","topic_bn":"রেচন","board":"Maharashtra","q":"The main nitrogenous waste present in human urine is","bn_q":"মানুষের প্রস্রাবে উপস্থিত প্রধান নাইট্রোজেনযুক্ত বর্জ্য হল","options":["Urea","Ammonia","Uric acid","Creatinine"],"bn_options":["ইউরিয়া","অ্যামোনিয়া","ইউরিক অ্যাসিড","ক্রিয়েটিনিন"],"answer":0,"explain":"The human liver converts excess amino acids into urea, which the kidneys excrete.","bn_explain":"মানুষের যকৃত অতিরিক্ত অ্যামিনো অ্যাসিডকে ইউরিয়ায় পরিণত করে, যা কিডনি নির্গত করে।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Control and Coordination","topic_bn":"নিয়ন্ত্রণ ও সমন্বয়","board":"CBSE","q":"The gap between two adjacent neurons across which nerve impulses pass is called the","bn_q":"দুটি সন্নিহিত নিউরনের মধ্যে যে ফাঁক দিয়ে স্নায়ু স্পন্দন যায়, তাকে বলা হয়","options":["Reflex arc","Axon","Dendrite","Synapse"],"bn_options":["রিফ্লেক্স আর্ক","অ্যাক্সন","ডেনড্রাইট","সাইন্যাপস"],"answer":3,"explain":"A nerve impulse passes from one neuron to the next across a synapse.","bn_explain":"স্নায়ু স্পন্দন একটি নিউরন থেকে পরবর্তী নিউরনে সাইন্যাপসের মাধ্যমে যায়।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Control and Coordination","topic_bn":"নিয়ন্ত্রণ ও সমন্বয়","board":"Karnataka","q":"Deficiency of iodine in the diet causes","bn_q":"খাদ্যে আয়োডিনের অভাব ঘটায়","options":["Anaemia","Goitre","Rickets","Scurvy"],"bn_options":["রক্তাল্পতা","গলগণ্ড (গয়টার)","রিকেটস","স্কার্ভি"],"answer":1,"explain":"Iodine deficiency reduces thyroxine, enlarging the thyroid gland (goitre).","bn_explain":"আয়োডিনের অভাব থাইরক্সিন কমায়, ফলে থাইরয়েড গ্রন্থি বেড়ে যায় (গলগণ্ড)।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Reproduction","topic_bn":"প্রজনন","board":"UP","q":"In the human female, the embryo normally develops in the","bn_q":"মানব মহিলার ক্ষেত্রে ভ্রূণ সাধারণত বিকশিত হয়","options":["Vagina","Ovary","Uterus","Fallopian tube"],"bn_options":["যোনিতে","ডিম্বাশয়ে","জরায়ুতে","ডিম্ববাহী নালিতে"],"answer":2,"explain":"After fertilisation the zygote moves to the uterus, where the embryo develops.","bn_explain":"নিষেকের পর জাইগোট জরায়ুতে যায়, যেখানে ভ্রূণ বিকশিত হয়।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Reproduction in Plants","topic_bn":"উদ্ভিদে প্রজনন","board":"Tamil Nadu","q":"The transfer of pollen grains from the anther to the stigma of the same flower is called","bn_q":"পরাগরেণু একই ফুলের পুংকেশর থেকে গর্ভমুণ্ডে স্থানান্তরিত হওয়াকে বলা হয়","options":["Cross-pollination","Fertilisation","Germination","Self-pollination"],"bn_options":["পর-পরাগায়ন","নিষেক","অঙ্কুরোদ্গম","স্ব-পরাগায়ন"],"answer":3,"explain":"Pollen transfer within the same flower is self-pollination; between flowers it is cross-pollination.","bn_explain":"একই ফুলের মধ্যে পরাগ স্থানান্তর স্ব-পরাগায়ন; ভিন্ন ফুলের মধ্যে হলে পর-পরাগায়ন।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Heredity and Evolution","topic_bn":"বংশগতি ও অভিব্যক্তি","board":"CBSE","q":"When a pure tall pea plant (TT) is crossed with a pure dwarf pea plant (tt), the F1 generation is","bn_q":"একটি বিশুদ্ধ লম্বা মটর গাছ (TT) এর সঙ্গে একটি বিশুদ্ধ খর্ব মটর গাছ (tt) এর সংকরায়ণে F1 বংশধর হয়","options":["All tall","1 tall : 1 dwarf","All dwarf","3 tall : 1 dwarf"],"bn_options":["সব লম্বা","1 লম্বা : 1 খর্ব","সব খর্ব","3 লম্বা : 1 খর্ব"],"answer":0,"explain":"All F1 plants are Tt; since tall (T) is dominant, every plant is tall.","bn_explain":"সমস্ত F1 গাছ Tt; লম্বা (T) প্রকট হওয়ায় প্রতিটি গাছ লম্বা হয়।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Heredity and Evolution","topic_bn":"বংশগতি ও অভিব্যক্তি","board":"ICSE","q":"The basic unit of heredity that is passed from parents to offspring is the","bn_q":"পিতামাতা থেকে সন্তানে সঞ্চারিত বংশগতির মৌলিক একক হল","options":["Chromosome","Gene","Nucleus","Cytoplasm"],"bn_options":["ক্রোমোজোম","জিন","নিউক্লিয়াস","সাইটোপ্লাজম"],"answer":1,"explain":"A gene is a segment of DNA that carries the information for a trait.","bn_explain":"জিন হল DNA-র একটি অংশ যা একটি বৈশিষ্ট্যের তথ্য বহন করে।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Our Environment","topic_bn":"আমাদের পরিবেশ","board":"Karnataka","q":"In the food chain grass -> grasshopper -> frog -> snake, the frog occupies the","bn_q":"grass -> grasshopper -> frog -> snake খাদ্যশৃঙ্খলে frog অবস্থান করে","options":["First trophic level","Third trophic level","Second trophic level","Fourth trophic level"],"bn_options":["প্রথম পুষ্টিস্তরে","তৃতীয় পুষ্টিস্তরে","দ্বিতীয় পুষ্টিস্তরে","চতুর্থ পুষ্টিস্তরে"],"answer":1,"explain":"Grass is the first, grasshopper the second and frog the third trophic level.","bn_explain":"grass প্রথম, grasshopper দ্বিতীয় এবং frog তৃতীয় পুষ্টিস্তর।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Our Environment","topic_bn":"আমাদের পরিবেশ","board":"WBBSE","q":"The greenhouse gas mainly responsible for global warming is","bn_q":"বিশ্ব উষ্ণায়নের জন্য প্রধানত দায়ী গ্রিনহাউস গ্যাস হল","options":["Argon","Nitrogen","Carbon dioxide","Oxygen"],"bn_options":["আর্গন","নাইট্রোজেন","কার্বন ডাইঅক্সাইড","অক্সিজেন"],"answer":2,"explain":"CO2 traps heat in the atmosphere, contributing most to global warming.","bn_explain":"CO2 বায়ুমণ্ডলে তাপ আটকে রাখে, যা বিশ্ব উষ্ণায়নে সবচেয়ে বেশি অবদান রাখে।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Natural Resources","topic_bn":"প্রাকৃতিক সম্পদ","board":"ICSE","q":"Which of the following is a renewable source of energy?","bn_q":"নিচের কোনটি নবায়নযোগ্য শক্তির উৎস?","options":["Coal","Natural gas","Wind","Petroleum"],"bn_options":["কয়লা","প্রাকৃতিক গ্যাস","বায়ু","পেট্রোলিয়াম"],"answer":2,"explain":"Wind is replenished naturally, so it is renewable; the others are fossil fuels.","bn_explain":"বায়ু প্রাকৃতিকভাবে পুনরায় তৈরি হয়, তাই এটি নবায়নযোগ্য; বাকিগুলি জীবাশ্ম জ্বালানি।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Management of Natural Resources","topic_bn":"প্রাকৃতিক সম্পদের ব্যবস্থাপনা","board":"CBSE","q":"The 'three R's' of environmental protection stand for","bn_q":"পরিবেশ সংরক্ষণের 'তিনটি R' বলতে বোঝায়","options":["Reduce, Reuse, Recycle","Read, Write, Recall","Remove, Replace, Repaint","Run, Rest, Relax"],"bn_options":["Reduce, Reuse, Recycle","Read, Write, Recall","Remove, Replace, Repaint","Run, Rest, Relax"],"answer":0,"explain":"The three R's - Reduce, Reuse and Recycle - help minimise waste and conserve resources.","bn_explain":"তিনটি R - Reduce, Reuse ও Recycle - বর্জ্য কমাতে ও সম্পদ সংরক্ষণে সাহায্য করে।","marks":2},{"subject":"Life Science","subject_bn":"জীবনবিজ্ঞান","topic":"Human Health and Diseases","topic_bn":"মানুষের স্বাস্থ্য ও রোগ","board":"Maharashtra","q":"Which of the following diseases is caused by a virus?","bn_q":"নিচের কোন রোগটি একটি ভাইরাসের জন্য হয়?","options":["Tuberculosis","Malaria","Dengue","Typhoid"],"bn_options":["যক্ষ্মা","ম্যালেরিয়া","ডেঙ্গু","টাইফয়েড"],"answer":2,"explain":"Dengue is caused by the dengue virus, spread by the Aedes mosquito.","bn_explain":"ডেঙ্গু ডেঙ্গু ভাইরাসের জন্য হয়, যা এডিস মশা ছড়ায়।","marks":2}]};
+
+const $ = id => document.getElementById(id);
+const n = EXAM.questions.length;
+const totalMarks = EXAM.questions.reduce((s,q)=>s+(q.marks||1),0);
+let cur=0, answers=new Array(n).fill(null), timeLeft=0, timerId=null, startedAt=0;
+const PER_Q=240; let qLeft=PER_Q;
+function init(){
+  $("s-title-bn").textContent = EXAM.title_bn;
+  $("s-title").textContent = EXAM.title;
+  $("s-meta").innerHTML = `${EXAM.subtitle_bn}<br>${EXAM.subtitle}<br>${n} questions &middot; ${totalMarks} marks &middot; ${EXAM.durationMinutes} minutes &middot; +2 correct / -0.5 wrong &middot; pass ${EXAM.passPercent}%`;
+}
+function startExam(){
+  $("start-screen").classList.add("hidden");
+  $("exam-screen").classList.remove("hidden");
+  timeLeft = EXAM.durationMinutes*60; startedAt = Date.now();
+  timerId = setInterval(tick,1000); tick(); render();
+}
+function tick(){
+  const t=$("timer"); t.textContent = fmt(timeLeft);
+  t.className = "timer" + (timeLeft<=60?" danger": timeLeft<=300?" warn":"");
+  if(timeLeft<=0){ finish(true); return; } timeLeft--;
+  if(!$("exam-screen").classList.contains("hidden")){ qLeft--; updateQTimer();
+    if(qLeft<=0){ if(cur<n-1) go(1); else nextOrFinish(); } }
+}
+function updateQTimer(){ const e=$("qtimer"); if(!e) return; e.textContent = fmt(qLeft);
+  e.className = "timer" + (qLeft<=30?" danger":""); }
+const fmt = s => String(Math.floor(Math.max(0,s)/60)).padStart(2,"0")+":"+String(Math.max(0,s)%60).padStart(2,"0");
+function render(){
+  const q=EXAM.questions[cur];
+  $("q-count").textContent = `Question ${cur+1} / ${n}`;
+  $("prog").style.width = ((cur+1)/n*100)+"%";
+  $("q-text").innerHTML = `<div class="bn">${q.bn_q}</div><div class="en">${q.q}</div>`;
+  $("q-sub").textContent = `${q.subject_bn} · ${q.subject} · ${q.topic} · ${q.board}`;
+  $("opts").innerHTML = q.options.map((o,i)=>
+    `<button class="opt ${answers[cur]===i?'sel':''}" onclick="choose(${i})">
+       <span class="key">${"ABCD"[i]}</span>
+       <span><span class="bn">${q.bn_options[i]}</span><span class="en">${o}</span></span></button>`).join("");
+  $("prev").style.visibility = cur===0 ? "hidden":"visible";
+  $("next").textContent = cur===n-1 ? "Finish" : "Next";
+  qLeft = PER_Q; updateQTimer();
+}
+function choose(i){ answers[cur]=i; render(); if(EXAM.autoAdvance && cur<n-1){ setTimeout(()=>go(1),180); } }
+function go(d){ cur=Math.min(n-1,Math.max(0,cur+d)); render(); window.scrollTo(0,0); }
+function nextOrFinish(){ if(cur===n-1) showOverview("Almost done"); else go(1); }
+function showOverview(heading){
+  $("exam-screen").classList.add("hidden"); $("overview-screen").classList.remove("hidden");
+  $("ov-title").textContent = heading;
+  const left = answers.filter(a=>a===null).length;
+  $("ov-sub").textContent = left ? `${left} question(s) still unanswered.` : "All questions answered. Submit when ready.";
+  $("grid").innerHTML = EXAM.questions.map((_,i)=>
+    `<button class="gcell ${answers[i]!==null?'done':''} ${i===cur?'cur':''}" onclick="jumpFromOverview(${i})">${i+1}</button>`).join("");
+  window.scrollTo(0,0);
+}
+function backToExam(){ $("overview-screen").classList.add("hidden"); $("exam-screen").classList.remove("hidden"); }
+function jumpFromOverview(i){ cur=i; backToExam(); render(); }
+function finish(auto){
+  clearInterval(timerId);
+  let score=0; const results=[], weak=[];
+  EXAM.questions.forEach((q,i)=>{
+    const ok = answers[i]===q.answer; results.push(ok);
+    if(ok) score += (q.marks||1); else if(answers[i]!==null) score -= (EXAM.negativeMark||0);
+    if(!ok && answers[i]!==null) weak.push(`${q.subject_bn}: ${q.topic}`);
+    else if(answers[i]===null) weak.push(`${q.subject_bn}: ${q.topic} (not attempted)`);
+  });
+  const pct = Math.max(0, Math.round(score/totalMarks*100));
+  const passed = pct >= EXAM.passPercent;
+  $("r-kicker").textContent = auto ? "Time's up - auto-submitted" : "Result";
+  $("r-pct").textContent = pct;
+  const v=$("verdict"); v.textContent = passed ? "Passed" : "Not passed this time"; v.className = "verdict " + (passed?"pass":"fail");
+  const used = Math.min(Math.round((Date.now()-startedAt)/1000), EXAM.durationMinutes*60);
+  $("r-note").textContent = `${score} of ${totalMarks} marks (negative marking applied) · pass mark ${EXAM.passPercent}% · time used ${fmt(used)}`;
+  const uniq=[...new Set(weak)];
+  $("weak").innerHTML = uniq.length
+    ? `<h3>Weaker portions to revise / দুর্বল অংশ</h3><ul>${uniq.map(w=>`<li>${w}</li>`).join("")}</ul>`
+    : `<h3>Weaker portions to revise / দুর্বল অংশ</h3><p>None - you got every attempted question right. Excellent.</p>`;
+  $("review").innerHTML = EXAM.questions.map((q,i)=>`
+    <div class="rev">
+      <div class="q"><span><span>Q${i+1}. ${q.bn_q}</span><span class="en">${q.q}</span></span><span class="tag ${results[i]?'ok':'no'}">${results[i]?'correct':'wrong'}</span></div>
+      <div class="line">Your answer: <span class="${results[i]?'ans-ok':'ans-no'}">${answers[i]!=null?q.bn_options[answers[i]]+" ("+q.options[answers[i]]+")":"- not answered -"}</span></div>
+      ${results[i]?"":`<div class="line">Correct answer: <span class="ans-ok">${q.bn_options[q.answer]} (${q.options[q.answer]})</span></div>`}
+      ${q.explain?`<div class="exp"><div>${q.bn_explain}</div><div class="en">${q.explain}</div></div>`:""}
+      <div class="src">${q.subject_bn} · ${q.subject} · ${q.topic} · ${q.board}</div>
+    </div>`).join("");
+  $("exam-screen").classList.add("hidden"); $("overview-screen").classList.add("hidden");
+  $("result-screen").classList.remove("hidden"); window.scrollTo(0,0);
+}
+init();
+
+</script>
+</body>
+</html>
