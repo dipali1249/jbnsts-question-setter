@@ -1,315 +1,367 @@
 <!--
   JBNSTS Junior Talent Search - PERMANENT EXAM TEMPLATE
-  Canonical, frozen format for every daily practice set. Do NOT edit the
-  layout / CSS / JavaScript per set. To produce a set, copy this file and
-  substitute the two placeholder tokens (defined in template/README.md):
-    (1) the SET-NUMBER token - in the <title> and in "const SET_NO = ...;"
+  Canonical, frozen format for every daily practice set (Bengali-first, bilingual).
+  Do NOT edit the layout / CSS / JavaScript per set. To produce a set, copy this
+  file and substitute the two placeholder tokens documented in template/README.md:
+    (1) the SET-NUMBER token   - in the <title>, the header and the footer lines
     (2) the QUESTIONS-DATA token - in "const QUESTIONS = ...;"
   Keep the option order as authored; vary the position of the correct answer.
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JBNSTS Junior Talent Search - Practice Exam Set __SET_NO__</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JBNSTS Junior Talent Search — Practice Exam — Set __SET_NO__</title>
 <style>
-:root{--bg:#0f172a;--card:#ffffff;--ink:#0f172a;--muted:#64748b;--brand:#1d4ed8;--brand2:#0ea5e9;
---ok:#16a34a;--bad:#dc2626;--warn:#d97706;--line:#e2e8f0;--soft:#f1f5f9;}
-*{box-sizing:border-box}
-body{margin:0;font-family:'Noto Sans Bengali','Nirmala UI','Segoe UI',system-ui,-apple-system,sans-serif;
-background:linear-gradient(160deg,#eef2ff,#e0f2fe 40%,#f8fafc);color:var(--ink);line-height:1.5}
-.wrap{max-width:960px;margin:0 auto;padding:16px}
-.screen{display:none}.screen.active{display:block}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 30px rgba(15,23,42,.07);padding:22px;margin-bottom:16px}
-h1{font-size:24px;margin:0 0 6px}h2{font-size:19px;margin:0 0 10px}
-.sub{color:var(--muted);font-size:14px}
-.badge{display:inline-block;background:var(--soft);border:1px solid var(--line);border-radius:999px;
-padding:3px 12px;font-size:13px;margin:2px 4px 2px 0;color:#334155}
-.btn{border:0;border-radius:10px;padding:11px 18px;font-size:15px;font-weight:600;cursor:pointer;
-background:var(--brand);color:#fff;transition:.15s}.btn:hover{filter:brightness(1.08)}
-.btn.ghost{background:#fff;color:var(--brand);border:1.5px solid var(--brand)}
-.btn.warn{background:var(--warn)}.btn.gray{background:#64748b}
-.btn:disabled{opacity:.45;cursor:not-allowed}
-.bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.timer{font-variant-numeric:tabular-nums;font-weight:700;background:#0f172a;color:#fff;border-radius:10px;padding:6px 12px;font-size:14px}
-.timer.low{background:var(--bad)}
-.qmeta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
-.qnum{font-weight:700;color:var(--brand)}
-.subj{font-weight:700}
-.stem{font-size:17px;margin:6px 0 4px}
-.stem .bn{font-size:17.5px;font-weight:600}
-.stem .en{font-size:15.5px;color:#334155}
-.opt{display:flex;gap:12px;align-items:flex-start;border:1.5px solid var(--line);border-radius:12px;
-padding:12px 14px;margin:9px 0;cursor:pointer;background:#fff;transition:.12s}
-.opt:hover{border-color:var(--brand2);background:#f8fbff}
-.opt.sel{border-color:var(--brand);background:#eff6ff;box-shadow:0 0 0 2px #dbeafe inset}
-.opt .k{width:26px;height:26px;flex:0 0 26px;border-radius:50%;background:var(--soft);display:flex;
-align-items:center;justify-content:center;font-weight:700;font-size:14px}
-.opt.sel .k{background:var(--brand);color:#fff}
-.opt .txt .bn{font-weight:600}.opt .txt .en{font-size:13.5px;color:#475569}
-.nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;margin-top:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:8px;margin-top:12px}
-.cell{aspect-ratio:1;border-radius:10px;border:1.5px solid var(--line);display:flex;align-items:center;
-justify-content:center;font-weight:700;cursor:pointer;background:#fff;font-size:14px}
-.cell.ans{background:#dcfce7;border-color:#86efac;color:#166534}
-.cell.cur{outline:3px solid var(--brand);outline-offset:1px}
-.legend{font-size:13px;color:var(--muted);margin-top:8px}
-.score{font-size:44px;font-weight:800;color:var(--brand)}
-.pass{color:var(--ok)}.fail{color:var(--bad)}
-.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:14px 0}
-.stat .box{background:var(--soft);border-radius:12px;padding:12px;text-align:center}
-.stat .n{font-size:22px;font-weight:800}.stat .l{font-size:13px;color:var(--muted)}
-.rev{border:1px solid var(--line);border-left:6px solid var(--muted);border-radius:12px;padding:14px;margin:12px 0;background:#fff}
-.rev.right{border-left-color:var(--ok)}.rev.wrong{border-left-color:var(--bad)}.rev.skip{border-left-color:var(--warn)}
-.tag{font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px}
-.tag.right{background:#dcfce7;color:#166534}.tag.wrong{background:#fee2e2;color:#991b1b}.tag.skip{background:#fef3c7;color:#92400e}
-.expl{background:#f8fafc;border:1px dashed var(--line);border-radius:10px;padding:10px 12px;margin-top:10px;font-size:14px}
-.expl .bn{font-weight:600}.expl .en{color:#475569}
-.weak{background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:14px;margin:12px 0}
-.weak h3{margin:0 0 8px;color:#9a3412;font-size:16px}
-.weak li{margin:4px 0}
-.hidden{display:none}
-.mini{font-size:13px;color:var(--muted)}
-ol.inst{margin:8px 0 0 18px;padding:0}ol.inst li{margin:4px 0}
+  :root{
+    --bg:#0f172a; --card:#ffffff; --ink:#1e293b; --muted:#64748b;
+    --line:#e2e8f0; --brand:#1d4ed8; --brand2:#1e40af;
+    --math:#1d4ed8; --phy:#b45309; --life:#15803d;
+    --ok:#16a34a; --bad:#dc2626; --warn:#d97706;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Noto Sans Bengali","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+       background:linear-gradient(180deg,#eef2ff 0%,#f8fafc 40%,#f1f5f9 100%);color:var(--ink);line-height:1.55}
+  .wrap{max-width:900px;margin:0 auto;padding:16px}
+  .screen{display:none}
+  .screen.active{display:block;animation:fade .25s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 24px rgba(15,23,42,.06);padding:22px;margin-bottom:16px}
+  h1{font-size:1.45rem;margin:.1em 0 .3em}
+  h2{font-size:1.15rem;margin:.2em 0 .5em}
+  .sub{color:var(--muted);font-size:.92rem}
+  .bn{font-size:1.06rem}
+  .en{color:#475569;font-size:.94rem}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  .pill{font-size:.78rem;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#f8fafc;color:#334155}
+  .pill.board{background:#eef2ff;border-color:#c7d2fe;color:#3730a3;font-weight:600}
+  .btn{appearance:none;border:0;border-radius:12px;padding:12px 20px;font-size:1rem;font-weight:600;cursor:pointer;
+       background:var(--brand);color:#fff;transition:.15s}
+  .btn:hover{background:var(--brand2)}
+  .btn.ghost{background:#fff;color:var(--brand);border:1px solid #c7d2fe}
+  .btn.ghost:hover{background:#eef2ff}
+  .btn.small{padding:8px 14px;font-size:.88rem;border-radius:10px}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;
+          background:#0f172a;color:#e2e8f0;border-radius:14px;padding:10px 14px;margin-bottom:12px;position:sticky;top:8px;z-index:20;
+          box-shadow:0 6px 18px rgba(15,23,42,.25)}
+  .topbar .clock{font-variant-numeric:tabular-nums;font-weight:700;font-size:.95rem}
+  .clock.pq{color:#fca5a5}
+  .clock.pq.safe{color:#86efac}
+  .qhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .qnum{font-size:.8rem;font-weight:700;color:var(--muted);letter-spacing:.03em}
+  .qtext-bn{font-size:1.12rem;font-weight:600;margin:6px 0 2px}
+  .qtext-en{font-size:.95rem;color:#475569;margin-bottom:12px}
+  .opts{display:grid;gap:10px}
+  .opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;cursor:pointer;
+       border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:12px 14px;transition:.12s;font:inherit}
+  .opt:hover{border-color:#93c5fd;background:#f8fbff}
+  .opt .k{flex:0 0 26px;height:26px;border-radius:50%;border:1.5px solid #cbd5e1;display:grid;place-items:center;
+          font-weight:700;font-size:.85rem;color:#475569}
+  .opt.sel{border-color:var(--brand);background:#eef2ff;box-shadow:0 0 0 3px rgba(29,78,216,.12)}
+  .opt.sel .k{background:var(--brand);color:#fff;border-color:var(--brand)}
+  .opt .opt-bn{font-size:1rem;font-weight:600}
+  .opt .opt-en{font-size:.86rem;color:#64748b}
+  .nav{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(42px,1fr));gap:8px;margin-top:10px}
+  .gbtn{aspect-ratio:1;border-radius:10px;border:1.5px solid var(--line);background:#fff;font-weight:700;cursor:pointer;font-size:.85rem;color:#334155}
+  .gbtn.answered{background:#dcfce7;border-color:#86efac;color:#166534}
+  .gbtn.locked{background:#fef3c7;border-color:#fcd34d;color:#92400e}
+  .gbtn.current{outline:3px solid var(--brand);outline-offset:1px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin-top:10px}
+  .dot{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:5px;vertical-align:-1px;border:1px solid var(--line)}
+  .scorebig{font-size:3rem;font-weight:800;line-height:1;margin:4px 0}
+  .statrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:16px 0}
+  .stat{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+  .stat .n{font-size:1.5rem;font-weight:800}
+  .stat .l{font-size:.78rem;color:var(--muted)}
+  .pass{color:var(--ok)} .fail{color:var(--bad)}
+  .review-item{border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px;background:#fff}
+  .tag{font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff}
+  .tag.math{background:var(--math)} .tag.phy{background:var(--phy)} .tag.life{background:var(--life)}
+  .rev-opt{display:flex;gap:10px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);margin-top:7px;font-size:.92rem}
+  .rev-opt.correct{border-color:#86efac;background:#f0fdf4}
+  .rev-opt.wrongpick{border-color:#fca5a5;background:#fef2f2}
+  .rev-opt .mk{font-weight:800}
+  .expl{margin-top:12px;padding:12px 14px;border-left:4px solid var(--brand);background:#f8fafc;border-radius:0 10px 10px 0}
+  .expl .lbl{font-size:.72rem;font-weight:800;letter-spacing:.06em;color:var(--brand);text-transform:uppercase}
+  .weaklist li{margin:4px 0}
+  .footer{text-align:center;color:var(--muted);font-size:.78rem;padding:8px 0 24px}
+  .note{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:12px 14px;font-size:.88rem;color:#92400e}
+  @media(max-width:560px){.scorebig{font-size:2.4rem}.card{padding:16px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<!-- START -->
-<section id="startScreen" class="screen active">
-  <div class="card">
-    <h1>JBNSTS Junior Talent Search - Practice Exam</h1>
-    <div class="sub">জগদীশ বসু জাতীয় বিজ্ঞান প্রতিভা অন্বেষণ - জুনিয়র প্রতিভা অন্বেষণ পরীক্ষা (অনুশীলন)</div>
-    <div class="sub" style="margin-top:6px">Set __SET_NO__ &middot; Class XI Science (after Madhyamik / Class 10)</div>
-    <div style="margin-top:12px">
-      <span class="badge">45 Questions</span>
-      <span class="badge">90 Marks</span>
-      <span class="badge">180 Minutes</span>
-      <span class="badge">+2 correct</span>
-      <span class="badge">-0.5 wrong</span>
-      <span class="badge">Pass 40% (36 marks)</span>
-    </div>
-    <h2 style="margin-top:18px">Instructions / নির্দেশাবলি</h2>
-    <ol class="inst">
-      <li>15 Mathematics (গণিত), 15 Physical Science (ভৌতবিজ্ঞান) and 15 Life Science (জীবনবিজ্ঞান) questions.</li>
-      <li>Every question is shown in Bengali first, with the English version beneath it.</li>
-      <li>Each question has 4 minutes. When the per-question timer runs out, the paper moves to the next question automatically.</li>
-      <li>Each question carries 2 marks: +2 for correct, -0.5 for wrong, 0 if unattempted.</li>
-      <li>You may jump to any question using the "All questions" grid. The whole paper lasts 180 minutes.</li>
-      <li>Questions are aligned to the Class 10 syllabus of CBSE, ICSE and various state boards.</li>
-    </ol>
-    <div style="margin-top:18px"><button class="btn" onclick="startExam()">Start Exam / পরীক্ষা শুরু করুন</button></div>
-  </div>
-</section>
+  <!-- ================= START SCREEN ================= -->
+  <div id="start" class="screen active">
+    <div class="card">
+      <div class="pills">
+        <span class="pill board">JBNSTS · Junior Talent Search</span>
+        <span class="pill">Practice Set __SET_NO__</span>
+      </div>
+      <h1>JBNSTS Junior Talent Search — Practice Exam</h1>
+      <p class="bn" style="font-weight:600;margin:.2em 0">জগদীশ বসু জাতীয় বিজ্ঞান প্রতিভা অন্বেষণ — প্র্যাকটিস পরীক্ষা (জুনিয়র)</p>
+      <p class="sub">For West Bengal students who have passed Class 10 (Madhyamik) with 75%+ and joined Class 11 Science. Syllabus aligned with CBSE, ICSE and state boards (WBBSE, Maharashtra, Tamil Nadu, Karnataka, UP and others).</p>
+      <p class="bn sub">পশ্চিমবঙ্গের যে ছাত্রছাত্রীরা 75%+ নম্বর নিয়ে দশম শ্রেণি (মাধ্যমিক) উত্তীর্ণ হয়ে একাদশ শ্রেণির বিজ্ঞান বিভাগে ভর্তি হয়েছে তাদের জন্য। CBSE, ICSE ও রাজ্য পর্ষদ (WBBSE, মহারাষ্ট্র, তামিলনাড়ু, কর্ণাটক, UP ইত্যাদি) এর সিলেবাস অনুসারে।</p>
 
-<!-- EXAM -->
-<section id="examScreen" class="screen">
-  <div class="card">
-    <div class="bar">
-      <div>
-        <div class="qnum">Question <span id="qIndexLabel">1</span> / 45</div>
-        <div class="mini" id="subjectLabel"></div>
-      </div>
-      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-        <div class="timer" id="perTimer">04:00</div>
-        <div class="timer" id="totalTimer">03:00:00</div>
+      <h2>Instructions / নির্দেশাবলি</h2>
+      <ul class="bn" style="margin:.3em 0 .3em 1.1em;font-size:1rem">
+        <li>মোট ৪৫টি প্রশ্ন — গণিত ১৫, ভৌতবিজ্ঞান ১৫, জীবনবিজ্ঞান ১৫।</li>
+        <li>প্রতিটি প্রশ্নে ৪ মিনিট সময়; মোট সময়কাল ১৮০ মিনিট (৩ ঘণ্টা)।</li>
+        <li>প্রতিটি প্রশ্নের মান ২ নম্বর। সঠিক উত্তরে +২, ভুল উত্তরে −০.৫, উত্তর না দিলে ০।</li>
+        <li>মোট নম্বর ৯০; পাশের নম্বর ৪০% (৩৬ নম্বর)।</li>
+        <li>প্রতিটি প্রশ্ন বাংলা ও ইংরেজি — উভয় ভাষায় দেওয়া আছে।</li>
+      </ul>
+      <ul class="en" style="margin:.2em 0 .2em 1.1em">
+        <li>45 questions — Mathematics 15, Physical Science 15, Life Science 15.</li>
+        <li>4 minutes per question; total duration 180 minutes (3 hours).</li>
+        <li>Each question carries 2 marks. +2 correct, −0.5 wrong, 0 unattempted.</li>
+        <li>Maximum 90 marks; pass mark 40% (36 marks).</li>
+        <li>Every question is given in both Bengali and English.</li>
+      </ul>
+      <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn" onclick="startExam()">Start Test · পরীক্ষা শুরু করুন</button>
       </div>
     </div>
-    <div class="mini" style="margin-top:4px">Per-question: 4 min &middot; Total: 180 min &middot; Subject &amp; board tag shown below</div>
+    <div class="footer">JBNSTS Practice Exam · Set __SET_NO__ · 45 questions · 90 marks · 180 minutes</div>
   </div>
 
-  <div class="card">
-    <div class="qmeta">
-      <span class="subj" id="subjName"></span>
-      <span class="badge" id="boardTag"></span>
-      <span class="badge" id="topicTag"></span>
-    </div>
-    <div class="stem">
-      <div class="bn" id="stemBn"></div>
-      <div class="en" id="stemEn"></div>
-    </div>
-    <div id="optionsWrap"></div>
-    <div class="nav">
-      <div style="display:flex;gap:10px">
-        <button class="btn ghost" id="prevBtn" onclick="go(-1)">&larr; Previous</button>
-        <button class="btn ghost" onclick="toggleGrid()">All questions / সব প্রশ্ন</button>
-      </div>
-      <div style="display:flex;gap:10px">
-        <button class="btn" id="nextBtn" onclick="go(1)">Next &rarr;</button>
-        <button class="btn warn" onclick="submitExam()">Submit / জমা দিন</button>
+  <!-- ================= EXAM SCREEN ================= -->
+  <div id="exam" class="screen">
+    <div class="topbar">
+      <div><strong>JBNSTS Set __SET_NO__</strong> <span class="sub" style="color:#94a3b8">· Q <span id="qpos">1</span>/45</span></div>
+      <div style="display:flex;gap:16px;align-items:center">
+        <span class="clock pq safe" id="pqtimer">04:00</span>
+        <span class="clock" id="totalTimer">180:00</span>
       </div>
     </div>
-    <div id="gridWrap" class="hidden">
-      <h2 style="margin-top:16px">All questions / সব প্রশ্ন</h2>
+
+    <div class="card" id="qcard"></div>
+
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <h2 style="margin:0">All questions · সমস্ত প্রশ্ন</h2>
+        <button class="btn ghost small" onclick="finishExam()">Finish &amp; Submit · শেষ করুন</button>
+      </div>
       <div class="grid" id="grid"></div>
-      <div class="legend">Green = answered &middot; White = not answered &middot; Blue outline = current question</div>
+      <div class="legend">
+        <span><span class="dot" style="background:#dcfce7;border-color:#86efac"></span>Answered · উত্তর দেওয়া</span>
+        <span><span class="dot" style="background:#fef3c7;border-color:#fcd34d"></span>Time up · সময় শেষ</span>
+        <span><span class="dot" style="background:#fff"></span>Not visited · দেখা হয়নি</span>
+      </div>
     </div>
+    <div class="footer">Negative marking applies · ঋণাত্মক নম্বর প্রযোজ্য</div>
   </div>
-</section>
 
-<!-- RESULT -->
-<section id="resultScreen" class="screen">
-  <div class="card">
-    <h1>Result / ফলাফল</h1>
-    <div id="resultSummary"></div>
+  <!-- ================= RESULT SCREEN ================= -->
+  <div id="result" class="screen">
+    <div class="card" id="resultCard"></div>
+    <div class="card">
+      <h2>Weaker portions to revise · পুনরালোচনার প্রয়োজনীয় দুর্বল অংশ</h2>
+      <div id="weakBox"></div>
+    </div>
+    <div class="card">
+      <h2>Detailed review &amp; explanations · বিস্তারিত পর্যালোচনা ও ব্যাখ্যা</h2>
+      <div id="review"></div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn ghost" onclick="location.reload()">Retake · আবার শুরু করুন</button>
+    </div>
+    <div class="footer">JBNSTS Practice Exam · Set __SET_NO__</div>
   </div>
-  <div class="card">
-    <div id="weakWrap"></div>
-  </div>
-  <div class="card">
-    <h2>Review / পর্যালোচনা</h2>
-    <div id="reviewWrap"></div>
-  </div>
-</section>
 
 </div>
+
 <script>
 const QUESTIONS = __QUESTIONS_JSON__;
-const SET_NO = __SET_NO__;
-const MARKS_CORRECT = 2, MARKS_WRONG = -0.5, PER_Q_TIME = 240, TOTAL_TIME = 180*60;
+const PQ_SECONDS = 240;          /* 4 minutes per question */
+const TOTAL_SECONDS = 10800;     /* 180 minutes */
+const MARKS_PER_Q = 2;
+const NEG = 0.5;
+const MAX_MARKS = 90;
+const PASS_PCT = 0.4;
+const N = QUESTIONS.length;
 
-let answers = new Array(QUESTIONS.length).fill(null);
-let cur = 0, perRemaining = PER_Q_TIME, totalRemaining = TOTAL_TIME;
-let perTimer = null, totalTimer = null, finished = false;
+let S = null;
 
-function fmt(s){s=Math.max(0,Math.round(s));const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),x=s%60;
-  return (h>0? String(h).padStart(2,'0')+':':'')+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0');}
-function fmtMMSS(s){s=Math.max(0,Math.round(s));const m=Math.floor(s/60),x=s%60;
-  return String(m).padStart(2,'0')+':'+String(x).padStart(2,'0');}
-const L = ['A','B','C','D'];
+function fmt(t){
+  t = Math.max(0, t|0);
+  const m = Math.floor(t/60), s = t%60;
+  return String(m).padStart(2,'0')+":"+String(s).padStart(2,'0');
+}
+function subjClass(en){
+  if(en.indexOf('Math')===0) return 'math';
+  if(en.indexOf('Physical')===0) return 'phy';
+  return 'life';
+}
+function esc(x){ return String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 function startExam(){
-  document.getElementById('startScreen').classList.remove('active');
-  document.getElementById('examScreen').classList.add('active');
-  answers = new Array(QUESTIONS.length).fill(null);
-  cur = 0; finished = false;
-  totalRemaining = TOTAL_TIME; perRemaining = PER_Q_TIME;
-  totalTimer = setInterval(()=>{totalRemaining--; updateTimers();
-    if(totalRemaining<=0){clearInterval(totalTimer); submitExam();}},1000);
-  renderQ(0);
+  S = { idx:0, answers:new Array(N).fill(null), locked:new Array(N).fill(false),
+        pq:new Array(N).fill(PQ_SECONDS), total:TOTAL_SECONDS, finished:false };
+  show('exam');
+  renderQ();
+  if(window.__timer) clearInterval(window.__timer);
+  window.__timer = setInterval(tick, 1000);
 }
-
-function updateTimers(){
-  const pt = document.getElementById('perTimer');
-  pt.textContent = fmtMMSS(perRemaining);
-  pt.classList.toggle('low', perRemaining<=30);
-  document.getElementById('totalTimer').textContent = fmt(totalRemaining);
-}
-
-function startPerTimer(){
-  clearInterval(perTimer);
-  perRemaining = PER_Q_TIME; updateTimers();
-  perTimer = setInterval(()=>{perRemaining--; updateTimers();
-    if(perRemaining<=0){clearInterval(perTimer); if(cur < QUESTIONS.length-1){cur++; renderQ(cur);} else {submitExam();}}},1000);
-}
-
-function renderQ(i){
-  cur = i;
-  const q = QUESTIONS[i];
-  document.getElementById('qIndexLabel').textContent = i+1;
-  document.getElementById('subjectLabel').textContent = q.subject_bn + ' / ' + q.subject_en;
-  document.getElementById('subjName').textContent = q.subject_bn + ' / ' + q.subject_en;
-  document.getElementById('boardTag').textContent = 'Board: ' + q.board;
-  document.getElementById('topicTag').textContent = q.topic_bn + ' / ' + q.topic_en;
-  document.getElementById('stemBn').textContent = q.q_bn;
-  document.getElementById('stemEn').textContent = q.q_en;
-  const w = document.getElementById('optionsWrap'); w.innerHTML='';
-  q.options.forEach((o,idx)=>{
-    const d = document.createElement('div');
-    d.className = 'opt' + (answers[i]===idx ? ' sel':'');
-    d.onclick = ()=>selectOpt(idx);
-    d.innerHTML = '<div class="k">'+L[idx]+'</div><div class="txt"><div class="bn">'+esc(o.bn)+
-      '</div><div class="en">'+esc(o.en)+'</div></div>';
-    w.appendChild(d);
-  });
-  document.getElementById('prevBtn').disabled = (i===0);
-  document.getElementById('nextBtn').disabled = (i===QUESTIONS.length-1);
-  updateGrid();
-  startPerTimer();
-}
-
-function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-
-function selectOpt(idx){ if(finished) return; answers[cur]=idx; renderQ(cur); }
-
-function go(d){ const n=cur+d; if(n<0||n>=QUESTIONS.length) return; renderQ(n); }
-
-function toggleGrid(){ document.getElementById('gridWrap').classList.toggle('hidden'); }
-
-function updateGrid(){
-  const g = document.getElementById('grid'); g.innerHTML='';
-  QUESTIONS.forEach((q,i)=>{
-    const c = document.createElement('div');
-    c.className = 'cell' + (answers[i]!==null?' ans':'') + (i===cur?' cur':'');
-    c.textContent = i+1; c.onclick = ()=>renderQ(i);
-    g.appendChild(c);
-  });
-}
-
-function submitExam(){
-  if(finished) return;
-  finished = true;
-  clearInterval(perTimer); clearInterval(totalTimer);
-  let correct=0, wrong=0, unatt=0, score=0;
-  QUESTIONS.forEach((q,i)=>{
-    if(answers[i]===null){unatt++;}
-    else if(answers[i]===q.correct){correct++; score+=MARKS_CORRECT;}
-    else {wrong++; score+=MARKS_WRONG;}
-  });
-  const max = QUESTIONS.length*MARKS_CORRECT;
-  const pct = (score/max)*100;
-  const pass = pct >= 40;
-  document.getElementById('examScreen').classList.remove('active');
-  document.getElementById('resultScreen').classList.add('active');
-
-  document.getElementById('resultSummary').innerHTML =
-    '<div class="score '+(pass?'pass':'fail')+'">'+score.toFixed(1)+' / '+max+'</div>'+
-    '<div style="font-size:18px;font-weight:700" class="'+(pass?'pass':'fail')+'">'+
-      (pass?'PASS / উত্তীর্ণ':'FAIL / অনুত্তীর্ণ')+' &middot; '+pct.toFixed(1)+'% (pass mark 40%)</div>'+
-    '<div class="stat">'+
-      '<div class="box"><div class="n" style="color:#16a34a">'+correct+'</div><div class="l">Correct / সঠিক</div></div>'+
-      '<div class="box"><div class="n" style="color:#dc2626">'+wrong+'</div><div class="l">Wrong / ভুল</div></div>'+
-      '<div class="box"><div class="n" style="color:#d97706">'+unatt+'</div><div class="l">Unattempted / অনুত্থিত</div></div>'+
-      '<div class="box"><div class="n">'+QUESTIONS.length+'</div><div class="l">Total / মোট</div></div>'+
-    '</div>'+
-    '<div class="mini">Marking: +2 correct, -0.5 wrong, 0 unattempted.</div>';
-
-  const weak = {};
-  QUESTIONS.forEach((q,i)=>{
-    if(answers[i]===null || answers[i]!==q.correct){
-      const k = q.subject_bn+' / '+q.subject_en;
-      (weak[k] = weak[k] || []).push(q.topic_bn+' / '+q.topic_en);
-    }
-  });
-  let wh = '<h3>Weaker portions to revise / যে বিষয়গুলি আবার পড়া দরকার</h3>';
-  const keys = Object.keys(weak);
-  if(keys.length===0){ wh += '<div>Nothing to revise - every question was answered correctly. Well done!</div>'; }
-  else { wh += '<ul>'; keys.forEach(k=>{
-    const uniq = [...new Set(weak[k])];
-    wh += '<li><b>'+esc(k)+'</b>: '+esc(uniq.join('; '))+'</li>';}); wh += '</ul>'; }
-  document.getElementById('weakWrap').innerHTML = wh;
-
-  let rv = '';
-  QUESTIONS.forEach((q,i)=>{
-    const a = answers[i];
-    let cls='skip', tag='Unattempted / অনুত্থিত';
-    if(a!==null){ if(a===q.correct){cls='right';tag='Correct / সঠিক';} else {cls='wrong';tag='Wrong / ভুল';} }
-    const yours = a===null ? '&mdash;' : (L[a]+'. '+esc(q.options[a].bn)+' / '+esc(q.options[a].en));
-    const corr = L[q.correct]+'. '+esc(q.options[q.correct].bn)+' / '+esc(q.options[q.correct].en);
-    rv += '<div class="rev '+cls+'">'+
-      '<div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap">'+
-        '<div class="qnum">Q'+(i+1)+' &middot; <span class="mini">'+esc(q.subject_bn)+' / '+esc(q.subject_en)+' &middot; Board: '+esc(q.board)+'</span></div>'+
-        '<span class="tag '+cls+'">'+tag+'</span></div>'+
-      '<div class="stem" style="margin-top:6px"><div class="bn">'+esc(q.q_bn)+'</div><div class="en">'+esc(q.q_en)+'</div></div>'+
-      '<div class="mini" style="margin-top:6px">Your answer: '+yours+'</div>'+
-      '<div class="mini">Correct answer: <b>'+corr+'</b></div>'+
-      '<div class="expl"><div class="bn">'+esc(q.exp_bn)+'</div><div class="en">'+esc(q.exp_en)+'</div></div>'+
-    '</div>';
-  });
-  document.getElementById('reviewWrap').innerHTML = rv;
+function show(id){
+  ['start','exam','result'].forEach(x=>document.getElementById(x).classList.toggle('active', x===id));
   window.scrollTo(0,0);
+}
+function tick(){
+  if(!S || S.finished) return;
+  S.total--;
+  if(S.total<=0){ S.total=0; updateClocks(); finishExam(); return; }
+  if(!S.locked[S.idx]){
+    S.pq[S.idx]--;
+    if(S.pq[S.idx]<=0){ S.pq[S.idx]=0; S.locked[S.idx]=true; renderQ(); }
+  }
+  updateClocks();
+}
+function updateClocks(){
+  const pqEl = document.getElementById('pqtimer');
+  pqEl.textContent = fmt(S.pq[S.idx]);
+  pqEl.classList.toggle('safe', S.pq[S.idx] > 30);
+  document.getElementById('totalTimer').textContent = fmt(S.total);
+}
+function renderQ(){
+  const i = S.idx, q = QUESTIONS[i];
+  const sc = subjClass(q.subject.en);
+  const opts = q.options.map((o,k)=>{
+    const sel = S.answers[i]===k;
+    const dis = S.locked[i] ? 'disabled' : '';
+    return '<button class="opt'+(sel?' sel':'')+'" '+dis+' onclick="pick('+k+')">'
+      + '<span class="k">'+String.fromCharCode(65+k)+'</span>'
+      + '<span><span class="opt-bn">'+esc(o.bn)+'</span><br><span class="opt-en">'+esc(o.en)+'</span></span>'
+      + '</button>';
+  }).join('');
+  document.getElementById('qcard').innerHTML =
+    '<div class="qhead"><div class="qnum">QUESTION '+(i+1)+' / '+N+'</div>'
+    + '<span class="tag '+sc+'">'+esc(q.subject.en)+' / '+esc(q.subject.bn)+'</span></div>'
+    + '<div class="pills" style="margin-top:10px">'
+    + '<span class="pill board">Board: '+esc(q.board)+'</span>'
+    + '<span class="pill">Topic: '+esc(q.topic.en)+' / '+esc(q.topic.bn)+'</span></div>'
+    + '<div class="qtext-bn">'+esc(q.q.bn)+'</div>'
+    + '<div class="qtext-en">'+esc(q.q.en)+'</div>'
+    + '<div class="opts">'+opts+'</div>'
+    + (S.locked[i] ? '<div class="note" style="margin-top:12px">সময় শেষ — এই প্রশ্নে আর উত্তর দেওয়া যাবে না। · Time up — this question is now locked.</div>' : '')
+    + '<div class="nav">'
+    + '<button class="btn ghost" '+(i===0?'disabled':'')+' onclick="go(-1)">← Previous · পূর্ববর্তী</button>'
+    + (i===N-1 ? '<button class="btn" onclick="finishExam()">Finish · শেষ করুন</button>'
+               : '<button class="btn" onclick="go(1)">Next · পরবর্তী →</button>')
+    + '</div>';
+  document.getElementById('qpos').textContent = (i+1);
+  updateClocks();
+  renderGrid();
+}
+function pick(k){
+  if(!S || S.locked[S.idx] || S.finished) return;
+  S.answers[S.idx] = (S.answers[S.idx]===k) ? null : k;
+  renderQ();
+}
+function go(d){
+  const n = S.idx + d;
+  if(n<0 || n>=N) return;
+  S.idx = n;
+  renderQ();
+}
+function jump(n){ S.idx = n; renderQ(); }
+function renderGrid(){
+  const g = document.getElementById('grid');
+  let h = '';
+  for(let i=0;i<N;i++){
+    let cls='gbtn';
+    if(S.answers[i]!==null) cls+=' answered';
+    else if(S.locked[i]) cls+=' locked';
+    if(i===S.idx) cls+=' current';
+    h += '<button class="'+cls+'" onclick="jump('+i+')">'+(i+1)+'</button>';
+  }
+  g.innerHTML = h;
+}
+function finishExam(){
+  if(!S || S.finished) return;
+  S.finished = true;
+  if(window.__timer) clearInterval(window.__timer);
+  let correct=0, wrong=0, unatt=0;
+  for(let i=0;i<N;i++){
+    if(S.answers[i]===null) unatt++;
+    else if(S.answers[i]===QUESTIONS[i].answer) correct++;
+    else wrong++;
+  }
+  const score = MARKS_PER_Q*correct - NEG*wrong;
+  const pct = (score/MAX_MARKS*100);
+  const passed = pct >= PASS_PCT*100;
+  document.getElementById('resultCard').innerHTML =
+    '<div class="pills"><span class="pill board">JBNSTS · Junior Talent Search</span><span class="pill">Set __SET_NO__ · Result</span></div>'
+    + '<h1>Result · ফলাফল</h1>'
+    + '<div class="scorebig '+(passed?'pass':'fail')+'">'+score.toFixed(2)+' <span style="font-size:1.1rem;color:#64748b">/ '+MAX_MARKS+'</span></div>'
+    + '<p class="bn '+(passed?'pass':'fail')+'" style="font-weight:700;margin:.2em 0">'+(passed?'অভিনন্দন — আপনি উত্তীর্ণ হয়েছেন।':'সরাসরি উত্তীর্ণ হননি — দুর্বল অংশগুলি পুনরালোচনা করুন।')+'</p>'
+    + '<p class="en">'+(passed?'Congratulations — you have passed.':'Not a pass yet — revise the weaker portions below.')+'</p>'
+    + '<div class="statrow">'
+    + '<div class="stat"><div class="n pass">'+correct+'</div><div class="l">Correct · সঠিক</div></div>'
+    + '<div class="stat"><div class="n fail">'+wrong+'</div><div class="l">Wrong · ভুল (−'+(NEG*wrong).toFixed(1)+')</div></div>'
+    + '<div class="stat"><div class="n" style="color:#64748b">'+unatt+'</div><div class="l">Unattempted · উত্তরহীন</div></div>'
+    + '<div class="stat"><div class="n">'+pct.toFixed(1)+'%</div><div class="l">Percentage · শতকরা</div></div>'
+    + '</div>'
+    + '<p class="sub">Marking: +'+MARKS_PER_Q+' correct, −'+NEG+' wrong, 0 unattempted · পাশের নম্বর ৪০% ('+(MAX_MARKS*PASS_PCT)+' নম্বর)</p>';
+
+  const weak = [];
+  for(let i=0;i<N;i++){
+    if(S.answers[i]!==QUESTIONS[i].answer){
+      const q = QUESTIONS[i];
+      weak.push({n:i+1, s_en:q.subject.en, s_bn:q.subject.bn, t_en:q.topic.en, t_bn:q.topic.bn,
+                 why: S.answers[i]===null ? 'unattempted' : 'wrong'});
+    }
+  }
+  const wb = document.getElementById('weakBox');
+  if(weak.length===0){
+    wb.innerHTML = '<p class="bn">দুর্দান্ত! কোনো ভুল বা উত্তরহীন প্রশ্ন নেই। · Excellent — no wrong or unattempted questions.</p>';
+  } else {
+    const seen = {};
+    weak.forEach(w=>{ const k=w.s_en+'|'+w.t_en; if(!seen[k]) seen[k]={w, items:[]}; seen[k].items.push(w.n); });
+    let h = '<ul class="weaklist">';
+    Object.values(seen).forEach(g=>{
+      h += '<li><strong>'+esc(g.w.s_en)+' / '+esc(g.w.s_bn)+' — '+esc(g.w.t_en)+' / '+esc(g.w.t_bn)+'</strong>'
+         + ' <span class="sub">(Q '+g.items.join(', ')+')</span></li>';
+    });
+    h += '</ul>';
+    wb.innerHTML = h;
+  }
+
+  const rv = document.getElementById('review');
+  let h2 = '';
+  for(let i=0;i<N;i++){
+    const q = QUESTIONS[i], sc = subjClass(q.subject.en);
+    const pick = S.answers[i];
+    let opts = '';
+    q.options.forEach((o,k)=>{
+      let cls='rev-opt';
+      if(k===q.answer) cls+=' correct';
+      else if(k===pick) cls+=' wrongpick';
+      const mark = (k===q.answer)?'✓':((k===pick)?'✗':'');
+      opts += '<div class="'+cls+'"><span class="mk">'+String.fromCharCode(65+k)+' '+mark+'</span>'
+            + '<span><span class="opt-bn">'+esc(o.bn)+'</span><br><span class="opt-en">'+esc(o.en)+'</span></span></div>';
+    });
+    const status = (pick===null)?'<span style="color:#d97706;font-weight:700">Unattempted · উত্তরহীন</span>'
+                 : (pick===q.answer?'<span style="color:#16a34a;font-weight:700">Correct · সঠিক</span>'
+                                    :'<span style="color:#dc2626;font-weight:700">Wrong · ভুল</span>');
+    h2 += '<div class="review-item">'
+        + '<div class="qhead"><div class="qnum">Q'+(i+1)+' · '+status+'</div>'
+        + '<span class="tag '+sc+'">'+esc(q.subject.en)+' / '+esc(q.subject.bn)+'</span></div>'
+        + '<div class="pills" style="margin-top:8px"><span class="pill board">Board: '+esc(q.board)+'</span>'
+        + '<span class="pill">Topic: '+esc(q.topic.en)+' / '+esc(q.topic.bn)+'</span></div>'
+        + '<div class="qtext-bn">'+esc(q.q.bn)+'</div>'
+        + '<div class="qtext-en">'+esc(q.q.en)+'</div>'
+        + opts
+        + '<div class="expl"><div class="lbl">Explanation · ব্যাখ্যা</div>'
+        + '<div class="bn">'+esc(q.exp.bn)+'</div><div class="en">'+esc(q.exp.en)+'</div></div>'
+        + '</div>';
+  }
+  rv.innerHTML = h2;
+  show('result');
 }
 </script>
 </body>
