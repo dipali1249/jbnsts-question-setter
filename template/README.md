@@ -49,7 +49,7 @@ Rules for the data:
 ## Fixed marking / timing (baked into the template — do not change)
 
 - 4 minutes per question → **180 minutes** total; each question carries **2 marks**.
-- +2 correct, −0.5 wrong, 0 unattempted; maximum **90** marks; pass **40%** (36 marks).
+- +2 correct, −0.5 wrong, 0 unattempted; maximum **90** marks; pass **90%** (81 marks).
 
 ## Example: producing a set
 
