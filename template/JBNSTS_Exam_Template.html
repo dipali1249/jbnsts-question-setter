@@ -112,14 +112,14 @@
         <li>মোট ৪৫টি প্রশ্ন — গণিত ১৫, ভৌতবিজ্ঞান ১৫, জীবনবিজ্ঞান ১৫।</li>
         <li>প্রতিটি প্রশ্নে ৪ মিনিট সময়; মোট সময়কাল ১৮০ মিনিট (৩ ঘণ্টা)।</li>
         <li>প্রতিটি প্রশ্নের মান ২ নম্বর। সঠিক উত্তরে +২, ভুল উত্তরে −০.৫, উত্তর না দিলে ০।</li>
-        <li>মোট নম্বর ৯০; পাশের নম্বর ৪০% (৩৬ নম্বর)।</li>
+        <li>মোট নম্বর ৯০; পাশের নম্বর ৯০% (৮১ নম্বর)।</li>
         <li>প্রতিটি প্রশ্ন বাংলা ও ইংরেজি — উভয় ভাষায় দেওয়া আছে।</li>
       </ul>
       <ul class="en" style="margin:.2em 0 .2em 1.1em">
         <li>45 questions — Mathematics 15, Physical Science 15, Life Science 15.</li>
         <li>4 minutes per question; total duration 180 minutes (3 hours).</li>
         <li>Each question carries 2 marks. +2 correct, −0.5 wrong, 0 unattempted.</li>
-        <li>Maximum 90 marks; pass mark 40% (36 marks).</li>
+        <li>Maximum 90 marks; pass mark 90% (81 marks).</li>
         <li>Every question is given in both Bengali and English.</li>
       </ul>
       <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
@@ -182,7 +182,7 @@ const TOTAL_SECONDS = 10800;     /* 180 minutes */
 const MARKS_PER_Q = 2;
 const NEG = 0.5;
 const MAX_MARKS = 90;
-const PASS_PCT = 0.4;
+const PASS_PCT = 0.9;
 const N = QUESTIONS.length;
 
 let S = null;
@@ -306,7 +306,7 @@ function finishExam(){
     + '<div class="stat"><div class="n" style="color:#64748b">'+unatt+'</div><div class="l">Unattempted · উত্তরহীন</div></div>'
     + '<div class="stat"><div class="n">'+pct.toFixed(1)+'%</div><div class="l">Percentage · শতকরা</div></div>'
     + '</div>'
-    + '<p class="sub">Marking: +'+MARKS_PER_Q+' correct, −'+NEG+' wrong, 0 unattempted · পাশের নম্বর ৪০% ('+(MAX_MARKS*PASS_PCT)+' নম্বর)</p>';
+    + '<p class="sub">Marking: +'+MARKS_PER_Q+' correct, −'+NEG+' wrong, 0 unattempted · পাশের নম্বর ৯০% ('+(MAX_MARKS*PASS_PCT)+' নম্বর)</p>';
 
   const weak = [];
   for(let i=0;i<N;i++){
