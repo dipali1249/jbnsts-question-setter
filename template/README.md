@@ -1,11 +1,11 @@
 # JBNSTS Exam Template (permanent)
 
 `JBNSTS_Exam_Template.html` is the **canonical, frozen format** for every daily practice
-set. It is a self-contained interactive exam page containing: a start screen, a
-per-question timer (4 min) and a total timer (180 min), question cards with a bilingual
-stem and four bilingual options, an "All questions" overview grid, and a result screen
-with negative marking, a "Weaker portions to revise" list and a full per-question review
-with explanations.
+set — the exact format delivered and approved on 2026-10-10. It is a self-contained,
+Bengali-first bilingual interactive exam page: a start screen, a per-question timer (4 min)
+and a total timer (180 min), question cards with a Bengali-first stem and four bilingual
+options, an "All questions" overview grid, and a result screen with negative marking, a
+"Weaker portions to revise" list and a full per-question review with explanations.
 
 Do **not** change the layout, CSS or JS per set. To produce a set, copy this file and
 substitute the two placeholders only:
@@ -19,32 +19,30 @@ substitute the two placeholders only:
 
 ```json
 {
-  "subject_en": "Mathematics",
-  "subject_bn": "গণিত",
-  "topic_en": "Quadratic Equations",
-  "topic_bn": "দ্বিঘাত সমীকরণ",
+  "subject": { "en": "Mathematics", "bn": "গণিত" },
+  "topic":   { "en": "Quadratic Equations", "bn": "দ্বিঘাত সমীকরণ" },
   "board": "CBSE",
-  "q_en": "question stem in English",
-  "q_bn": "প্রশ্ন বাংলায়",
+  "q": { "en": "question stem in English", "bn": "প্রশ্ন বাংলায়" },
   "options": [
-    {"en": "option A English", "bn": "বিকল্প A বাংলা"},
-    {"en": "option B English", "bn": "বিকল্প B বাংলা"},
-    {"en": "option C English", "bn": "বিকল্প C বাংলা"},
-    {"en": "option D English", "bn": "বিকল্প D বাংলা"}
+    { "en": "option A English", "bn": "বিকল্প A বাংলা" },
+    { "en": "option B English", "bn": "বিকল্প B বাংলা" },
+    { "en": "option C English", "bn": "বিকল্প C বাংলা" },
+    { "en": "option D English", "bn": "বিকল্প D বাংলা" }
   ],
-  "correct": 0,
-  "exp_en": "one-line explanation in English",
-  "exp_bn": "এক লাইনের ব্যাখ্যা বাংলায়"
+  "answer": 0,
+  "exp": { "en": "one-line explanation in English", "bn": "এক লাইনের ব্যাখ্যা বাংলায়" }
 }
 ```
 
 Rules for the data:
 
-- `correct` is the **0-based** index of the correct option.
+- `answer` is the **0-based** index of the correct option.
 - Exactly **4** options, all distinct, with exactly one unambiguously correct answer.
 - Exactly **45** objects: 15 Mathematics, 15 Physical Science, 15 Life Science.
+- Subject labels must be exactly `Mathematics`/`গণিত`, `Physical Science`/`ভৌতবিজ্ঞান`,
+  `Life Science`/`জীবনবিজ্ঞান`.
 - Every field must be present in **both** English and Bengali (Bengali in Bengali script).
-- Vary the position of the correct answer across the paper (do not let it cluster on one letter).
+- Vary the position of the correct answer across the paper (do not cluster on one letter).
 - `board` is the syllabus board the question aligns with — one of
   `CBSE`, `ICSE`, `WBBSE`, `Maharashtra`, `Tamil Nadu`, `Karnataka`, `UP` — mixed within a paper.
 
