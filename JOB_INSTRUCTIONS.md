@@ -48,7 +48,7 @@ confirmed, rewrite or replace that question — never ship an unverified answer.
 ## STEP 4 — MARKING & TIMING
 
 4 minutes per question → 180 minutes; each question 2 marks; +2 correct, −0.5 wrong,
-0 unattempted; 90 marks total; pass 40%. These are baked into the template — do not change them.
+0 unattempted; 90 marks total; pass 90%. These are baked into the template — do not change them.
 
 ## STEP 5 — BUILD, WRITE BACK, DELIVER
 
