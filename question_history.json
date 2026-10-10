@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-09",
- "last_set": 2,
+ "updated": "2026-10-10",
+ "last_set": 3,
  "max_repeats_allowed": 3,
  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
  "questions": [
@@ -902,6 +902,456 @@
    "count": 1,
    "sets": [
     2
+   ]
+  },
+  {
+   "fp": "if 3 is one root of the quadratic equation x² − 8x + k = 0, then the value of k is",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the sum of the first 20 natural numbers (1 + 2 + 3 + ... + 20) is",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the midpoint of the line segment joining the points (2, 3) and (6, 7) is",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "if cos θ = 12/13 for an acute angle θ, then sin θ is",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the number of tangents that can be drawn to a circle from an external point is",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "a fair die is thrown once. the probability of getting an even number is",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the hcf of 18 and 24 is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "if p(x) = 2x³ + x² − 5x + 3, then p(1) equals",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the solution of the equations 2x − y = 3 and x + y = 3 is",
+   "subject": "Mathematics",
+   "topic": "Pair of Linear Equations",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the total surface area of a cube of side 5 cm is",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the mean of the numbers 2, 4, 6, 8 and 10 is",
+   "subject": "Mathematics",
+   "topic": "Statistics",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "in a right-angled triangle the two legs are 6 cm and 8 cm. the hypotenuse is",
+   "subject": "Mathematics",
+   "topic": "Triangles",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "a vertical pole 10 m high casts a shadow 10√3 m long on the ground. the angle of elevation of the sun is",
+   "subject": "Mathematics",
+   "topic": "Heights and Distances",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the area of a circle of radius 7 cm is (take π = 22/7)",
+   "subject": "Mathematics",
+   "topic": "Areas Related to Circles",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the length of the diagonal of a square of side 5 cm is",
+   "subject": "Mathematics",
+   "topic": "Geometry — Quadrilaterals",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "three resistors of 2 ω, 3 ω and 5 ω are connected in series. the equivalent resistance is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "a 60 w bulb is used for 5 hours a day for 30 days. the electrical energy consumed is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the image formed by a convex mirror is always",
+   "subject": "Physical Science",
+   "topic": "Light — Reflection",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the power of a concave lens of focal length 25 cm is",
+   "subject": "Physical Science",
+   "topic": "Light — Refraction",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "fleming's left-hand rule gives the direction of",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Current",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "on heating, 2pb(no₃)₂ → 2pbo + 4no₂ + o₂. this reaction is an example of a",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "a solution turns blue litmus paper red. its ph is",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "which metal is stored under kerosene to prevent it from reacting with air?",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the number of covalent bonds in one molecule of methane (ch₄) is",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "elements placed in the same group of the modern periodic table have the same number of",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the least distance of distinct vision for a normal human eye is about",
+   "subject": "Physical Science",
+   "topic": "Human Eye",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the momentum of a body of mass 5 kg moving with a velocity of 2 m/s is",
+   "subject": "Physical Science",
+   "topic": "Force and Motion",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the acceleration due to gravity on the moon is about ______ that on the earth",
+   "subject": "Physical Science",
+   "topic": "Gravitation",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "a sound wave has a frequency of 50 hz. its time period is",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "two resistors of 4 ω and 6 ω are connected in parallel. their equivalent resistance is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the mode of nutrition in green plants is",
+   "subject": "Life Science",
+   "topic": "Life Processes — Nutrition",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "during anaerobic respiration in yeast, glucose is converted into",
+   "subject": "Life Science",
+   "topic": "Life Processes — Respiration",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the largest part of the human brain, which controls thinking and memory, is the",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "which of the following is the male reproductive organ in human beings?",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "a cross between two heterozygous tall pea plants (tt × tt) gives a phenotypic ratio of tall to dwarf of",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "organisms that break down dead plants and animals and return nutrients to the soil are called",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the liquid part of blood, in which the blood cells float, is called",
+   "subject": "Life Science",
+   "topic": "Life Processes — Transportation",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "which cell organelle is known as the 'suicidal bag' of the cell?",
+   "subject": "Life Science",
+   "topic": "Cell — Structure and Function",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the tube that carries urine from the kidney to the urinary bladder is the",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the largest gland in the human body is the",
+   "subject": "Life Science",
+   "topic": "Life Processes — Digestion",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the process by which plants lose water vapour through the stomata is called",
+   "subject": "Life Science",
+   "topic": "Life Processes — Transport in Plants",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the scientist who proposed the theory of natural selection was",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "which of the following organisms reproduces by budding?",
+   "subject": "Life Science",
+   "topic": "Reproduction — Asexual",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "the chief cause of depletion of the ozone layer is",
+   "subject": "Life Science",
+   "topic": "Natural Resources",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    3
+   ]
+  },
+  {
+   "fp": "deficiency of vitamin c in the diet causes",
+   "subject": "Life Science",
+   "topic": "Human Health and Diseases",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    3
    ]
   }
  ]
