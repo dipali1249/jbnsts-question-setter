@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-10",
- "last_set": 3,
+ "updated": "2026-10-11",
+ "last_set": 4,
  "max_repeats_allowed": 3,
  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
  "questions": [
@@ -1352,6 +1352,456 @@
    "count": 1,
    "sets": [
     3
+   ]
+  },
+  {
+   "fp": "the hcf of 65 and 117 is 13. their lcm is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "which of the following is an irrational number?",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "if alpha and beta are the zeroes of the polynomial x^2 - 7x + 10, then alpha*beta equals",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the quadratic equation x^2 + 4x + 4 = 0 has",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the 10th term of the ap 5, 8, 11, ... is",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the sum of the first 15 terms of the ap 7, 11, 15, ... is",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the point dividing the line segment joining (2, 3) and (8, 9) internally in the ratio 1 : 2 is",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "if 3 tan(theta) = 4 for an acute angle theta, then sin(theta) equals",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the value of sin(60) x cos(30) is",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "two circles of radii 8 cm and 5 cm touch each other internally. the distance between their centres is",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the volume of a cone of radius 7 cm and height 3 cm is (take pi = 22/7)",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the total surface area of a solid hemisphere of radius 7 cm is (take pi = 22/7)",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the median of the data 3, 5, 7, 9, 11, 13 is",
+   "subject": "Mathematics",
+   "topic": "Statistics",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "two fair coins are tossed together. the probability of getting exactly one head is",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "in a rhombus whose diagonals are 6 cm and 8 cm, the length of each side is",
+   "subject": "Mathematics",
+   "topic": "Geometry - Quadrilaterals",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the reaction cao + h2o -> ca(oh)2 is an example of a",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "in the reaction zno + c -> zn + co, the substance that is oxidised is",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "a solution that turns red litmus paper blue has a ph",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "washing soda is chemically known as",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "which of the following metals reacts vigorously with cold water?",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "brass is an alloy of",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the functional group present in ethanol is",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the molecular formula of ethyne is",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "an element with atomic number 17 belongs to which group of the modern periodic table?",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the bond formed by the complete transfer of electrons from a metal atom to a non-metal atom is called",
+   "subject": "Physical Science",
+   "topic": "Chemical Bonding",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "an electric iron of power 1000 w is used for 2 hours. the electrical energy consumed is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "if light travels in a medium at 2 x 10^8 m/s, the refractive index of that medium is",
+   "subject": "Physical Science",
+   "topic": "Light - Refraction",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "fleming's right-hand rule gives the direction of",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Current",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "a force of 20 n acts on a body of mass 10 kg. its acceleration is",
+   "subject": "Physical Science",
+   "topic": "Force and Motion",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the audible range of frequency for a normal human ear is",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the mode of nutrition in cuscuta (amarbel) is",
+   "subject": "Life Science",
+   "topic": "Life Processes - Nutrition",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "during heavy exercise, human muscle cells may respire anaerobically to produce",
+   "subject": "Life Science",
+   "topic": "Life Processes - Respiration",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the blood vessel that carries oxygenated blood from the lungs to the heart is the",
+   "subject": "Life Science",
+   "topic": "Life Processes - Transportation",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the process of removing waste products from the blood using an artificial kidney machine is called",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the hormone secreted by the thyroid gland that regulates metabolism is",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the part of the human brain that maintains posture and balance is the",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the growth movement of roots towards gravity is called",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "in a monohybrid cross, the genotypic ratio in the f2 generation is",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "in a normal human body cell, the number of autosomes is",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the organ that provides nutrition to the developing embryo in the human female is the",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "after fertilisation in a flower, the ovule develops into the",
+   "subject": "Life Science",
+   "topic": "Reproduction in Plants",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "in the food chain grass -> deer -> lion, the lion occupies the",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the main gases responsible for acid rain are",
+   "subject": "Life Science",
+   "topic": "Natural Resources",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "deficiency of vitamin a in the diet causes",
+   "subject": "Life Science",
+   "topic": "Human Health and Diseases",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    4
+   ]
+  },
+  {
+   "fp": "the cell organelle known as the 'powerhouse' of the cell is the",
+   "subject": "Life Science",
+   "topic": "Cell - Structure and Function",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    4
    ]
   }
  ]
