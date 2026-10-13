@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-11",
- "last_set": 4,
+ "updated": "2026-10-13",
+ "last_set": 5,
  "max_repeats_allowed": 3,
  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
  "questions": [
@@ -1802,6 +1802,456 @@
    "count": 1,
    "sets": [
     4
+   ]
+  },
+  {
+   "fp": "the hcf of two numbers is 6 and their lcm is 36 if one of the numbers is 12 the other number is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "if a 2 3 and b 2 3 then the hcf of a and b is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "if and are the zeroes of the polynomial x 3x 4 then is",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the value of k for which the equation kx 2x 3 0 has equal roots is",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the common difference of the arithmetic progression whose nth term is 3n 2 is",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the distance of the point 6 8 from the origin is",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "if sin 1 2 for an acute angle then equals",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the value of 1 tan cos is",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the angle between a tangent to a circle and the radius drawn at the point of contact is",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the volume of a cube of edge 4 cm is",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "in abc de bc with d on ab and e on ac if ad 2 cm db 3 cm and ae 4 cm then ec is",
+   "subject": "Mathematics",
+   "topic": "Triangles",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the mean of 5 observations is 18 if an observation 20 is replaced by 10 the new mean is",
+   "subject": "Mathematics",
+   "topic": "Statistics",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "a card is drawn at random from a well shuffled pack of 52 playing cards the probability that it is a king is",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the pair of linear equations x 2y 5 and 2x 4y 10 has",
+   "subject": "Mathematics",
+   "topic": "Pair of Linear Equations",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the circumference of a circle of radius 7 cm is take 22 7",
+   "subject": "Mathematics",
+   "topic": "Areas Related to Circles",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the reaction between an acid and a base to give salt and water is called",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the acid present in vinegar is",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the most abundant metal in the earth s crust is",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the iupac name of ch cooh is",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the number of periods in the modern periodic table is",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "which of the following is a covalent compound",
+   "subject": "Physical Science",
+   "topic": "Chemical Bonding",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "a conductor of resistance 5 carries a current of 2 a the potential difference across it is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "an electric bulb is rated 100 w at 220 v the current drawn by it is about",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the magnetic field inside a long current carrying solenoid is",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Current",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the radius of curvature of a concave mirror of focal length 10 cm is",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "when a ray of light passes from air into glass the angle of refraction is",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the defect of vision in which a person cannot see nearby objects clearly is called",
+   "subject": "Physical Science",
+   "topic": "Human Eye",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "a body of mass 10 kg moving with a velocity of 5 m s is brought to rest in 2 s the force acting on it is",
+   "subject": "Physical Science",
+   "topic": "Force and Motion",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the value of acceleration due to gravity on the surface of the earth is about",
+   "subject": "Physical Science",
+   "topic": "Gravitation",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "sound travels fastest in",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the outermost rigid covering that gives shape and protection to a plant cell is the",
+   "subject": "Life Science",
+   "topic": "Cell - Structure and Function",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the enzyme present in human saliva that begins the digestion of starch is",
+   "subject": "Life Science",
+   "topic": "Life Processes - Nutrition",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "in plants the exchange of gases takes place mainly through the",
+   "subject": "Life Science",
+   "topic": "Life Processes - Respiration",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the number of chambers in the human heart is",
+   "subject": "Life Science",
+   "topic": "Life Processes - Transportation",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "besides the kidneys which organ helps remove carbon dioxide a waste product from the human body",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the part of the human brain that controls involuntary actions such as heartbeat and breathing is the",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the brain and the spinal cord together make up the",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the fusion of a male gamete and a female gamete is called",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "in a flowering plant the male gamete is carried inside the",
+   "subject": "Life Science",
+   "topic": "Reproduction in Plants",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "in human beings the sex chromosomes present in a male are",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the scientist regarded as the father of genetics is",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "which of the following is a non biodegradable waste",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the rise in the average temperature of the earth due to greenhouse gases is called",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "the main combustible component of biogas is",
+   "subject": "Life Science",
+   "topic": "Natural Resources",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    5
+   ]
+  },
+  {
+   "fp": "malaria in humans is caused by",
+   "subject": "Life Science",
+   "topic": "Human Health and Diseases",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    5
    ]
   }
  ]
