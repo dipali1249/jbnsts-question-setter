@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-13",
- "last_set": 5,
+ "updated": "2026-10-14",
+ "last_set": 6,
  "max_repeats_allowed": 3,
  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
  "questions": [
@@ -2252,6 +2252,456 @@
    "count": 1,
    "sets": [
     5
+   ]
+  },
+  {
+   "fp": "the hcf of 26 and 91 is:",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the decimal expansion of 17/8 terminates after how many decimal places?",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "if α and β are the zeroes of the polynomial x² + 7x + 12, then α + β equals:",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "if the product of the roots of x² − 4x + k = 0 is 3, then k equals:",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the equation x² − 2x + 5 = 0 has:",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the 15th term of the arithmetic progression 7, 13, 19, ... is:",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the sum of the first n terms of an ap is sₙ = 3n² + 5n. its 10th term is:",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the distance between the points (−1, 2) and (3, 5) is:",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the centroid of the triangle with vertices (1, 2), (3, 4) and (5, 6) is:",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the value of cos²60° + sin²30° is:",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "if sin θ = 5/13 for an acute angle θ, then tan θ equals:",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the number of tangents that can be drawn to a circle from a point lying on the circle is:",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the volume of a sphere of radius 6 cm is (take π = 3.14):",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the median of the data 5, 3, 9, 7, 11 is:",
+   "subject": "Mathematics",
+   "topic": "Statistics",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "a fair die is thrown once. the probability of getting a number greater than 4 is:",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the reaction 2kclo₃ → 2kcl + 3o₂ (on heating) is an example of a:",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "in the reaction cuo + h₂ → cu + h₂o, the substance that is oxidised is:",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "which gas is produced when dilute hydrochloric acid reacts with zinc granules?",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the metal that is in the liquid state at room temperature is:",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "coating iron with a thin layer of zinc to prevent rusting is called:",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "which of the following is a saturated hydrocarbon?",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the molecular formula of propene is:",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "an element with atomic number 12 belongs to which period and group of the modern periodic table?",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the number of valence electrons in a chlorine atom (atomic number 17) is:",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "which of the following molecules contains a triple covalent bond?",
+   "subject": "Physical Science",
+   "topic": "Chemical Bonding",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "resistors of 4 ω, 6 ω and 12 ω are connected in parallel. their equivalent resistance is:",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "an electric bulb of power 60 w is used for 10 hours. the electrical energy consumed is:",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "which mirror is used as a rear-view mirror in vehicles?",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "if the speed of light in a medium is 2.25 × 10⁸ m/s, the refractive index of the medium is:",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the kinetic energy of a body of mass 2 kg moving with a velocity of 3 m/s is:",
+   "subject": "Physical Science",
+   "topic": "Force and Motion",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "bile juice, which helps in the digestion of fats, is produced by the:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the blood group known as the 'universal recipient' is:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the largest artery in the human body is the:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the part of a neuron that receives nerve impulses from other neurons is the:",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "deficiency of growth hormone during childhood causes:",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the organ that stores urine before it is expelled from the body is the:",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "in the human female, the organ that produces eggs (ova) is the:",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "amoeba reproduces by:",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "in a human female, the pair of sex chromosomes present is:",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the '10 per cent law' of energy transfer in food chains was given by:",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the cell organelle that controls all the activities of the cell and contains the genetic material is the:",
+   "subject": "Life Science",
+   "topic": "Cell - Structure and Function",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "the green pigment in leaves that traps sunlight for photosynthesis is:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "deficiency of vitamin d in the diet causes:",
+   "subject": "Life Science",
+   "topic": "Human Health and Diseases",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "in plants, the tissue that transports food (sugar) from the leaves to other parts is:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    6
+   ]
+  },
+  {
+   "fp": "rhizobium bacteria present in the root nodules of leguminous plants help in:",
+   "subject": "Life Science",
+   "topic": "Life Processes",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    6
    ]
   }
  ]
