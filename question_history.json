@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-19",
-  "last_set": 7,
+  "updated": "2026-10-20",
+  "last_set": 8,
   "max_repeats_allowed": 3,
   "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
   "questions": [
@@ -3152,6 +3152,456 @@
       "count": 1,
       "sets": [
         7
+      ]
+    },
+    {
+      "fp": "if the hcf of 306 and 657 is 9, then their lcm is:",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the decimal expansion of 23/(2^3 x 5^2) terminates after how many decimal places?",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "if alpha and beta are the zeroes of x^2 - 6x + 8, then alpha^2 + beta^2 equals:",
+      "subject": "Mathematics",
+      "topic": "Polynomials",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the quadratic equation 3x^2 - 2x + 5 = 0 has:",
+      "subject": "Mathematics",
+      "topic": "Quadratic Equations",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "if the equation x^2 + kx + 9 = 0 has equal roots, then k equals:",
+      "subject": "Mathematics",
+      "topic": "Quadratic Equations",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the 10th term of the arithmetic progression 3, 8, 13, ... is:",
+      "subject": "Mathematics",
+      "topic": "Arithmetic Progressions",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the sum of the first 20 terms of the arithmetic progression 1, 4, 7, ... is:",
+      "subject": "Mathematics",
+      "topic": "Arithmetic Progressions",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the distance between the points (3, -2) and (-1, 1) is:",
+      "subject": "Mathematics",
+      "topic": "Coordinate Geometry",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the value of (1 + tan^2 theta) is:",
+      "subject": "Mathematics",
+      "topic": "Trigonometry",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the value of 2 sin 30 + 3 cos 60 is:",
+      "subject": "Mathematics",
+      "topic": "Trigonometry",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "a chord of a circle of radius 10 cm subtends a right angle at the centre. its length is:",
+      "subject": "Mathematics",
+      "topic": "Circles",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the curved surface area of a cone of radius 7 cm and slant height 10 cm is (take pi = 22/7):",
+      "subject": "Mathematics",
+      "topic": "Surface Areas and Volumes",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the median of the data 12, 7, 15, 9, 20, 11 is:",
+      "subject": "Mathematics",
+      "topic": "Statistics",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "a card is drawn at random from a well-shuffled pack of 52 cards. the probability that it is a red face card is:",
+      "subject": "Mathematics",
+      "topic": "Probability",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the angle of elevation of the top of a tower from a point 20 m away from its foot on the ground is 45 degrees. the height of the tower is:",
+      "subject": "Mathematics",
+      "topic": "Heights and Distances",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "in the reaction mno2 + 4hcl -> mncl2 + 2h2o + cl2, the substance that is oxidised is:",
+      "subject": "Physical Science",
+      "topic": "Chemical Reactions",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "plaster of paris is chemically known as:",
+      "subject": "Physical Science",
+      "topic": "Acids, Bases and Salts",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "which of the following is the best conductor of electricity?",
+      "subject": "Physical Science",
+      "topic": "Metals and Non-metals",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the molecular formula of butyne is:",
+      "subject": "Physical Science",
+      "topic": "Carbon Compounds",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "an element with atomic number 20 belongs to which period and group of the modern periodic table?",
+      "subject": "Physical Science",
+      "topic": "Periodic Classification",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the number of covalent bonds in one molecule of ammonia (nh3) is:",
+      "subject": "Physical Science",
+      "topic": "Chemical Bonding",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "a resistor of 8 ohm carries a current of 0.5 a. the potential difference across it is:",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "three resistors of 3 ohm, 6 ohm and 6 ohm are connected in parallel. their equivalent resistance is:",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "which device converts electrical energy into mechanical energy?",
+      "subject": "Physical Science",
+      "topic": "Magnetic Effects of Current",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "an object is placed at the centre of curvature of a concave mirror. the image formed is:",
+      "subject": "Physical Science",
+      "topic": "Light - Reflection and Refraction",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the refractive index of water is 4/3. the speed of light in water is (c = 3 x 10^8 m/s):",
+      "subject": "Physical Science",
+      "topic": "Light - Reflection and Refraction",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the coloured part of the eye that controls the size of the pupil is the:",
+      "subject": "Physical Science",
+      "topic": "Human Eye",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "a body of mass 4 kg is moving with a velocity of 5 m/s. its momentum is:",
+      "subject": "Physical Science",
+      "topic": "Force and Motion",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "compared with its value on the earth, the mass of a body on the moon is:",
+      "subject": "Physical Science",
+      "topic": "Gravitation",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "a sound wave travels with a speed of 340 m/s. if its wavelength is 0.5 m, its frequency is:",
+      "subject": "Physical Science",
+      "topic": "Sound",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "which cell organelle is the site of protein synthesis?",
+      "subject": "Life Science",
+      "topic": "Cell - Structure and Function",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "amoeba engulfs food particles by extending pseudopodia. this process is called:",
+      "subject": "Life Science",
+      "topic": "Life Processes - Nutrition",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the respiratory pigment in human blood that carries oxygen is:",
+      "subject": "Life Science",
+      "topic": "Life Processes - Respiration",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "which blood vessel has the thickest wall?",
+      "subject": "Life Science",
+      "topic": "Life Processes - Transportation",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "in the nephron, the selective reabsorption of glucose, amino acids and most water occurs in the:",
+      "subject": "Life Science",
+      "topic": "Excretion",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "which plant hormone inhibits growth and promotes dormancy of seeds and wilting of leaves?",
+      "subject": "Life Science",
+      "topic": "Control and Coordination",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the surgical method of family planning in males in which the vas deferens is cut and tied is called:",
+      "subject": "Life Science",
+      "topic": "Reproduction",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the transfer of pollen grains from the anther of one flower to the stigma of a flower on a different plant of the same species is called:",
+      "subject": "Life Science",
+      "topic": "Reproduction in Plants",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "a cross involving two pairs of contrasting characters is called a:",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "in an ecosystem, the organisms that trap solar energy and convert it into food energy are called:",
+      "subject": "Life Science",
+      "topic": "Our Environment",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "which of the following is a non-renewable source of energy?",
+      "subject": "Life Science",
+      "topic": "Natural Resources",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "aids is caused by:",
+      "subject": "Life Science",
+      "topic": "Human Health and Diseases",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the finger-like projections in the small intestine that increase the surface area for absorption are called:",
+      "subject": "Life Science",
+      "topic": "Life Processes - Digestion",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "water enters the root hair from the soil mainly by:",
+      "subject": "Life Science",
+      "topic": "Life Processes - Transport in Plants",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        8
+      ]
+    },
+    {
+      "fp": "the forelimbs of a human, a whale and a bat have the same basic structure but perform different functions. such organs are called:",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        8
       ]
     }
   ]

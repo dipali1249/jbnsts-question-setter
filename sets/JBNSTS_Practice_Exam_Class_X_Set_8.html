@@ -1,0 +1,368 @@
+<!--
+  JBNSTS Junior Talent Search - PERMANENT EXAM TEMPLATE
+  Canonical, frozen format for every daily practice set (Bengali-first, bilingual).
+  Do NOT edit the layout / CSS / JavaScript per set. To produce a set, copy this
+  file and substitute the two placeholder tokens documented in template/README.md:
+    (1) the SET-NUMBER token   - in the <title>, the header and the footer lines
+    (2) the QUESTIONS-DATA token - in "const QUESTIONS = ...;"
+  Keep the option order as authored; vary the position of the correct answer.
+-->
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JBNSTS Junior Talent Search — Practice Exam — Set 8</title>
+<style>
+  :root{
+    --bg:#0f172a; --card:#ffffff; --ink:#1e293b; --muted:#64748b;
+    --line:#e2e8f0; --brand:#1d4ed8; --brand2:#1e40af;
+    --math:#1d4ed8; --phy:#b45309; --life:#15803d;
+    --ok:#16a34a; --bad:#dc2626; --warn:#d97706;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Noto Sans Bengali","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+       background:linear-gradient(180deg,#eef2ff 0%,#f8fafc 40%,#f1f5f9 100%);color:var(--ink);line-height:1.55}
+  .wrap{max-width:900px;margin:0 auto;padding:16px}
+  .screen{display:none}
+  .screen.active{display:block;animation:fade .25s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 24px rgba(15,23,42,.06);padding:22px;margin-bottom:16px}
+  h1{font-size:1.45rem;margin:.1em 0 .3em}
+  h2{font-size:1.15rem;margin:.2em 0 .5em}
+  .sub{color:var(--muted);font-size:.92rem}
+  .bn{font-size:1.06rem}
+  .en{color:#475569;font-size:.94rem}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  .pill{font-size:.78rem;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#f8fafc;color:#334155}
+  .pill.board{background:#eef2ff;border-color:#c7d2fe;color:#3730a3;font-weight:600}
+  .btn{appearance:none;border:0;border-radius:12px;padding:12px 20px;font-size:1rem;font-weight:600;cursor:pointer;
+       background:var(--brand);color:#fff;transition:.15s}
+  .btn:hover{background:var(--brand2)}
+  .btn.ghost{background:#fff;color:var(--brand);border:1px solid #c7d2fe}
+  .btn.ghost:hover{background:#eef2ff}
+  .btn.small{padding:8px 14px;font-size:.88rem;border-radius:10px}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;
+          background:#0f172a;color:#e2e8f0;border-radius:14px;padding:10px 14px;margin-bottom:12px;position:sticky;top:8px;z-index:20;
+          box-shadow:0 6px 18px rgba(15,23,42,.25)}
+  .topbar .clock{font-variant-numeric:tabular-nums;font-weight:700;font-size:.95rem}
+  .clock.pq{color:#fca5a5}
+  .clock.pq.safe{color:#86efac}
+  .qhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .qnum{font-size:.8rem;font-weight:700;color:var(--muted);letter-spacing:.03em}
+  .qtext-bn{font-size:1.12rem;font-weight:600;margin:6px 0 2px}
+  .qtext-en{font-size:.95rem;color:#475569;margin-bottom:12px}
+  .opts{display:grid;gap:10px}
+  .opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;cursor:pointer;
+       border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:12px 14px;transition:.12s;font:inherit}
+  .opt:hover{border-color:#93c5fd;background:#f8fbff}
+  .opt .k{flex:0 0 26px;height:26px;border-radius:50%;border:1.5px solid #cbd5e1;display:grid;place-items:center;
+          font-weight:700;font-size:.85rem;color:#475569}
+  .opt.sel{border-color:var(--brand);background:#eef2ff;box-shadow:0 0 0 3px rgba(29,78,216,.12)}
+  .opt.sel .k{background:var(--brand);color:#fff;border-color:var(--brand)}
+  .opt .opt-bn{font-size:1rem;font-weight:600}
+  .opt .opt-en{font-size:.86rem;color:#64748b}
+  .nav{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(42px,1fr));gap:8px;margin-top:10px}
+  .gbtn{aspect-ratio:1;border-radius:10px;border:1.5px solid var(--line);background:#fff;font-weight:700;cursor:pointer;font-size:.85rem;color:#334155}
+  .gbtn.answered{background:#dcfce7;border-color:#86efac;color:#166534}
+  .gbtn.locked{background:#fef3c7;border-color:#fcd34d;color:#92400e}
+  .gbtn.current{outline:3px solid var(--brand);outline-offset:1px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin-top:10px}
+  .dot{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:5px;vertical-align:-1px;border:1px solid var(--line)}
+  .scorebig{font-size:3rem;font-weight:800;line-height:1;margin:4px 0}
+  .statrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:16px 0}
+  .stat{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+  .stat .n{font-size:1.5rem;font-weight:800}
+  .stat .l{font-size:.78rem;color:var(--muted)}
+  .pass{color:var(--ok)} .fail{color:var(--bad)}
+  .review-item{border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px;background:#fff}
+  .tag{font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff}
+  .tag.math{background:var(--math)} .tag.phy{background:var(--phy)} .tag.life{background:var(--life)}
+  .rev-opt{display:flex;gap:10px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);margin-top:7px;font-size:.92rem}
+  .rev-opt.correct{border-color:#86efac;background:#f0fdf4}
+  .rev-opt.wrongpick{border-color:#fca5a5;background:#fef2f2}
+  .rev-opt .mk{font-weight:800}
+  .expl{margin-top:12px;padding:12px 14px;border-left:4px solid var(--brand);background:#f8fafc;border-radius:0 10px 10px 0}
+  .expl .lbl{font-size:.72rem;font-weight:800;letter-spacing:.06em;color:var(--brand);text-transform:uppercase}
+  .weaklist li{margin:4px 0}
+  .footer{text-align:center;color:var(--muted);font-size:.78rem;padding:8px 0 24px}
+  .note{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:12px 14px;font-size:.88rem;color:#92400e}
+  @media(max-width:560px){.scorebig{font-size:2.4rem}.card{padding:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ================= START SCREEN ================= -->
+  <div id="start" class="screen active">
+    <div class="card">
+      <div class="pills">
+        <span class="pill board">JBNSTS · Junior Talent Search</span>
+        <span class="pill">Practice Set 8</span>
+      </div>
+      <h1>JBNSTS Junior Talent Search — Practice Exam</h1>
+      <p class="bn" style="font-weight:600;margin:.2em 0">জগদীশ বসু জাতীয় বিজ্ঞান প্রতিভা অন্বেষণ — প্র্যাকটিস পরীক্ষা (জুনিয়র)</p>
+      <p class="sub">For West Bengal students who have passed Class 10 (Madhyamik) with 75%+ and joined Class 11 Science. Syllabus aligned with CBSE, ICSE and state boards (WBBSE, Maharashtra, Tamil Nadu, Karnataka, UP and others).</p>
+      <p class="bn sub">পশ্চিমবঙ্গের যে ছাত্রছাত্রীরা 75%+ নম্বর নিয়ে দশম শ্রেণি (মাধ্যমিক) উত্তীর্ণ হয়ে একাদশ শ্রেণির বিজ্ঞান বিভাগে ভর্তি হয়েছে তাদের জন্য। CBSE, ICSE ও রাজ্য পর্ষদ (WBBSE, মহারাষ্ট্র, তামিলনাড়ু, কর্ণাটক, UP ইত্যাদি) এর সিলেবাস অনুসারে।</p>
+
+      <h2>Instructions / নির্দেশাবলি</h2>
+      <ul class="bn" style="margin:.3em 0 .3em 1.1em;font-size:1rem">
+        <li>মোট ৪৫টি প্রশ্ন — গণিত ১৫, ভৌতবিজ্ঞান ১৫, জীবনবিজ্ঞান ১৫।</li>
+        <li>প্রতিটি প্রশ্নে ৪ মিনিট সময়; মোট সময়কাল ১৮০ মিনিট (৩ ঘণ্টা)।</li>
+        <li>প্রতিটি প্রশ্নের মান ২ নম্বর। সঠিক উত্তরে +২, ভুল উত্তরে −০.৫, উত্তর না দিলে ০।</li>
+        <li>মোট নম্বর ৯০; পাশের নম্বর ৯০% (৮১ নম্বর)।</li>
+        <li>প্রতিটি প্রশ্ন বাংলা ও ইংরেজি — উভয় ভাষায় দেওয়া আছে।</li>
+      </ul>
+      <ul class="en" style="margin:.2em 0 .2em 1.1em">
+        <li>45 questions — Mathematics 15, Physical Science 15, Life Science 15.</li>
+        <li>4 minutes per question; total duration 180 minutes (3 hours).</li>
+        <li>Each question carries 2 marks. +2 correct, −0.5 wrong, 0 unattempted.</li>
+        <li>Maximum 90 marks; pass mark 90% (81 marks).</li>
+        <li>Every question is given in both Bengali and English.</li>
+      </ul>
+      <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn" onclick="startExam()">Start Test · পরীক্ষা শুরু করুন</button>
+      </div>
+    </div>
+    <div class="footer">JBNSTS Practice Exam · Set 8 · 45 questions · 90 marks · 180 minutes</div>
+  </div>
+
+  <!-- ================= EXAM SCREEN ================= -->
+  <div id="exam" class="screen">
+    <div class="topbar">
+      <div><strong>JBNSTS Set 8</strong> <span class="sub" style="color:#94a3b8">· Q <span id="qpos">1</span>/45</span></div>
+      <div style="display:flex;gap:16px;align-items:center">
+        <span class="clock pq safe" id="pqtimer">04:00</span>
+        <span class="clock" id="totalTimer">180:00</span>
+      </div>
+    </div>
+
+    <div class="card" id="qcard"></div>
+
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <h2 style="margin:0">All questions · সমস্ত প্রশ্ন</h2>
+        <button class="btn ghost small" onclick="finishExam()">Finish &amp; Submit · শেষ করুন</button>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="legend">
+        <span><span class="dot" style="background:#dcfce7;border-color:#86efac"></span>Answered · উত্তর দেওয়া</span>
+        <span><span class="dot" style="background:#fef3c7;border-color:#fcd34d"></span>Time up · সময় শেষ</span>
+        <span><span class="dot" style="background:#fff"></span>Not visited · দেখা হয়নি</span>
+      </div>
+    </div>
+    <div class="footer">Negative marking applies · ঋণাত্মক নম্বর প্রযোজ্য</div>
+  </div>
+
+  <!-- ================= RESULT SCREEN ================= -->
+  <div id="result" class="screen">
+    <div class="card" id="resultCard"></div>
+    <div class="card">
+      <h2>Weaker portions to revise · পুনরালোচনার প্রয়োজনীয় দুর্বল অংশ</h2>
+      <div id="weakBox"></div>
+    </div>
+    <div class="card">
+      <h2>Detailed review &amp; explanations · বিস্তারিত পর্যালোচনা ও ব্যাখ্যা</h2>
+      <div id="review"></div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn ghost" onclick="location.reload()">Retake · আবার শুরু করুন</button>
+    </div>
+    <div class="footer">JBNSTS Practice Exam · Set 8</div>
+  </div>
+
+</div>
+
+<script>
+const QUESTIONS = [{"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Real Numbers", "bn": "বাস্তব সংখ্যা"}, "board": "CBSE", "q": {"en": "If the HCF of 306 and 657 is 9, then their LCM is:", "bn": "306 ও 657 -এর গ.সা.গু. 9 হলে, তাদের ল.সা.গু. কত?"}, "options": [{"en": "201042", "bn": "201042"}, {"en": "22338", "bn": "22338"}, {"en": "11169", "bn": "11169"}, {"en": "25092", "bn": "25092"}], "answer": 1, "exp": {"en": "LCM = (306 x 657) / 9 = 22338.", "bn": "ল.সা.গু. = (306 x 657) / 9 = 22338।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Real Numbers", "bn": "বাস্তব সংখ্যা"}, "board": "ICSE", "q": {"en": "The decimal expansion of 23/(2^3 x 5^2) terminates after how many decimal places?", "bn": "23/(2^3 x 5^2) -এর দশমিক বিস্তার কত ঘর পর্যন্ত সমাপ্ত হবে?"}, "options": [{"en": "2", "bn": "2"}, {"en": "5", "bn": "5"}, {"en": "It does not terminate", "bn": "এটি সমাপ্ত হয় না"}, {"en": "3", "bn": "3"}], "answer": 3, "exp": {"en": "Decimal places = max(power of 2, power of 5) = max(3,2) = 3; 23/200 = 0.115.", "bn": "দশমিক ঘর = 2 ও 5 -এর ঘাতের বড়টি = max(3,2) = 3; 23/200 = 0.115।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Polynomials", "bn": "বহুপদ"}, "board": "WBBSE", "q": {"en": "If alpha and beta are the zeroes of x^2 - 6x + 8, then alpha^2 + beta^2 equals:", "bn": "x^2 - 6x + 8 -এর শূন্যক alpha ও beta হলে, alpha^2 + beta^2 -এর মান কত?"}, "options": [{"en": "36", "bn": "36"}, {"en": "16", "bn": "16"}, {"en": "20", "bn": "20"}, {"en": "10", "bn": "10"}], "answer": 2, "exp": {"en": "alpha+beta = 6, alphabeta = 8, so alpha^2+beta^2 = (alpha+beta)^2 - 2alphabeta = 36 - 16 = 20.", "bn": "alpha+beta = 6, alphabeta = 8, তাই alpha^2+beta^2 = (alpha+beta)^2 - 2alphabeta = 36 - 16 = 20।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Quadratic Equations", "bn": "দ্বিঘাত সমীকরণ"}, "board": "Maharashtra", "q": {"en": "The quadratic equation 3x^2 - 2x + 5 = 0 has:", "bn": "3x^2 - 2x + 5 = 0 দ্বিঘাত সমীকরণের বীজ সম্পর্কে কী বলা যায়?"}, "options": [{"en": "two equal real roots", "bn": "দুটি সমান বাস্তব বীজ"}, {"en": "no real roots", "bn": "কোনো বাস্তব বীজ নেই"}, {"en": "two distinct real roots", "bn": "দুটি ভিন্ন বাস্তব বীজ"}, {"en": "infinitely many real roots", "bn": "অসংখ্য বাস্তব বীজ"}], "answer": 1, "exp": {"en": "Discriminant = (-2)^2 - 4(3)(5) = 4 - 60 = -56 < 0, so there are no real roots.", "bn": "নিরূপক = (-2)^2 - 4(3)(5) = 4 - 60 = -56 < 0, তাই কোনো বাস্তব বীজ নেই।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Quadratic Equations", "bn": "দ্বিঘাত সমীকরণ"}, "board": "Karnataka", "q": {"en": "If the equation x^2 + kx + 9 = 0 has equal roots, then k equals:", "bn": "x^2 + kx + 9 = 0 সমীকরণের বীজ দুটি সমান হলে, k -এর মান কত?"}, "options": [{"en": "6", "bn": "6"}, {"en": "3", "bn": "3"}, {"en": "+/- 6", "bn": "+/- 6"}, {"en": "+/- 3", "bn": "+/- 3"}], "answer": 2, "exp": {"en": "For equal roots, k^2 - 4(1)(9) = 0, so k^2 = 36 and k = +/- 6.", "bn": "সমান বীজের জন্য k^2 - 4(1)(9) = 0, তাই k^2 = 36 এবং k = +/- 6।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Arithmetic Progressions", "bn": "সমান্তর প্রগতি"}, "board": "UP", "q": {"en": "The 10th term of the arithmetic progression 3, 8, 13, ... is:", "bn": "3, 8, 13, ... সমান্তর প্রগতির 10তম পদ কত?"}, "options": [{"en": "48", "bn": "48"}, {"en": "53", "bn": "53"}, {"en": "45", "bn": "45"}, {"en": "50", "bn": "50"}], "answer": 0, "exp": {"en": "a = 3, d = 5; 10th term = 3 + 9 x 5 = 48.", "bn": "a = 3, d = 5; 10তম পদ = 3 + 9 x 5 = 48।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Arithmetic Progressions", "bn": "সমান্তর প্রগতি"}, "board": "Tamil Nadu", "q": {"en": "The sum of the first 20 terms of the arithmetic progression 1, 4, 7, ... is:", "bn": "1, 4, 7, ... সমান্তর প্রগতির প্রথম 20টি পদের সমষ্টি কত?"}, "options": [{"en": "580", "bn": "580"}, {"en": "590", "bn": "590"}, {"en": "600", "bn": "600"}, {"en": "595", "bn": "595"}], "answer": 1, "exp": {"en": "a = 1, d = 3; S20 = 20/2 [2x1 + 19x3] = 10 x 59 = 590.", "bn": "a = 1, d = 3; S20 = 20/2 [2x1 + 19x3] = 10 x 59 = 590।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Coordinate Geometry", "bn": "স্থানাঙ্ক জ্যামিতি"}, "board": "ICSE", "q": {"en": "The distance between the points (3, -2) and (-1, 1) is:", "bn": "(3, -2) ও (-1, 1) বিন্দু দুটির মধ্যে দূরত্ব কত?"}, "options": [{"en": "25", "bn": "25"}, {"en": "sqrt(5)", "bn": "sqrt(5)"}, {"en": "5", "bn": "5"}, {"en": "7", "bn": "7"}], "answer": 2, "exp": {"en": "sqrt((3-(-1))^2 + (-2-1)^2) = sqrt(16 + 9) = sqrt(25) = 5.", "bn": "sqrt((3-(-1))^2 + (-2-1)^2) = sqrt(16 + 9) = sqrt(25) = 5।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Trigonometry", "bn": "ত্রিকোণমিতি"}, "board": "CBSE", "q": {"en": "The value of (1 + tan^2 theta) is:", "bn": "(1 + tan^2 theta) -এর মান কত?"}, "options": [{"en": "cosec^2 theta", "bn": "cosec^2 theta"}, {"en": "1", "bn": "1"}, {"en": "cot^2 theta", "bn": "cot^2 theta"}, {"en": "sec^2 theta", "bn": "sec^2 theta"}], "answer": 3, "exp": {"en": "By the Pythagorean identity, 1 + tan^2 theta = sec^2 theta.", "bn": "পিথাগোরীয় অভেদ অনুসারে, 1 + tan^2 theta = sec^2 theta।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Trigonometry", "bn": "ত্রিকোণমিতি"}, "board": "WBBSE", "q": {"en": "The value of 2 sin 30 + 3 cos 60 is:", "bn": "2 sin 30 + 3 cos 60 -এর মান কত?"}, "options": [{"en": "3/2", "bn": "3/2"}, {"en": "5/2", "bn": "5/2"}, {"en": "2", "bn": "2"}, {"en": "5/4", "bn": "5/4"}], "answer": 1, "exp": {"en": "2 x (1/2) + 3 x (1/2) = 1 + 3/2 = 5/2.", "bn": "2 x (1/2) + 3 x (1/2) = 1 + 3/2 = 5/2।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Circles", "bn": "বৃত্ত"}, "board": "Maharashtra", "q": {"en": "A chord of a circle of radius 10 cm subtends a right angle at the centre. Its length is:", "bn": "10 cm ব্যাসার্ধের একটি বৃত্তের একটি জ্যা কেন্দ্রে সমকোণ উৎপন্ন করে। জ্যাটির দৈর্ঘ্য কত?"}, "options": [{"en": "10 cm", "bn": "10 cm"}, {"en": "20 cm", "bn": "20 cm"}, {"en": "10 sqrt(2) cm", "bn": "10 sqrt(2) cm"}, {"en": "5 sqrt(2) cm", "bn": "5 sqrt(2) cm"}], "answer": 2, "exp": {"en": "Chord = 2r sin(theta/2) = 2 x 10 x sin 45 = 10 sqrt(2) cm.", "bn": "জ্যা = 2r sin(theta/2) = 2 x 10 x sin 45 = 10 sqrt(2) cm।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Surface Areas and Volumes", "bn": "পৃষ্ঠতল ও আয়তন"}, "board": "Karnataka", "q": {"en": "The curved surface area of a cone of radius 7 cm and slant height 10 cm is (take pi = 22/7):", "bn": "7 cm ব্যাসার্ধ ও 10 cm হেলান উচ্চতার একটি শঙ্কুর বক্রতলের ক্ষেত্রফল কত? (pi = 22/7)"}, "options": [{"en": "154 cm^2", "bn": "154 cm^2"}, {"en": "440 cm^2", "bn": "440 cm^2"}, {"en": "110 cm^2", "bn": "110 cm^2"}, {"en": "220 cm^2", "bn": "220 cm^2"}], "answer": 3, "exp": {"en": "Curved surface area = pi x r x l = (22/7) x 7 x 10 = 220 cm^2.", "bn": "বক্রতলের ক্ষেত্রফল = pi x r x l = (22/7) x 7 x 10 = 220 cm^2।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Statistics", "bn": "পরিসংখ্যান"}, "board": "UP", "q": {"en": "The median of the data 12, 7, 15, 9, 20, 11 is:", "bn": "12, 7, 15, 9, 20, 11 উপাত্তের মধ্যমা কত?"}, "options": [{"en": "11", "bn": "11"}, {"en": "11.5", "bn": "11.5"}, {"en": "12", "bn": "12"}, {"en": "13", "bn": "13"}], "answer": 1, "exp": {"en": "Sorted: 7, 9, 11, 12, 15, 20; median = (11 + 12)/2 = 11.5.", "bn": "সাজানো: 7, 9, 11, 12, 15, 20; মধ্যমা = (11 + 12)/2 = 11.5।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Probability", "bn": "সম্ভাবনা"}, "board": "Tamil Nadu", "q": {"en": "A card is drawn at random from a well-shuffled pack of 52 cards. The probability that it is a red face card is:", "bn": "52 তাসের একটি ভালোভাবে মেশানো প্যাক থেকে একটি তাস তোলা হল। সেটি লাল মুখ-তাস হওয়ার সম্ভাবনা কত?"}, "options": [{"en": "3/13", "bn": "3/13"}, {"en": "1/26", "bn": "1/26"}, {"en": "3/26", "bn": "3/26"}, {"en": "1/13", "bn": "1/13"}], "answer": 2, "exp": {"en": "Red face cards (K, Q, J of hearts and diamonds) = 6; P = 6/52 = 3/26.", "bn": "লাল মুখ-তাস (হরতন ও রুইতনের K, Q, J) = 6; সম্ভাবনা = 6/52 = 3/26।"}}, {"subject": {"en": "Mathematics", "bn": "গণিত"}, "topic": {"en": "Heights and Distances", "bn": "উচ্চতা ও দূরত্ব"}, "board": "CBSE", "q": {"en": "The angle of elevation of the top of a tower from a point 20 m away from its foot on the ground is 45 degrees. The height of the tower is:", "bn": "ভূমিতে একটি স্তম্ভের পাদদেশ থেকে 20 m দূরে একটি বিন্দু থেকে স্তম্ভের শীর্ষের উন্নতি কোণ 45 ডিগ্রি। স্তম্ভের উচ্চতা কত?"}, "options": [{"en": "10 m", "bn": "10 m"}, {"en": "20 sqrt(3) m", "bn": "20 sqrt(3) m"}, {"en": "40 m", "bn": "40 m"}, {"en": "20 m", "bn": "20 m"}], "answer": 3, "exp": {"en": "tan 45 = h/20, so h = 20 m.", "bn": "tan 45 = h/20, তাই h = 20 m।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Chemical Reactions", "bn": "রাসায়নিক বিক্রিয়া"}, "board": "ICSE", "q": {"en": "In the reaction MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2, the substance that is oxidised is:", "bn": "MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2 বিক্রিয়ায় জারিত পদার্থটি কোনটি?"}, "options": [{"en": "MnO2", "bn": "MnO2"}, {"en": "HCl", "bn": "HCl"}, {"en": "MnCl2", "bn": "MnCl2"}, {"en": "H2O", "bn": "H2O"}], "answer": 1, "exp": {"en": "The Cl(-) of HCl loses electrons to form Cl2, so HCl is oxidised (MnO2 is reduced).", "bn": "HCl -এর Cl(-) ইলেকট্রন হারিয়ে Cl2 গঠন করে, তাই HCl জারিত হয় (MnO2 বিজারিত হয়)।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Acids, Bases and Salts", "bn": "অ্যাসিড, ক্ষারক ও লবণ"}, "board": "WBBSE", "q": {"en": "Plaster of Paris is chemically known as:", "bn": "প্লাস্টার অফ প্যারিসের রাসায়নিক নাম কী?"}, "options": [{"en": "CaSO4.2H2O", "bn": "CaSO4.2H2O"}, {"en": "CaO", "bn": "CaO"}, {"en": "CaSO4.(1/2)H2O", "bn": "CaSO4.(1/2)H2O"}, {"en": "Ca(OH)2", "bn": "Ca(OH)2"}], "answer": 2, "exp": {"en": "Plaster of Paris is calcium sulphate hemihydrate, CaSO4.(1/2)H2O.", "bn": "প্লাস্টার অফ প্যারিস হল ক্যালসিয়াম সালফেট হেমিহাইড্রেট, CaSO4.(1/2)H2O।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Metals and Non-metals", "bn": "ধাতু ও অধাতু"}, "board": "Maharashtra", "q": {"en": "Which of the following is the best conductor of electricity?", "bn": "নিচের কোনটি বিদ্যুতের শ্রেষ্ঠ পরিবাহী?"}, "options": [{"en": "Copper", "bn": "তামা"}, {"en": "Aluminium", "bn": "অ্যালুমিনিয়াম"}, {"en": "Iron", "bn": "লোহা"}, {"en": "Silver", "bn": "রুপো"}], "answer": 3, "exp": {"en": "Silver is the best conductor of electricity among metals.", "bn": "ধাতুগুলির মধ্যে রুপো বিদ্যুতের শ্রেষ্ঠ পরিবাহী।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Carbon Compounds", "bn": "কার্বন যৌগ"}, "board": "Tamil Nadu", "q": {"en": "The molecular formula of butyne is:", "bn": "বিউটাইনের আণবিক সংকেত কী?"}, "options": [{"en": "C4H8", "bn": "C4H8"}, {"en": "C4H6", "bn": "C4H6"}, {"en": "C4H10", "bn": "C4H10"}, {"en": "C3H4", "bn": "C3H4"}], "answer": 1, "exp": {"en": "Butyne is an alkyne with 4 carbon atoms, so its formula is C4H6.", "bn": "বিউটাইন একটি অ্যালকাইন যাতে 4টি কার্বন পরমাণু আছে, তাই সংকেত C4H6।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Periodic Classification", "bn": "পর্যায় সারণি"}, "board": "UP", "q": {"en": "An element with atomic number 20 belongs to which period and group of the modern periodic table?", "bn": "পারমাণবিক সংখ্যা 20 যুক্ত মৌলটি আধুনিক পর্যায় সারণির কোন পর্যায় ও শ্রেণিতে আছে?"}, "options": [{"en": "Period 2, group 4", "bn": "2য় পর্যায়, 4র্থ শ্রেণি"}, {"en": "Period 4, group 4", "bn": "4র্থ পর্যায়, 4র্থ শ্রেণি"}, {"en": "Period 4, group 2", "bn": "4র্থ পর্যায়, 2য় শ্রেণি"}, {"en": "Period 3, group 2", "bn": "3য় পর্যায়, 2য় শ্রেণি"}], "answer": 2, "exp": {"en": "Ca (Z = 20) has the configuration 2, 8, 8, 2, so it lies in period 4, group 2.", "bn": "Ca (Z = 20) -এর বিন্যাস 2, 8, 8, 2, তাই এটি 4র্থ পর্যায়, 2য় শ্রেণিতে অবস্থিত।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Chemical Bonding", "bn": "রাসায়নিক বন্ধন"}, "board": "Karnataka", "q": {"en": "The number of covalent bonds in one molecule of ammonia (NH3) is:", "bn": "অ্যামোনিয়া (NH3) -র একটি অণুতে কতগুলি সমযোজী বন্ধন থাকে?"}, "options": [{"en": "4", "bn": "4"}, {"en": "2", "bn": "2"}, {"en": "1", "bn": "1"}, {"en": "3", "bn": "3"}], "answer": 3, "exp": {"en": "In NH3, nitrogen forms 3 single covalent bonds, one with each hydrogen atom.", "bn": "NH3 -এ নাইট্রোজেন 3টি একক সমযোজী বন্ধন গঠন করে, প্রতিটি হাইড্রোজেন পরমাণুর সঙ্গে একটি।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Electricity", "bn": "বিদ্যুৎ"}, "board": "CBSE", "q": {"en": "A resistor of 8 ohm carries a current of 0.5 A. The potential difference across it is:", "bn": "8 ohm রোধের একটি পরিবাহীর মধ্য দিয়ে 0.5 A প্রবাহ যায়। তার দুই প্রান্তের বিভব পার্থক্য কত?"}, "options": [{"en": "16 V", "bn": "16 V"}, {"en": "4 V", "bn": "4 V"}, {"en": "8 V", "bn": "8 V"}, {"en": "0.5 V", "bn": "0.5 V"}], "answer": 1, "exp": {"en": "V = I x R = 0.5 x 8 = 4 V.", "bn": "V = I x R = 0.5 x 8 = 4 V।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Electricity", "bn": "বিদ্যুৎ"}, "board": "WBBSE", "q": {"en": "Three resistors of 3 ohm, 6 ohm and 6 ohm are connected in parallel. Their equivalent resistance is:", "bn": "3 ohm, 6 ohm ও 6 ohm -এর তিনটি রোধ সমান্তরাল সমবায়ে যুক্ত। তাদের তুল্য রোধ কত?"}, "options": [{"en": "15 ohm", "bn": "15 ohm"}, {"en": "3 ohm", "bn": "3 ohm"}, {"en": "1.5 ohm", "bn": "1.5 ohm"}, {"en": "6 ohm", "bn": "6 ohm"}], "answer": 2, "exp": {"en": "1/R = 1/3 + 1/6 + 1/6 = 2/3, so R = 1.5 ohm.", "bn": "1/R = 1/3 + 1/6 + 1/6 = 2/3, তাই R = 1.5 ohm।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Magnetic Effects of Current", "bn": "তড়িৎপ্রবাহের চৌম্বক ক্রিয়া"}, "board": "ICSE", "q": {"en": "Which device converts electrical energy into mechanical energy?", "bn": "কোন যন্ত্র বিদ্যুৎ শক্তিকে যান্ত্রিক শক্তিতে রূপান্তরিত করে?"}, "options": [{"en": "Electric generator", "bn": "বৈদ্যুতিক জেনারেটর"}, {"en": "Galvanometer", "bn": "গ্যালভানোমিটার"}, {"en": "Transformer", "bn": "ট্রান্সফরমার"}, {"en": "Electric motor", "bn": "বৈদ্যুতিক মোটর"}], "answer": 3, "exp": {"en": "An electric motor converts electrical energy into mechanical energy.", "bn": "বৈদ্যুতিক মোটর বিদ্যুৎ শক্তিকে যান্ত্রিক শক্তিতে রূপান্তরিত করে।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Light - Reflection and Refraction", "bn": "আলো - প্রতিফলন ও প্রতিসরণ"}, "board": "Maharashtra", "q": {"en": "An object is placed at the centre of curvature of a concave mirror. The image formed is:", "bn": "একটি অবতল দর্পণের বক্রতার কেন্দ্রে একটি বস্তু রাখা হল। উৎপন্ন প্রতিবিম্বটি কেমন হবে?"}, "options": [{"en": "at the focus, real and inverted", "bn": "ফোকাসে, সদ ও উলটো"}, {"en": "at the centre of curvature, real, inverted and of the same size", "bn": "বক্রতার কেন্দ্রে, সদ, উলটো ও সমান আকারের"}, {"en": "at infinity", "bn": "অসীমে"}, {"en": "behind the mirror, virtual", "bn": "দর্পণের পিছনে, অসদ"}], "answer": 1, "exp": {"en": "An object at the centre of curvature of a concave mirror forms a real, inverted image of the same size at C.", "bn": "অবতল দর্পণের বক্রতার কেন্দ্রে বস্তু থাকলে বক্রতার কেন্দ্রে সমান আকারের সদ ও উলটো প্রতিবিম্ব গঠিত হয়।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Light - Reflection and Refraction", "bn": "আলো - প্রতিফলন ও প্রতিসরণ"}, "board": "Tamil Nadu", "q": {"en": "The refractive index of water is 4/3. The speed of light in water is (c = 3 x 10^8 m/s):", "bn": "জলের প্রতিসরাঙ্ক 4/3। জলে আলোর বেগ কত? (c = 3 x 10^8 m/s)"}, "options": [{"en": "2.25 x 10^8 m/s", "bn": "2.25 x 10^8 m/s"}, {"en": "4 x 10^8 m/s", "bn": "4 x 10^8 m/s"}, {"en": "1.5 x 10^8 m/s", "bn": "1.5 x 10^8 m/s"}, {"en": "2.5 x 10^8 m/s", "bn": "2.5 x 10^8 m/s"}], "answer": 0, "exp": {"en": "v = c/n = (3 x 10^8)/(4/3) = 2.25 x 10^8 m/s.", "bn": "v = c/n = (3 x 10^8)/(4/3) = 2.25 x 10^8 m/s।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Human Eye", "bn": "মানব চোখ"}, "board": "Karnataka", "q": {"en": "The coloured part of the eye that controls the size of the pupil is the:", "bn": "চোখের রঙিন অংশ, যা পিউপিলের আকার নিয়ন্ত্রণ করে, তাকে কী বলা হয়?"}, "options": [{"en": "cornea", "bn": "কর্নিয়া"}, {"en": "retina", "bn": "রেটিনা"}, {"en": "iris", "bn": "আইরিস"}, {"en": "lens", "bn": "লেন্স"}], "answer": 2, "exp": {"en": "The iris is the coloured part of the eye and controls the size of the pupil.", "bn": "আইরিস হল চোখের রঙিন অংশ এবং এটি পিউপিলের আকার নিয়ন্ত্রণ করে।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Force and Motion", "bn": "বল ও গতি"}, "board": "UP", "q": {"en": "A body of mass 4 kg is moving with a velocity of 5 m/s. Its momentum is:", "bn": "4 kg ভরের একটি বস্তু 5 m/s বেগে চলছে। তার ভরবেগ কত?"}, "options": [{"en": "9 kg m/s", "bn": "9 kg m/s"}, {"en": "1.25 kg m/s", "bn": "1.25 kg m/s"}, {"en": "20 kg m/s", "bn": "20 kg m/s"}, {"en": "0.8 kg m/s", "bn": "0.8 kg m/s"}], "answer": 2, "exp": {"en": "Momentum = mass x velocity = 4 x 5 = 20 kg m/s.", "bn": "ভরবেগ = ভর x বেগ = 4 x 5 = 20 kg m/s।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Gravitation", "bn": "মহাকর্ষ"}, "board": "CBSE", "q": {"en": "Compared with its value on the earth, the mass of a body on the moon is:", "bn": "পৃথিবীর তুলনায় চাঁদে একটি বস্তুর ভর কেমন হয়?"}, "options": [{"en": "one-sixth", "bn": "এক-ষষ্ঠাংশ"}, {"en": "the same", "bn": "একই থাকে"}, {"en": "six times", "bn": "ছয় গুণ"}, {"en": "zero", "bn": "শূন্য"}], "answer": 1, "exp": {"en": "Mass is the amount of matter in a body and does not change with location; only weight changes.", "bn": "ভর হল বস্তুতে উপস্থিত পদার্থের পরিমাণ এবং তা স্থান অনুসারে বদলায় না; কেবল ওজন বদলায়।"}}, {"subject": {"en": "Physical Science", "bn": "ভৌতবিজ্ঞান"}, "topic": {"en": "Sound", "bn": "শব্দ"}, "board": "ICSE", "q": {"en": "A sound wave travels with a speed of 340 m/s. If its wavelength is 0.5 m, its frequency is:", "bn": "একটি শব্দ তরঙ্গের বেগ 340 m/s এবং তরঙ্গদৈর্ঘ্য 0.5 m হলে, তার কম্পাঙ্ক কত?"}, "options": [{"en": "170 Hz", "bn": "170 Hz"}, {"en": "340 Hz", "bn": "340 Hz"}, {"en": "680 Hz", "bn": "680 Hz"}, {"en": "1360 Hz", "bn": "1360 Hz"}], "answer": 2, "exp": {"en": "Frequency = speed / wavelength = 340 / 0.5 = 680 Hz.", "bn": "কম্পাঙ্ক = বেগ / তরঙ্গদৈর্ঘ্য = 340 / 0.5 = 680 Hz।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Cell - Structure and Function", "bn": "কোষ - গঠন ও কার্য"}, "board": "CBSE", "q": {"en": "Which cell organelle is the site of protein synthesis?", "bn": "কোষে প্রোটিন সংশ্লেষণের স্থান কোন অঙ্গাণু?"}, "options": [{"en": "Lysosome", "bn": "লাইসোজোম"}, {"en": "Ribosome", "bn": "রাইবোজোম"}, {"en": "Golgi apparatus", "bn": "গলগি বস্তু"}, {"en": "Vacuole", "bn": "রসধারণী"}], "answer": 1, "exp": {"en": "Ribosomes are the site of protein synthesis in the cell.", "bn": "রাইবোজোম হল কোষে প্রোটিন সংশ্লেষণের স্থান।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Life Processes - Nutrition", "bn": "জীবনপ্রক্রিয়া - পুষ্টি"}, "board": "WBBSE", "q": {"en": "Amoeba engulfs food particles by extending pseudopodia. This process is called:", "bn": "অ্যামিবা সিউডোপোডিয়া বিস্তার করে খাদ্যকণা গ্রহণ করে। এই প্রক্রিয়াকে কী বলা হয়?"}, "options": [{"en": "osmosis", "bn": "অভিস্রবণ"}, {"en": "diffusion", "bn": "ব্যাপন"}, {"en": "phagocytosis", "bn": "ফ্যাগোসাইটোসিস"}, {"en": "photosynthesis", "bn": "সালোকসংশ্লেষ"}], "answer": 2, "exp": {"en": "Engulfing of solid food particles by a cell (as in Amoeba) is called phagocytosis.", "bn": "কোষ কর্তৃক কঠিন খাদ্যকণা গ্রহণকে (অ্যামিবার মতো) ফ্যাগোসাইটোসিস বলা হয়।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Life Processes - Respiration", "bn": "জীবনপ্রক্রিয়া - শ্বসন"}, "board": "Maharashtra", "q": {"en": "The respiratory pigment in human blood that carries oxygen is:", "bn": "মানব রক্তে অক্সিজেন বহনকারী শ্বসন রঞ্জকটি কী?"}, "options": [{"en": "chlorophyll", "bn": "ক্লোরোফিল"}, {"en": "plasma", "bn": "রক্তরস"}, {"en": "platelets", "bn": "অণুচক্রিকা"}, {"en": "haemoglobin", "bn": "হিমোগ্লোবিন"}], "answer": 3, "exp": {"en": "Haemoglobin present in red blood cells carries oxygen in human blood.", "bn": "লোহিত রক্তকণিকায় উপস্থিত হিমোগ্লোবিন মানব রক্তে অক্সিজেন বহন করে।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Life Processes - Transportation", "bn": "জীবনপ্রক্রিয়া - পরিবহণ"}, "board": "Tamil Nadu", "q": {"en": "Which blood vessel has the thickest wall?", "bn": "মানবদেহে কোন রক্তনালীর প্রাচীর সবচেয়ে পুরু?"}, "options": [{"en": "Vein", "bn": "শিরা"}, {"en": "Capillary", "bn": "কেশিকা"}, {"en": "Artery", "bn": "ধমনী"}, {"en": "Lymph vessel", "bn": "লসিকানালী"}], "answer": 2, "exp": {"en": "Arteries have the thickest, most elastic walls because blood flows through them under high pressure.", "bn": "ধমনীর প্রাচীর সবচেয়ে পুরু ও স্থিতিস্থাপক, কারণ তাদের মধ্য দিয়ে রক্ত উচ্চ চাপে প্রবাহিত হয়।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Excretion", "bn": "রেচন"}, "board": "Karnataka", "q": {"en": "In the nephron, the selective reabsorption of glucose, amino acids and most water occurs in the:", "bn": "নেফ্রনে গ্লুকোজ, অ্যামিনো অ্যাসিড ও অধিকাংশ জলের নির্বাচিত পুনঃশোষণ প্রধানত কোথায় ঘটে?"}, "options": [{"en": "Bowman's capsule", "bn": "বোম্যানের ক্যাপসুল"}, {"en": "renal tubule", "bn": "বৃক্ক নালিকা"}, {"en": "collecting duct", "bn": "সংগ্রাহক নালী"}, {"en": "renal artery", "bn": "বৃক্ক ধমনী"}], "answer": 1, "exp": {"en": "Filtration occurs in the Bowman's capsule; selective reabsorption of useful substances occurs in the renal tubule.", "bn": "পরিস্রাবণ বোম্যানের ক্যাপসুলে ঘটে; উপকারী পদার্থের নির্বাচিত পুনঃশোষণ বৃক্ক নালিকায় ঘটে।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Control and Coordination", "bn": "নিয়ন্ত্রণ ও সমন্বয়"}, "board": "ICSE", "q": {"en": "Which plant hormone inhibits growth and promotes dormancy of seeds and wilting of leaves?", "bn": "কোন উদ্ভিদ হরমোন বৃদ্ধি রোধ করে এবং বীজের সুপ্তাবস্থা ও পাতার শুকিয়ে যাওয়া ঘটায়?"}, "options": [{"en": "Auxin", "bn": "অক্সিন"}, {"en": "Gibberellin", "bn": "জিবেরেলিন"}, {"en": "Abscisic acid", "bn": "অ্যাবসিসিক অ্যাসিড"}, {"en": "Cytokinin", "bn": "সাইটোকাইনিন"}], "answer": 2, "exp": {"en": "Abscisic acid is a growth inhibitor that promotes dormancy of seeds and wilting of leaves.", "bn": "অ্যাবসিসিক অ্যাসিড একটি বৃদ্ধি-নিরোধক যা বীজের সুপ্তাবস্থা ও পাতার শুকিয়ে যাওয়া ঘটায়।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Reproduction", "bn": "জনন"}, "board": "UP", "q": {"en": "The surgical method of family planning in males in which the vas deferens is cut and tied is called:", "bn": "পুরুষে বীর্যপ্রণালী (vas deferens) কেটে বন্ধ করে দেওয়ার এই অস্ত্রোপচার-ভিত্তিক পরিবার-পরিকল্পনা পদ্ধতির নাম কী?"}, "options": [{"en": "tubectomy", "bn": "টিউবেক্টমি"}, {"en": "vasectomy", "bn": "ভ্যাসেক্টমি"}, {"en": "IUD", "bn": "আইইউডি"}, {"en": "condom", "bn": "কনডম"}], "answer": 1, "exp": {"en": "In vasectomy the vas deferens is cut and tied so that sperm are not released during ejaculation.", "bn": "ভ্যাসেক্টমিতে বীর্যপ্রণালী কেটে বন্ধ করে দেওয়া হয় যাতে স্খলনের সময় শুক্রাণু নির্গত না হয়।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Reproduction in Plants", "bn": "উদ্ভিদের জনন"}, "board": "WBBSE", "q": {"en": "The transfer of pollen grains from the anther of one flower to the stigma of a flower on a different plant of the same species is called:", "bn": "একই প্রজাতির একটি ফুলের পরাগধানী থেকে অন্য গাছের ফুলের গর্ভমুণ্ডে পরাগরেণু স্থানান্তরকে কী বলা হয়?"}, "options": [{"en": "self-pollination", "bn": "স্ব-পরাগযোগ"}, {"en": "cross-pollination", "bn": "পর-পরাগযোগ"}, {"en": "fertilisation", "bn": "নিষেক"}, {"en": "germination", "bn": "অঙ্কুরোদ্গম"}], "answer": 1, "exp": {"en": "Transfer of pollen between flowers of different plants of the same species is cross-pollination.", "bn": "একই প্রজাতির ভিন্ন গাছের ফুলের মধ্যে পরাগ স্থানান্তরকে পর-পরাগযোগ বলা হয়।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Heredity and Evolution", "bn": "বংশগতি ও বিবর্তন"}, "board": "CBSE", "q": {"en": "A cross involving two pairs of contrasting characters is called a:", "bn": "দুই জোড়া বিপরীতধর্মী বৈশিষ্ট্য নিয়ে করা সংকরায়নকে কী বলা হয়?"}, "options": [{"en": "monohybrid cross", "bn": "একসংকরায়ন"}, {"en": "test cross", "bn": "পরীক্ষামূলক সংকরায়ন"}, {"en": "dihybrid cross", "bn": "দ্বিসংকরায়ন"}, {"en": "back cross", "bn": "ব্যাক ক্রস"}], "answer": 2, "exp": {"en": "A cross involving two pairs of contrasting characters (e.g. seed shape and colour) is a dihybrid cross.", "bn": "দুই জোড়া বিপরীতধর্মী বৈশিষ্ট্য (যেমন বীজের আকার ও রং) নিয়ে করা সংকরায়ন হল দ্বিসংকরায়ন।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Our Environment", "bn": "আমাদের পরিবেশ"}, "board": "Karnataka", "q": {"en": "In an ecosystem, the organisms that trap solar energy and convert it into food energy are called:", "bn": "বাস্তুতন্ত্রে যে জীবগুলি সৌরশক্তি ধারণ করে খাদ্যশক্তিতে রূপান্তরিত করে তাদের কী বলা হয়?"}, "options": [{"en": "producers", "bn": "উৎপাদক"}, {"en": "consumers", "bn": "ভোক্তা"}, {"en": "decomposers", "bn": "বিয়োজক"}, {"en": "parasites", "bn": "পরজীবী"}], "answer": 0, "exp": {"en": "Green plants (producers) trap solar energy and convert it into food energy by photosynthesis.", "bn": "সবুজ উদ্ভিদ (উৎপাদক) সালোকসংশ্লেষের মাধ্যমে সৌরশক্তি ধারণ করে খাদ্যশক্তিতে রূপান্তরিত করে।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Natural Resources", "bn": "প্রাকৃতিক সম্পদ"}, "board": "Maharashtra", "q": {"en": "Which of the following is a non-renewable source of energy?", "bn": "নিচের কোনটি অ-নবীকরণযোগ্য শক্তির উৎস?"}, "options": [{"en": "Solar energy", "bn": "সৌরশক্তি"}, {"en": "Wind energy", "bn": "বায়ুশক্তি"}, {"en": "Biogas", "bn": "বায়োগ্যাস"}, {"en": "Coal", "bn": "কয়লা"}], "answer": 3, "exp": {"en": "Coal is a fossil fuel; it is exhaustible and hence a non-renewable source of energy.", "bn": "কয়লা একটি জীবাশ্ম জ্বালানি; এটি নিঃশেষণীয়, তাই এটি অ-নবীকরণযোগ্য শক্তির উৎস।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Human Health and Diseases", "bn": "মানব স্বাস্থ্য ও রোগ"}, "board": "Tamil Nadu", "q": {"en": "AIDS is caused by:", "bn": "এইডস (AIDS) কোন জীবাণুর দ্বারা হয়?"}, "options": [{"en": "bacteria", "bn": "ব্যাকটেরিয়া"}, {"en": "HIV", "bn": "এইচআইভি"}, {"en": "protozoa", "bn": "প্রোটোজোয়া"}, {"en": "fungus", "bn": "ছত্রাক"}], "answer": 1, "exp": {"en": "AIDS is caused by the human immunodeficiency virus (HIV).", "bn": "এইডস (AIDS) মানব ইমিউনোডেফিসিয়েন্সি ভাইরাস (HIV) দ্বারা হয়।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Life Processes - Digestion", "bn": "জীবনপ্রক্রিয়া - পরিপাক"}, "board": "WBBSE", "q": {"en": "The finger-like projections in the small intestine that increase the surface area for absorption are called:", "bn": "ক্ষুদ্রান্ত্রে শোষণ-পৃষ্ঠের ক্ষেত্রফল বাড়ায় এমন আঙুলের মতো অভিক্ষেপগুলিকে কী বলা হয়?"}, "options": [{"en": "cilia", "bn": "সিলিয়া"}, {"en": "alveoli", "bn": "অ্যালভিওলাই"}, {"en": "villi", "bn": "ভিলাই"}, {"en": "nephrons", "bn": "নেফ্রন"}], "answer": 2, "exp": {"en": "Villi are finger-like projections of the small intestine that greatly increase the surface area for absorption.", "bn": "ভিলাই হল ক্ষুদ্রান্ত্রের আঙুলের মতো অভিক্ষেপ যা শোষণের ক্ষেত্রফল অনেক বাড়ায়।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Life Processes - Transport in Plants", "bn": "জীবনপ্রক্রিয়া - উদ্ভিদে পরিবহণ"}, "board": "ICSE", "q": {"en": "Water enters the root hair from the soil mainly by:", "bn": "মূলরোমে মাটি থেকে জল প্রধানত কোন প্রক্রিয়ায় প্রবেশ করে?"}, "options": [{"en": "diffusion", "bn": "ব্যাপন"}, {"en": "active transport", "bn": "সক্রিয় পরিবহণ"}, {"en": "transpiration", "bn": "বাষ্পমোচন"}, {"en": "osmosis", "bn": "অভিস্রবণ"}], "answer": 3, "exp": {"en": "The root hair has a higher solute concentration than the soil water, so water enters it by osmosis.", "bn": "মূলরোমের দ্রবের ঘনত্ব মাটির জলের চেয়ে বেশি, তাই জল অভিস্রবণ দ্বারা প্রবেশ করে।"}}, {"subject": {"en": "Life Science", "bn": "জীবনবিজ্ঞান"}, "topic": {"en": "Heredity and Evolution", "bn": "বংশগতি ও বিবর্তন"}, "board": "UP", "q": {"en": "The forelimbs of a human, a whale and a bat have the same basic structure but perform different functions. Such organs are called:", "bn": "মানুষ, তিমি ও বাদুড়ের অগ্রপদের মূল গঠন একই কিন্তু কার্য ভিন্ন। এমন অঙ্গকে কী বলা হয়?"}, "options": [{"en": "analogous organs", "bn": "সমবৃত্তীয় অঙ্গ"}, {"en": "homologous organs", "bn": "সমসংস্থ অঙ্গ"}, {"en": "vestigial organs", "bn": "অবশেষী অঙ্গ"}, {"en": "adaptive organs", "bn": "অভিযোজিত অঙ্গ"}], "answer": 1, "exp": {"en": "Organs with the same basic structure but different functions are homologous organs; they indicate common ancestry.", "bn": "একই মূল গঠন কিন্তু ভিন্ন কার্যের অঙ্গকে সমসংস্থ অঙ্গ বলে; এগুলি সাধারণ পূর্বপুরুষ নির্দেশ করে।"}}];
+const PQ_SECONDS = 240;          /* 4 minutes per question */
+const TOTAL_SECONDS = 10800;     /* 180 minutes */
+const MARKS_PER_Q = 2;
+const NEG = 0.5;
+const MAX_MARKS = 90;
+const PASS_PCT = 0.9;
+const N = QUESTIONS.length;
+
+let S = null;
+
+function fmt(t){
+  t = Math.max(0, t|0);
+  const m = Math.floor(t/60), s = t%60;
+  return String(m).padStart(2,'0')+":"+String(s).padStart(2,'0');
+}
+function subjClass(en){
+  if(en.indexOf('Math')===0) return 'math';
+  if(en.indexOf('Physical')===0) return 'phy';
+  return 'life';
+}
+function esc(x){ return String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function startExam(){
+  S = { idx:0, answers:new Array(N).fill(null), locked:new Array(N).fill(false),
+        pq:new Array(N).fill(PQ_SECONDS), total:TOTAL_SECONDS, finished:false };
+  show('exam');
+  renderQ();
+  if(window.__timer) clearInterval(window.__timer);
+  window.__timer = setInterval(tick, 1000);
+}
+function show(id){
+  ['start','exam','result'].forEach(x=>document.getElementById(x).classList.toggle('active', x===id));
+  window.scrollTo(0,0);
+}
+function tick(){
+  if(!S || S.finished) return;
+  S.total--;
+  if(S.total<=0){ S.total=0; updateClocks(); finishExam(); return; }
+  if(!S.locked[S.idx]){
+    S.pq[S.idx]--;
+    if(S.pq[S.idx]<=0){ S.pq[S.idx]=0; S.locked[S.idx]=true; renderQ(); }
+  }
+  updateClocks();
+}
+function updateClocks(){
+  const pqEl = document.getElementById('pqtimer');
+  pqEl.textContent = fmt(S.pq[S.idx]);
+  pqEl.classList.toggle('safe', S.pq[S.idx] > 30);
+  document.getElementById('totalTimer').textContent = fmt(S.total);
+}
+function renderQ(){
+  const i = S.idx, q = QUESTIONS[i];
+  const sc = subjClass(q.subject.en);
+  const opts = q.options.map((o,k)=>{
+    const sel = S.answers[i]===k;
+    const dis = S.locked[i] ? 'disabled' : '';
+    return '<button class="opt'+(sel?' sel':'')+'" '+dis+' onclick="pick('+k+')">'
+      + '<span class="k">'+String.fromCharCode(65+k)+'</span>'
+      + '<span><span class="opt-bn">'+esc(o.bn)+'</span><br><span class="opt-en">'+esc(o.en)+'</span></span>'
+      + '</button>';
+  }).join('');
+  document.getElementById('qcard').innerHTML =
+    '<div class="qhead"><div class="qnum">QUESTION '+(i+1)+' / '+N+'</div>'
+    + '<span class="tag '+sc+'">'+esc(q.subject.en)+' / '+esc(q.subject.bn)+'</span></div>'
+    + '<div class="pills" style="margin-top:10px">'
+    + '<span class="pill board">Board: '+esc(q.board)+'</span>'
+    + '<span class="pill">Topic: '+esc(q.topic.en)+' / '+esc(q.topic.bn)+'</span></div>'
+    + '<div class="qtext-bn">'+esc(q.q.bn)+'</div>'
+    + '<div class="qtext-en">'+esc(q.q.en)+'</div>'
+    + '<div class="opts">'+opts+'</div>'
+    + (S.locked[i] ? '<div class="note" style="margin-top:12px">সময় শেষ — এই প্রশ্নে আর উত্তর দেওয়া যাবে না। · Time up — this question is now locked.</div>' : '')
+    + '<div class="nav">'
+    + '<button class="btn ghost" '+(i===0?'disabled':'')+' onclick="go(-1)">← Previous · পূর্ববর্তী</button>'
+    + (i===N-1 ? '<button class="btn" onclick="finishExam()">Finish · শেষ করুন</button>'
+               : '<button class="btn" onclick="go(1)">Next · পরবর্তী →</button>')
+    + '</div>';
+  document.getElementById('qpos').textContent = (i+1);
+  updateClocks();
+  renderGrid();
+}
+function pick(k){
+  if(!S || S.locked[S.idx] || S.finished) return;
+  S.answers[S.idx] = (S.answers[S.idx]===k) ? null : k;
+  renderQ();
+}
+function go(d){
+  const n = S.idx + d;
+  if(n<0 || n>=N) return;
+  S.idx = n;
+  renderQ();
+}
+function jump(n){ S.idx = n; renderQ(); }
+function renderGrid(){
+  const g = document.getElementById('grid');
+  let h = '';
+  for(let i=0;i<N;i++){
+    let cls='gbtn';
+    if(S.answers[i]!==null) cls+=' answered';
+    else if(S.locked[i]) cls+=' locked';
+    if(i===S.idx) cls+=' current';
+    h += '<button class="'+cls+'" onclick="jump('+i+')">'+(i+1)+'</button>';
+  }
+  g.innerHTML = h;
+}
+function finishExam(){
+  if(!S || S.finished) return;
+  S.finished = true;
+  if(window.__timer) clearInterval(window.__timer);
+  let correct=0, wrong=0, unatt=0;
+  for(let i=0;i<N;i++){
+    if(S.answers[i]===null) unatt++;
+    else if(S.answers[i]===QUESTIONS[i].answer) correct++;
+    else wrong++;
+  }
+  const score = MARKS_PER_Q*correct - NEG*wrong;
+  const pct = (score/MAX_MARKS*100);
+  const passed = pct >= PASS_PCT*100;
+  document.getElementById('resultCard').innerHTML =
+    '<div class="pills"><span class="pill board">JBNSTS · Junior Talent Search</span><span class="pill">Set 8 · Result</span></div>'
+    + '<h1>Result · ফলাফল</h1>'
+    + '<div class="scorebig '+(passed?'pass':'fail')+'">'+score.toFixed(2)+' <span style="font-size:1.1rem;color:#64748b">/ '+MAX_MARKS+'</span></div>'
+    + '<p class="bn '+(passed?'pass':'fail')+'" style="font-weight:700;margin:.2em 0">'+(passed?'অভিনন্দন — আপনি উত্তীর্ণ হয়েছেন।':'সরাসরি উত্তীর্ণ হননি — দুর্বল অংশগুলি পুনরালোচনা করুন।')+'</p>'
+    + '<p class="en">'+(passed?'Congratulations — you have passed.':'Not a pass yet — revise the weaker portions below.')+'</p>'
+    + '<div class="statrow">'
+    + '<div class="stat"><div class="n pass">'+correct+'</div><div class="l">Correct · সঠিক</div></div>'
+    + '<div class="stat"><div class="n fail">'+wrong+'</div><div class="l">Wrong · ভুল (−'+(NEG*wrong).toFixed(1)+')</div></div>'
+    + '<div class="stat"><div class="n" style="color:#64748b">'+unatt+'</div><div class="l">Unattempted · উত্তরহীন</div></div>'
+    + '<div class="stat"><div class="n">'+pct.toFixed(1)+'%</div><div class="l">Percentage · শতকরা</div></div>'
+    + '</div>'
+    + '<p class="sub">Marking: +'+MARKS_PER_Q+' correct, −'+NEG+' wrong, 0 unattempted · পাশের নম্বর ৯০% ('+(MAX_MARKS*PASS_PCT)+' নম্বর)</p>';
+
+  const weak = [];
+  for(let i=0;i<N;i++){
+    if(S.answers[i]!==QUESTIONS[i].answer){
+      const q = QUESTIONS[i];
+      weak.push({n:i+1, s_en:q.subject.en, s_bn:q.subject.bn, t_en:q.topic.en, t_bn:q.topic.bn,
+                 why: S.answers[i]===null ? 'unattempted' : 'wrong'});
+    }
+  }
+  const wb = document.getElementById('weakBox');
+  if(weak.length===0){
+    wb.innerHTML = '<p class="bn">দুর্দান্ত! কোনো ভুল বা উত্তরহীন প্রশ্ন নেই। · Excellent — no wrong or unattempted questions.</p>';
+  } else {
+    const seen = {};
+    weak.forEach(w=>{ const k=w.s_en+'|'+w.t_en; if(!seen[k]) seen[k]={w, items:[]}; seen[k].items.push(w.n); });
+    let h = '<ul class="weaklist">';
+    Object.values(seen).forEach(g=>{
+      h += '<li><strong>'+esc(g.w.s_en)+' / '+esc(g.w.s_bn)+' — '+esc(g.w.t_en)+' / '+esc(g.w.t_bn)+'</strong>'
+         + ' <span class="sub">(Q '+g.items.join(', ')+')</span></li>';
+    });
+    h += '</ul>';
+    wb.innerHTML = h;
+  }
+
+  const rv = document.getElementById('review');
+  let h2 = '';
+  for(let i=0;i<N;i++){
+    const q = QUESTIONS[i], sc = subjClass(q.subject.en);
+    const pick = S.answers[i];
+    let opts = '';
+    q.options.forEach((o,k)=>{
+      let cls='rev-opt';
+      if(k===q.answer) cls+=' correct';
+      else if(k===pick) cls+=' wrongpick';
+      const mark = (k===q.answer)?'✓':((k===pick)?'✗':'');
+      opts += '<div class="'+cls+'"><span class="mk">'+String.fromCharCode(65+k)+' '+mark+'</span>'
+            + '<span><span class="opt-bn">'+esc(o.bn)+'</span><br><span class="opt-en">'+esc(o.en)+'</span></span></div>';
+    });
+    const status = (pick===null)?'<span style="color:#d97706;font-weight:700">Unattempted · উত্তরহীন</span>'
+                 : (pick===q.answer?'<span style="color:#16a34a;font-weight:700">Correct · সঠিক</span>'
+                                    :'<span style="color:#dc2626;font-weight:700">Wrong · ভুল</span>');
+    h2 += '<div class="review-item">'
+        + '<div class="qhead"><div class="qnum">Q'+(i+1)+' · '+status+'</div>'
+        + '<span class="tag '+sc+'">'+esc(q.subject.en)+' / '+esc(q.subject.bn)+'</span></div>'
+        + '<div class="pills" style="margin-top:8px"><span class="pill board">Board: '+esc(q.board)+'</span>'
+        + '<span class="pill">Topic: '+esc(q.topic.en)+' / '+esc(q.topic.bn)+'</span></div>'
+        + '<div class="qtext-bn">'+esc(q.q.bn)+'</div>'
+        + '<div class="qtext-en">'+esc(q.q.en)+'</div>'
+        + opts
+        + '<div class="expl"><div class="lbl">Explanation · ব্যাখ্যা</div>'
+        + '<div class="bn">'+esc(q.exp.bn)+'</div><div class="en">'+esc(q.exp.en)+'</div></div>'
+        + '</div>';
+  }
+  rv.innerHTML = h2;
+  show('result');
+}
+</script>
+</body>
+</html>
