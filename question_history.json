@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-24",
-  "last_set": 10,
+  "updated": "2026-10-25",
+  "last_set": 11,
   "max_repeats_allowed": 3,
   "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
   "questions": [
@@ -4502,6 +4502,456 @@
       "count": 1,
       "sets": [
         10
+      ]
+    },
+    {
+      "fp": "the decimal expansion of 1/7 is:",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the hcf of two numbers is 5 and their lcm is 45. if one number is 45, the other number is:",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "if (x - 3) is a factor of the polynomial x^3 - 4x^2 + kx - 6, then the value of k is:",
+      "subject": "Mathematics",
+      "topic": "Polynomials",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the pair of equations kx + 2y = 5 and 3x + y = 1 has a unique solution if:",
+      "subject": "Mathematics",
+      "topic": "Pair of Linear Equations",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "if the roots of the equation x^2 - 8x + k = 0 are equal, then k equals:",
+      "subject": "Mathematics",
+      "topic": "Quadratic Equations",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the 20th term of the arithmetic progression 3, 7, 11, ... is:",
+      "subject": "Mathematics",
+      "topic": "Arithmetic Progressions",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the sum of the first 10 terms of the arithmetic progression 2, 5, 8, ... is:",
+      "subject": "Mathematics",
+      "topic": "Arithmetic Progressions",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the distance of the point (5, 12) from the origin is:",
+      "subject": "Mathematics",
+      "topic": "Coordinate Geometry",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the midpoint of the line segment joining the points (-2, 5) and (6, -3) is:",
+      "subject": "Mathematics",
+      "topic": "Coordinate Geometry",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "if sin theta = 7/25 for an acute angle theta, then cos theta equals:",
+      "subject": "Mathematics",
+      "topic": "Trigonometry",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "if triangle abc is similar to triangle def and their areas are in the ratio 25 : 36, then the ratio of their corresponding sides is:",
+      "subject": "Mathematics",
+      "topic": "Similar Triangles",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "a vertical tower stands on the ground. from a point 15 m away from its foot on the ground, the angle of elevation of the top is 45 degrees. the height of the tower is:",
+      "subject": "Mathematics",
+      "topic": "Heights and Distances",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the length of a tangent drawn from a point 10 cm away from the centre of a circle of radius 6 cm is:",
+      "subject": "Mathematics",
+      "topic": "Circles",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the volume of a cylinder of radius 7 cm and height 5 cm is (take pi = 22/7):",
+      "subject": "Mathematics",
+      "topic": "Surface Areas and Volumes",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "a card is drawn at random from a well-shuffled pack of 52 playing cards. the probability that it is a black queen is:",
+      "subject": "Mathematics",
+      "topic": "Probability",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the chemical formula of quick lime is:",
+      "subject": "Physical Science",
+      "topic": "Chemical Reactions and Equations",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "in the reaction fe2o3 + 3co -> 2fe + 3co2, the substance that is oxidised is:",
+      "subject": "Physical Science",
+      "topic": "Chemical Reactions and Equations",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "bronze is an alloy of:",
+      "subject": "Physical Science",
+      "topic": "Metals and Non-metals",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "which metal is used as the filament of an electric bulb?",
+      "subject": "Physical Science",
+      "topic": "Metals and Non-metals",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "an element with atomic number 18 belongs to which group of the modern periodic table?",
+      "subject": "Physical Science",
+      "topic": "Periodic Classification of Elements",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the number of covalent bonds in one molecule of water (h2o) is:",
+      "subject": "Physical Science",
+      "topic": "Chemical Bonding",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the iupac name of the compound ch3 - ch2 - ch3 is:",
+      "subject": "Physical Science",
+      "topic": "Carbon Compounds",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the functional group present in ethanal (ch3cho) is:",
+      "subject": "Physical Science",
+      "topic": "Carbon Compounds",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "two resistors of 4 ohm and 12 ohm are connected in parallel. their equivalent resistance is:",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "an electric bulb of power 40 w is used for 5 hours. the electrical energy consumed is:",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the strength of an electromagnet can be increased by:",
+      "subject": "Physical Science",
+      "topic": "Magnetic Effects of Current",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "an object is placed 15 cm in front of a concave mirror of focal length 10 cm. the image is formed:",
+      "subject": "Physical Science",
+      "topic": "Reflection of Light",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "a body starts with a velocity of 5 m/s and moves with a uniform acceleration of 3 m/s^2 for 4 s. its final velocity is:",
+      "subject": "Physical Science",
+      "topic": "Motion",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "a person suffering from myopia (short-sightedness) uses spectacles with:",
+      "subject": "Physical Science",
+      "topic": "The Human Eye",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "an echo is produced due to:",
+      "subject": "Physical Science",
+      "topic": "Sound",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the raw materials required for photosynthesis are:",
+      "subject": "Life Science",
+      "topic": "Photosynthesis",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the normal systolic blood pressure of a healthy adult human is about:",
+      "subject": "Life Science",
+      "topic": "Circulatory System",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the enzyme present in the stomach that begins the digestion of proteins is:",
+      "subject": "Life Science",
+      "topic": "Digestive System",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "which gland of the human body works as both an endocrine and an exocrine gland?",
+      "subject": "Life Science",
+      "topic": "Endocrine System",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the part of a neuron that carries nerve impulses away from the cell body is the:",
+      "subject": "Life Science",
+      "topic": "Nervous System",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "urea is formed in the human body in the:",
+      "subject": "Life Science",
+      "topic": "Excretion",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the number of chromosomes in a human sperm cell is:",
+      "subject": "Life Science",
+      "topic": "Reproduction",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "a cross between a heterozygous tall pea plant (tt) and a dwarf pea plant (tt) gives a phenotypic ratio of tall to dwarf of:",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the wings of a butterfly and the wings of a bird perform the same function but differ in structure. such organs are called:",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "deforestation leads to an increase in the level of which gas in the atmosphere?",
+      "subject": "Life Science",
+      "topic": "Our Environment",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "dengue is caused by:",
+      "subject": "Life Science",
+      "topic": "Diseases",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "which plant hormone is responsible for the ripening of fruits?",
+      "subject": "Life Science",
+      "topic": "Plant Hormones",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "the jelly-like substance present between the cell membrane and the nucleus is called the:",
+      "subject": "Life Science",
+      "topic": "Cell",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "deficiency of vitamin k in the diet causes:",
+      "subject": "Life Science",
+      "topic": "Nutrition and Deficiency Diseases",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        11
+      ]
+    },
+    {
+      "fp": "in a flower, pollen grains are produced in the:",
+      "subject": "Life Science",
+      "topic": "Reproduction in Plants",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        11
       ]
     }
   ]
