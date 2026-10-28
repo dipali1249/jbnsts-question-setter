@@ -60,3 +60,24 @@ html = tpl.replace("__SET_NO__", "3").replace(
     "__QUESTIONS_JSON__", json.dumps(questions, ensure_ascii=False))
 open("sets/JBNSTS_Practice_Exam_Class_X_Set_3.html", "w", encoding="utf-8").write(html)
 ```
+
+## UI revision (2026-10-28)
+
+The page was given a visual and usability refresh. The structure, the two placeholder tokens,
+the question schema, and the marking/timing rules are unchanged — sets are still produced by
+copying this template and substituting `__SET_NO__` and `__QUESTIONS_JSON__` exactly as above.
+
+What changed in the UI:
+
+- Refreshed palette, type scale, card styling, and a subject-coloured accent on the start card.
+- Sticky exam bar with two labelled clocks (this question / total) and a depleting bar for the
+  per-question timer that turns amber under 60 s and red under 30 s.
+- An "answered" progress line above the question card.
+- Question palette and options restyled; selected option is clearly marked; options whose
+  Bengali and English text are identical (symbol-only answers such as `pq` or `Rb`) print once.
+- Result screen shows the score against a scale with a pass-mark marker at 81/90.
+- Keyboard shortcuts: `1`–`4` or `A`–`D` to answer, `←` / `→` to move between questions.
+- Accessibility: focus-visible outlines, `aria-label`/`aria-pressed` on controls, and animation
+  suppressed under `prefers-reduced-motion`.
+
+Do not re-style individual sets: restyle this template and rebuild the set from it.
