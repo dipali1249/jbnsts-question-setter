@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-28",
-  "last_set": 14,
+  "updated": "2026-10-29",
+  "last_set": 15,
   "max_repeats_allowed": 3,
   "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
   "questions": [
@@ -6302,6 +6302,456 @@
       "count": 1,
       "sets": [
         14
+      ]
+    },
+    {
+      "fp": "which of the following rational numbers has a non-terminating repeating decimal expansion?",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the smallest number which is divisible by both 24 and 36 and is also a perfect square is",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "when x^3 - 3x^2 + 5x - 3 is divided by (x^2 - 2), the remainder is",
+      "subject": "Mathematics",
+      "topic": "Polynomials",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the product of two consecutive positive integers is 156. their sum is",
+      "subject": "Mathematics",
+      "topic": "Quadratic Equations",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "which term of the arithmetic progression 21, 18, 15, ... is -81?",
+      "subject": "Mathematics",
+      "topic": "Arithmetic Progressions",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the points (1, 2), (3, 6) and (5, 10) are",
+      "subject": "Mathematics",
+      "topic": "Coordinate Geometry",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "if sec a + tan a = 2, then sec a - tan a equals",
+      "subject": "Mathematics",
+      "topic": "Trigonometry",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "an observer 1.5 m tall stands 30 m from the foot of a tower and finds the angle of elevation of its top to be 45 degrees. the height of the tower is",
+      "subject": "Mathematics",
+      "topic": "Heights and Distances",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "pa and pb are tangents from an external point p to a circle with centre o. if angle aob = 110 degrees, then angle apb is",
+      "subject": "Mathematics",
+      "topic": "Circles",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the volume of the largest sphere that can be carved out of a cube of edge 6 cm is",
+      "subject": "Mathematics",
+      "topic": "Surface Areas and Volumes",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the mean of 20 observations is 12. if every observation is multiplied by 3, the new mean is",
+      "subject": "Mathematics",
+      "topic": "Statistics",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "two dice are thrown together. the probability of getting a doublet is",
+      "subject": "Mathematics",
+      "topic": "Probability",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the length of an altitude of an equilateral triangle of side 2a is",
+      "subject": "Mathematics",
+      "topic": "Triangles",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "a father is three times as old as his son. after 12 years he will be twice as old as his son. the son's present age is",
+      "subject": "Mathematics",
+      "topic": "Pair of Linear Equations",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "if a = 2^3 x 3^2 and b = 2^2 x 3^3, then hcf(a, b) is",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "resistors of 4 ohm and 6 ohm are connected in parallel across a 12 v battery. the total current drawn from the battery is",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "a fuse wire should have",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "an electric heater marked 1500 w, 250 v draws a current of",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the device that converts mechanical energy into electrical energy is",
+      "subject": "Physical Science",
+      "topic": "Magnetic Effects of Current",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "an object is placed 20 cm in front of a concave lens of focal length 20 cm. the image formed is",
+      "subject": "Physical Science",
+      "topic": "Light - Reflection and Refraction",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "a person suffering from hypermetropia has a near point of 1 m. the power of the lens needed to read a book kept at 25 cm is",
+      "subject": "Physical Science",
+      "topic": "Human Eye",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "if the speed of sound in air is 340 m/s, the minimum distance from a reflecting surface at which an echo can be heard distinctly is about",
+      "subject": "Physical Science",
+      "topic": "Sound",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "a note played on a violin and a note of the same pitch and loudness played on a flute differ in their",
+      "subject": "Physical Science",
+      "topic": "Sound",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the green coating that forms on copper vessels exposed to moist air is mainly",
+      "subject": "Physical Science",
+      "topic": "Chemical Reactions",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the ph of a 0.001 m aqueous solution of sodium hydroxide at 25 degrees c is",
+      "subject": "Physical Science",
+      "topic": "Acids, Bases and Salts",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "bleaching powder is chemically",
+      "subject": "Physical Science",
+      "topic": "Acids, Bases and Salts",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the process of heating a sulphide ore strongly in the presence of excess air to convert it into its oxide is called",
+      "subject": "Physical Science",
+      "topic": "Metals and Non-metals",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "soap molecules remove oily dirt by forming spherical aggregates called",
+      "subject": "Physical Science",
+      "topic": "Carbon Compounds",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "which of the following pairs of elements has the same number of valence electrons?",
+      "subject": "Physical Science",
+      "topic": "Periodic Classification",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "a force of 20 n acts on a body of mass 5 kg for 2 s. the change in its velocity is",
+      "subject": "Physical Science",
+      "topic": "Force and Motion",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "deficiency of vitamin b1 (thiamine) in the diet causes",
+      "subject": "Life Science",
+      "topic": "Human Health and Diseases",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "kwashiorkor in children is caused mainly by a deficiency of",
+      "subject": "Life Science",
+      "topic": "Life Processes - Nutrition",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the normal rate of breathing in a healthy adult human at rest is about",
+      "subject": "Life Science",
+      "topic": "Life Processes - Respiration",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "human beings are said to have double circulation because",
+      "subject": "Life Science",
+      "topic": "Life Processes - Transportation",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "in plants, waste products such as resins and gums are stored mainly in",
+      "subject": "Life Science",
+      "topic": "Excretion",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the part of the brain that controls body temperature, hunger and thirst is the",
+      "subject": "Life Science",
+      "topic": "Control and Coordination",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the average period of pregnancy (gestation) in human beings is about",
+      "subject": "Life Science",
+      "topic": "Reproduction",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "in a flowering plant, the fusion of one male gamete with the egg and of the other male gamete with the two polar nuclei is called",
+      "subject": "Life Science",
+      "topic": "Reproduction in Plants",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "crossing an organism of unknown genotype with a homozygous recessive organism is called a",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "mendel's law of independent assortment states that",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the theory of inheritance of acquired characters was proposed by",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "eutrophication of a pond is caused mainly by",
+      "subject": "Life Science",
+      "topic": "Our Environment",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "rainwater harvesting mainly helps to",
+      "subject": "Life Science",
+      "topic": "Management of Natural Resources",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "the cell theory was proposed by",
+      "subject": "Life Science",
+      "topic": "Cell - Structure and Function",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        15
+      ]
+    },
+    {
+      "fp": "typhoid fever is caused by",
+      "subject": "Life Science",
+      "topic": "Human Health and Diseases",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        15
       ]
     }
   ]
