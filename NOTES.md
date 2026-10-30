@@ -4,13 +4,11 @@ Operational memory for the JBNSTS Question Setter job, so a fresh (stateless) ru
 picks up correctly.
 
 ## Last run
-- 2026-10-26 — generated **Set 12** (45 bilingual questions: 15 Mathematics, 15 Physical
-  Science, 15 Life Science); every answer independently re-derived/cross-checked; committed
-  to `main` through the GitHub contents API.
-- `question_history.json`: `last_set` = 12, 540 fingerprints (495 before + 45 new), all count 1.
-- Next set to produce = **13** (highest existing N + 1).
-- Commits go through the GitHub API (no local token needed); an anonymous `git push` from
-  the sandbox still fails.
+- 2026-10-30 — generated **Set 16** (45 bilingual questions: 15 Mathematics, 15 Physical
+  Science, 15 Life Science); every answer independently re-derived/cross-checked by script;
+  committed to `main` through the GitHub contents API.
+- `question_history.json`: `last_set` = 16, 720 fingerprints (675 before + 45 new), all count 1.
+- Next set to produce = **17** (highest existing N + 1).
 
 ## Pushing to this repo (important)
 - The sandbox has **no credentials by default**: an anonymous `git clone` works, but
