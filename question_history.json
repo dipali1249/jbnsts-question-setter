@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-30",
- "last_set": 16,
+ "updated": "2026-10-31",
+ "last_set": 17,
  "max_repeats_allowed": 3,
  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
  "questions": [
@@ -7202,6 +7202,456 @@
    "count": 1,
    "sets": [
     16
+   ]
+  },
+  {
+   "fp": "the hcf of 867 and 255, obtained by euclid's division algorithm, is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the smallest natural number by which 2^4 x 3^3 x 5^2 must be multiplied to make the product a perfect cube is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "if the sum of the zeroes of the quadratic polynomial ax^2 + bx + c (a not equal to 0) is equal to their product, then",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the remainder when x^3 - 3x^2 + 4x - 5 is divided by (x - 2) is",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the sum of the squares of two consecutive odd positive integers is 394. the smaller of the two integers is",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the value of k for which kx^2 - 4x + 1 = 0 has two equal real roots is",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "in an arithmetic progression the third term is 7 and the seventh term is 19. its tenth term is",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the sum of the first 20 positive multiples of 5 is",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "if (3, 5) is the midpoint of the line segment joining (a, 7) and (4, b), then (a, b) is",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "if the distance between the points (x, 3) and (2, 3) is 5 units, then x can be",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the value of sin 30 degree cos 60 degree + cos 30 degree sin 60 degree is",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "if theta is acute and tan theta = 3/4, then sin theta + cos theta equals",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "abcd is a cyclic quadrilateral in which angle a = 70 degrees. the measure of angle c is",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "a cone has base radius 7 cm and height 24 cm. its slant height is",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "a number is chosen at random from the integers 1 to 20. the probability that it is a multiple of 3 or of 4 is",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "three resistors of 6 ohm each are joined in parallel. the equivalent resistance of the combination is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "resistors of 10 ohm and 15 ohm are joined in parallel across a 6 v battery. the current through the 10 ohm resistor is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "a 100 w bulb is used for 10 hours. the electrical energy consumed is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "a straight current-carrying conductor is placed parallel to a uniform magnetic field. the force on the conductor is",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Current",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "whatever the distance of a real object from a convex mirror, the image it forms is",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the speed of light in a medium of refractive index 1.5 is (c = 3 x 10^8 m/s)",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "myopia, or short-sightedness, is corrected by using a",
+   "subject": "Physical Science",
+   "topic": "Human Eye",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "a person claps and hears the echo from a wall 0.6 s later. if the speed of sound is 340 m/s, the distance of the wall is",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "a body has a mass of 60 kg on the earth. its mass on the moon is",
+   "subject": "Physical Science",
+   "topic": "Gravitation",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "which of the following is a decomposition reaction",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "a solution has hydrogen ion concentration [h+] = 10^-4 mol/l. its ph and nature are",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "which of these metals does not react with dilute hydrochloric acid to liberate hydrogen",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "an element has atomic number 17. in the modern periodic table it belongs to",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "ethanoic acid is added to sodium hydrogen carbonate solution. the gas evolved, which turns lime water milky, is",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "when magnesium chloride is formed from magnesium and chlorine, each magnesium atom",
+   "subject": "Physical Science",
+   "topic": "Chemical Bonding",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the chief site of absorption of digested food in the human alimentary canal is the",
+   "subject": "Life Science",
+   "topic": "Life Processes - Nutrition",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "chlorophyll absorbs light most strongly in which regions of the visible spectrum",
+   "subject": "Life Science",
+   "topic": "Life Processes - Photosynthesis",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "during vigorous exercise, glucose in human muscle cells is converted into",
+   "subject": "Life Science",
+   "topic": "Life Processes - Respiration",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "in a plant, water and dissolved minerals are transported upwards mainly through the",
+   "subject": "Life Science",
+   "topic": "Life Processes - Transportation",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "which of the following is normally absent from the urine of a healthy person",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "deficiency of thyroxine in an adult leads to",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the correct sequence of the pathway of a reflex action is",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the placenta is connected to the embryo by the",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "which of the following shows vegetative propagation through leaves",
+   "subject": "Life Science",
+   "topic": "Reproduction in Plants",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "two heterozygous tall pea plants (tt) are crossed. the genotypic ratio of the offspring is",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the number of pairs of autosomes in a human body cell is",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "depletion of the ozone layer is caused mainly by",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "which of the following is a natural ecosystem",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "the traditional 'khadin' system of rainwater harvesting is practised mainly in",
+   "subject": "Life Science",
+   "topic": "Management of Natural Resources",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    17
+   ]
+  },
+  {
+   "fp": "which cell organelle has its own dna and is called the powerhouse of the cell",
+   "subject": "Life Science",
+   "topic": "Cell - Structure and Function",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    17
    ]
   }
  ]
