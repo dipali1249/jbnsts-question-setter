@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-31",
- "last_set": 17,
+ "updated": "2026-11-01",
+ "last_set": 18,
  "max_repeats_allowed": 3,
  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
  "questions": [
@@ -7652,6 +7652,456 @@
    "count": 1,
    "sets": [
     17
+   ]
+  },
+  {
+   "fp": "the greatest number which divides 245 and 1029, leaving a remainder of 5 in each case, is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "if p = 2^3 x 3^2 x 5 and q = 2^2 x 3^3, then the hcf of p and q is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the zeroes of the polynomial x^2 - 10x + q are in the ratio 2 : 3. the value of q is",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "if the polynomial x^2 + kx + 9 has equal zeroes, then k can be",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "if one root of 2x^2 - 5x + k = 0 is the reciprocal of the other, then k equals",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the product of two consecutive even positive integers is 288. the larger of the two integers is",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "in an arithmetic progression the third term is 5 and the seventh term is 9. its tenth term is",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "how many two-digit numbers are divisible by 7",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the point which divides the line segment joining (1, 2) and (4, 5) internally in the ratio 2 : 1 is",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the area of the triangle whose vertices are (0, 0), (4, 0) and (0, 3) is",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the value of sin 60 degree x cos 30 degree - cos 60 degree x sin 30 degree is",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "from the top of a vertical cliff 60 m high, the angle of depression of a boat on the water is 30 degree. the distance of the boat from the foot of the cliff is",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "pa and pb are tangents from an external point p to a circle with centre o. if angle apb = 60 degree and pa = 5 sqrt(3) cm, the radius of the circle is",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the curved surface area of a cylinder of radius 7 cm and height 10 cm (take pi = 22/7) is",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "a bag contains 5 red, 4 blue and 3 green balls. one ball is drawn at random. the probability that it is not blue is",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "resistors of 4 ohm and 6 ohm are joined in series across a 10 v battery. the potential difference across the 6 ohm resistor is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "an electric heater draws a current of 5 a at 220 v and runs for 2 hours. the electrical energy consumed is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "in an electric motor, the split-ring commutator is used to",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Electric Current",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "an object is placed between the pole and the principal focus of a concave mirror. the image formed is",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "a ray of light passes from air into a glass slab of refractive index 1.5. if the angle of incidence is 30 degree (sin 30 = 0.5), the angle of refraction is about",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "a young person can see distant objects clearly and his far point is normal, but he cannot read a book kept 25 cm away. the defect of vision is",
+   "subject": "Physical Science",
+   "topic": "Human Eye and Colourful World",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "a sonar pulse sent from a ship returns after 4 s. if the speed of sound in seawater is 1500 m/s, the depth of the sea below the ship is",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the gravitational force between two bodies is f. if both masses are doubled and the distance between them is also doubled, the force becomes",
+   "subject": "Physical Science",
+   "topic": "Gravitation",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "if the momentum of a moving body is doubled, its kinetic energy becomes",
+   "subject": "Physical Science",
+   "topic": "Work and Energy",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the reaction zn + cuso4 -> znso4 + cu is an example of a",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions and Equations",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the chemical formula of bleaching powder is",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the most abundant metal in the earth's crust is",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "an element with atomic number 12 belongs to",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification of Elements",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "ethanol reacts with ethanoic acid in the presence of concentrated sulphuric acid to give",
+   "subject": "Physical Science",
+   "topic": "Carbon and its Compounds",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "which of the following is not an allotrope of carbon",
+   "subject": "Physical Science",
+   "topic": "Carbon and its Compounds",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the organelle that modifies, sorts and packages proteins made on the rough endoplasmic reticulum is the",
+   "subject": "Life Science",
+   "topic": "Cell Biology",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "in a flowering plant, the food prepared in the leaves is transported to other parts through the",
+   "subject": "Life Science",
+   "topic": "Plant Tissues",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the gas that enters a leaf through the stomata for photosynthesis and the gas that leaves the leaf are respectively",
+   "subject": "Life Science",
+   "topic": "Photosynthesis",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the complete aerobic breakdown of one molecule of glucose in a cell yields about",
+   "subject": "Life Science",
+   "topic": "Respiration",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "which of the following animals has a three-chambered heart",
+   "subject": "Life Science",
+   "topic": "Circulation",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the structural and functional unit of the kidney is the",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the part of the brain that links the nervous system with the endocrine system and controls body temperature and hunger is the",
+   "subject": "Life Science",
+   "topic": "Nervous System",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the hormone secreted in large amounts during an emergency, which increases the heart rate and breathing, is",
+   "subject": "Life Science",
+   "topic": "Hormones",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "in a normal 28-day menstrual cycle, ovulation usually occurs on about the",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "a cross between a pure red-flowered plant (rr) and a pure white-flowered plant (rr) gives f1 plants that all bear pink flowers. this is an example of",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "which of the following is a sex-linked inherited disease",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the wings of a butterfly and the wings of a bird perform the same function but have different origins. they are",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the '10 per cent law' of energy transfer in food chains was given by",
+   "subject": "Life Science",
+   "topic": "Ecology",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "the greenhouse gas whose concentration in the atmosphere has increased most because of the burning of fossil fuels is",
+   "subject": "Life Science",
+   "topic": "Environment",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    18
+   ]
+  },
+  {
+   "fp": "nitrogen fixation in the root nodules of leguminous plants is carried out by",
+   "subject": "Life Science",
+   "topic": "Ecology",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    18
    ]
   }
  ]
