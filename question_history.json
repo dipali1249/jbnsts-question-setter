@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-01",
- "last_set": 18,
+ "updated": "2026-11-02",
+ "last_set": 19,
  "max_repeats_allowed": 3,
  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
  "questions": [
@@ -8102,6 +8102,456 @@
    "count": 1,
    "sets": [
     18
+   ]
+  },
+  {
+   "fp": "two positive integers have hcf 12 and their sum is 84 the number of such pairs of integers is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "if a and b are two distinct primes and p a b and q a b then lcm p q is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "if one zero of the polynomial 2x 8x k is three times the other then k",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "if the quadratic equation kx 2kx 6 0 k 0 has equal roots then k",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "for an arithmetic progression the sum of the first 10 terms is 155 and the sum of the first 9 terms is 126 the 10th term of the progression is",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the product of the hcf and the lcm of the smallest two digit composite number and the smallest odd composite number is",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the point on the y axis that is closest to the point 3 4 is",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the triangle with vertices 0 0 3 0 and 0 4 is drawn the radius of its circumcircle is",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "two circles of radii 9 cm and 4 cm touch each other externally the length of their direct common tangent is",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "if 3 tan 4 and is acute then the value of 3 sin 2 cos 3 sin 2 cos is",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "if cosec cot 2 then cosec cot",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "two vertical poles of heights 6 m and 11 m stand on level ground 12 m apart the distance between their tops is",
+   "subject": "Mathematics",
+   "topic": "Geometry",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "for a frequency distribution the mean is 30 and the median is 32 using the empirical relation between the three measures of central tendency the mode is approximately",
+   "subject": "Mathematics",
+   "topic": "Statistics",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "a bag contains 5 white balls and some black balls if the probability of drawing a black ball is twice the probability of drawing a white ball the number of black balls is",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the curved surface area of a cylinder is 264 cm and its height is 6 cm taking 22 7 its volume is",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the reaction between lead ii nitrate solution and potassium iodide solution which gives a yellow precipitate is an example of",
+   "subject": "Physical Science",
+   "topic": "Chemical Reactions",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "bleaching powder is obtained by the action of chlorine on",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "which of the following oxides is amphoteric in nature",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "which of the following belongs to the homologous series of alkynes",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "a hydrocarbon with the molecular formula c h decolourises bromine water the hydrocarbon is",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "an element x forms an ionic chloride with the formula xcl in the modern periodic table x belongs to",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "an element x has the electronic configuration 2 8 1 and another element y has 2 7 the compound formed between x and y is",
+   "subject": "Physical Science",
+   "topic": "Chemical Bonding",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "a metallic wire of resistance r is stretched uniformly until its length is doubled its new resistance is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "an electric heater of resistance 22 carries a current of 5 a the power consumed by it is",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "two long straight parallel conductors carry currents in the same direction the force between them is",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Current",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "a ray of light falls on a plane mirror making an angle of 30 with the surface of the mirror the angle of reflection is",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "when light travels from air into water which of the following does not change",
+   "subject": "Physical Science",
+   "topic": "Light - Refraction",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "two bodies of masses 4 kg and 9 kg are placed 3 m apart taking g 6 67 10 n m kg the gravitational force between them is",
+   "subject": "Physical Science",
+   "topic": "Gravitation",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the pitch of a sound depends on its while its loudness depends on its",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "a cricket ball of mass 150 g moving at 20 m s is brought to rest by a fielder in 0 1 s the magnitude of the force applied by the fielder is",
+   "subject": "Physical Science",
+   "topic": "Force and Motion",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "bile juice helps in the digestion of fats because it",
+   "subject": "Life Science",
+   "topic": "Life Processes - Nutrition",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the rate of breathing in aquatic animals is much faster than in terrestrial animals because",
+   "subject": "Life Science",
+   "topic": "Life Processes - Respiration",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the main force that raises water in the xylem of tall trees is",
+   "subject": "Life Science",
+   "topic": "Life Processes - Transportation",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "an artificial kidney machine works on the principle of",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the gap at the junction between two adjacent neurons is called the",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the two hormones that lower and raise the blood glucose level respectively are",
+   "subject": "Life Science",
+   "topic": "Hormones",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "which of the following is a unisexual flower",
+   "subject": "Life Science",
+   "topic": "Reproduction in Plants",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "in a dihybrid cross between two plants heterozygous for both characters rryy rryy the number of different phenotypes obtained in the f generation is",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "in human beings colour blindness is inherited as a",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "in a food chain the concentration of a pesticide such as ddt is highest in",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "khadin kulhs and kattas are traditional systems of",
+   "subject": "Life Science",
+   "topic": "Management of Natural Resources",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the mosquito that transmits the dengue virus is",
+   "subject": "Life Science",
+   "topic": "Human Health and Diseases",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "which of the following cell organelles is bounded by a double membrane",
+   "subject": "Life Science",
+   "topic": "Cell - Structure and Function",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the symbiotic association of rhizobium with the roots of leguminous plants results in",
+   "subject": "Life Science",
+   "topic": "Life Processes - Nutrition",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    19
+   ]
+  },
+  {
+   "fp": "the main function of the placenta in mammals is",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    19
    ]
   }
  ]
