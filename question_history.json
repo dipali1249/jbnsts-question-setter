@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-02",
- "last_set": 19,
+ "updated": "2026-11-03",
+ "last_set": 20,
  "max_repeats_allowed": 3,
  "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
  "questions": [
@@ -8552,6 +8552,456 @@
    "count": 1,
    "sets": [
     19
+   ]
+  },
+  {
+   "fp": "the hcf of 84 and 126 is:",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the decimal expansion of 7/8 terminates after how many places of decimals",
+   "subject": "Mathematics",
+   "topic": "Real Numbers",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the product of the zeroes of the polynomial 3x^2 - 11x + 6 is:",
+   "subject": "Mathematics",
+   "topic": "Polynomials",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the roots of the equation x^2 - 9x + 20 = 0 are:",
+   "subject": "Mathematics",
+   "topic": "Quadratic Equations",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the sum of the first 20 terms of the ap 5, 8, 11, ... is:",
+   "subject": "Mathematics",
+   "topic": "Arithmetic Progressions",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the mid-point of the line segment joining the points (2, -3) and (8, 7) is:",
+   "subject": "Mathematics",
+   "topic": "Coordinate Geometry",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the value of 1 - cos^2 30 degree is:",
+   "subject": "Mathematics",
+   "topic": "Trigonometry",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "two tangents drawn from an external point to a circle are inclined to each other at 60 degree. the angle between the two radii drawn to the points of contact is:",
+   "subject": "Mathematics",
+   "topic": "Circles",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "two triangles are similar and the ratio of their areas is 9 : 16. the ratio of their corresponding sides is:",
+   "subject": "Mathematics",
+   "topic": "Triangles",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the median of the observations 3, 5, 7, 9, 11, 13 is:",
+   "subject": "Mathematics",
+   "topic": "Statistics",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "a card is drawn at random from a well-shuffled pack of 52 playing cards. the probability that it is a red face card is:",
+   "subject": "Mathematics",
+   "topic": "Probability",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the volume of a hemisphere of radius 3 cm is:",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the total surface area of a cube of edge 5 cm is:",
+   "subject": "Mathematics",
+   "topic": "Surface Areas and Volumes",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "a ladder 10 m long makes an angle of 60 degree with the ground. the height of the top of the ladder above the ground is:",
+   "subject": "Mathematics",
+   "topic": "Heights and Distances",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the pair of equations 2x + 3y = 12 and 4x + 6y = 24 has:",
+   "subject": "Mathematics",
+   "topic": "Pair of Linear Equations",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "three resistors of 6 ohm each are connected in parallel. the equivalent resistance is:",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "an electric bulb marked 60 w, 220 v draws a current of about:",
+   "subject": "Physical Science",
+   "topic": "Electricity",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the direction of the force on a current-carrying conductor placed in a magnetic field is given by:",
+   "subject": "Physical Science",
+   "topic": "Magnetic Effects of Current",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "a concave mirror has a focal length of 15 cm. its radius of curvature is:",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the speed of light in a certain medium is 2 x 10^8 m/s. the refractive index of the medium is:",
+   "subject": "Physical Science",
+   "topic": "Light - Reflection and Refraction",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "a sound wave has a frequency of 250 hz. its time period is:",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "an echo is heard 0.6 s after a sound is produced. if the speed of sound is 340 m/s, the distance of the reflecting surface is:",
+   "subject": "Physical Science",
+   "topic": "Sound",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the weight of a body of mass 10 kg on the moon is about (g on the moon = 1.63 m/s^2):",
+   "subject": "Physical Science",
+   "topic": "Gravitation",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "a car starting from rest accelerates uniformly at 2 m/s^2. its velocity after 5 s is:",
+   "subject": "Physical Science",
+   "topic": "Force and Motion",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the work done in lifting a body of mass 5 kg to a height of 2 m is (take g = 10 m/s^2):",
+   "subject": "Physical Science",
+   "topic": "Work and Energy",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "baking soda is chemically:",
+   "subject": "Physical Science",
+   "topic": "Acids, Bases and Salts",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "which metal is stored under kerosene to prevent it from reacting with air and moisture",
+   "subject": "Physical Science",
+   "topic": "Metals and Non-metals",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the functional group -cooh is characteristic of:",
+   "subject": "Physical Science",
+   "topic": "Carbon Compounds",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "an element has atomic number 17. it belongs to:",
+   "subject": "Physical Science",
+   "topic": "Periodic Classification",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the bond formed between sodium and chlorine in sodium chloride is:",
+   "subject": "Physical Science",
+   "topic": "Chemical Bonding",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the organelle that is the site of protein synthesis in a cell is the:",
+   "subject": "Life Science",
+   "topic": "Cell - Structure and Function",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the cell wall of a plant cell is mainly made of:",
+   "subject": "Life Science",
+   "topic": "Cell - Structure and Function",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the light reaction of photosynthesis takes place in the:",
+   "subject": "Life Science",
+   "topic": "Life Processes - Photosynthesis",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the end product of anaerobic respiration in human muscle cells is:",
+   "subject": "Life Science",
+   "topic": "Life Processes - Respiration",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "water and dissolved minerals are transported in a plant mainly through the:",
+   "subject": "Life Science",
+   "topic": "Life Processes - Transportation",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the enzyme present in saliva that digests starch is:",
+   "subject": "Life Science",
+   "topic": "Life Processes - Digestion",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "which of the following is not an excretory organ of the human body",
+   "subject": "Life Science",
+   "topic": "Excretion",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the gland often called the master gland of the human body is the:",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "a reflex action in humans is coordinated by the:",
+   "subject": "Life Science",
+   "topic": "Control and Coordination",
+   "board": "ICSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "in human females, fertilisation normally takes place in the:",
+   "subject": "Life Science",
+   "topic": "Reproduction",
+   "board": "WBBSE",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the transfer of pollen grains from the anther to the stigma of the same flower is called:",
+   "subject": "Life Science",
+   "topic": "Reproduction in Plants",
+   "board": "Maharashtra",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "in mendel's monohybrid cross, the phenotypic ratio of the f2 generation is:",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "Tamil Nadu",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "an organism with the genotype tt for a trait is said to be:",
+   "subject": "Life Science",
+   "topic": "Heredity and Evolution",
+   "board": "Karnataka",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "according to the 10% law, if producers have 10,000 kj of energy, the energy reaching the third trophic level is:",
+   "subject": "Life Science",
+   "topic": "Our Environment",
+   "board": "UP",
+   "count": 1,
+   "sets": [
+    20
+   ]
+  },
+  {
+   "fp": "the chipko movement was primarily aimed at:",
+   "subject": "Life Science",
+   "topic": "Management of Natural Resources",
+   "board": "CBSE",
+   "count": 1,
+   "sets": [
+    20
    ]
   }
  ]
