@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-04",
-  "last_set": 21,
+  "updated": "2026-11-05",
+  "last_set": 22,
   "max_repeats_allowed": 3,
   "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
   "questions": [
@@ -9452,6 +9452,456 @@
       "count": 1,
       "sets": [
         21
+      ]
+    },
+    {
+      "fp": "the hcf of two numbers is 4 and their lcm is 9696. if one of the numbers is 96, the other number is:",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "if α and β are the zeroes of x² − 7x + 10, then α² + β² equals:",
+      "subject": "Mathematics",
+      "topic": "Polynomials",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "if the equation kx² − 8x + 2 = 0 has two equal roots, then k equals:",
+      "subject": "Mathematics",
+      "topic": "Quadratic Equations",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the sum of the first 20 terms of the ap 5, 8, 11, … is:",
+      "subject": "Mathematics",
+      "topic": "Arithmetic Progressions",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the area of the triangle whose vertices are (0, 0), (4, 0) and (0, 3) is:",
+      "subject": "Mathematics",
+      "topic": "Coordinate Geometry",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "if tan θ = 3/4 and θ is acute, then sin θ + cos θ equals:",
+      "subject": "Mathematics",
+      "topic": "Trigonometry",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "from a point on the ground 30 m away from the foot of a tower, the angle of elevation of the top is 30°. the height of the tower is:",
+      "subject": "Mathematics",
+      "topic": "Heights and Distances",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "two triangles are similar and the ratio of their areas is 9 : 16. the ratio of their corresponding perimeters is:",
+      "subject": "Mathematics",
+      "topic": "Similar Triangles",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the length of the tangent drawn from a point 13 cm away from the centre of a circle of radius 5 cm is:",
+      "subject": "Mathematics",
+      "topic": "Circles",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the volume of a right circular cylinder of radius 7 cm and height 10 cm is (take π = 22/7):",
+      "subject": "Mathematics",
+      "topic": "Surface Areas and Volumes",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "for a distribution the mean is 30 and the median is 32. using the empirical relation, the mode is:",
+      "subject": "Mathematics",
+      "topic": "Statistics",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "two dice are thrown together. the probability that the sum of the numbers on them is 9 is:",
+      "subject": "Mathematics",
+      "topic": "Probability",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the pair of equations 2x + 3y = 7 and 4x + ky = 14 has infinitely many solutions when k equals:",
+      "subject": "Mathematics",
+      "topic": "Pair of Linear Equations",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "how many two-digit numbers are divisible by 3?",
+      "subject": "Mathematics",
+      "topic": "Arithmetic Progressions",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "in a cyclic quadrilateral abcd, ∠a = 70°. then ∠c equals:",
+      "subject": "Mathematics",
+      "topic": "Circles",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "a car starts from rest and moves with a uniform acceleration of 2 m/s². the distance covered in the first 5 s is:",
+      "subject": "Physical Science",
+      "topic": "Motion",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "a body of mass 5 kg changes its velocity from 4 m/s to 10 m/s in 2 s. the force acting on it is:",
+      "subject": "Physical Science",
+      "topic": "Force and Motion",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the weight of a body of mass 60 kg on the moon, where g is one-sixth of that on the earth (take g = 10 m/s² on the earth), is:",
+      "subject": "Physical Science",
+      "topic": "Gravitation",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the kinetic energy of a body of mass 2 kg moving with a speed of 10 m/s is:",
+      "subject": "Physical Science",
+      "topic": "Work and Energy",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "a current of 2 a flows through a 5 ω resistor for 10 s. the heat produced in it is:",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "a concave mirror forms a virtual, erect and magnified image of an object when the object is placed:",
+      "subject": "Physical Science",
+      "topic": "Light - Reflection",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the speed of light in a medium of refractive index 1.5, taking the speed of light in vacuum as 3 × 10⁸ m/s, is:",
+      "subject": "Physical Science",
+      "topic": "Light - Refraction",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "short-sightedness (myopia) is corrected by using:",
+      "subject": "Physical Science",
+      "topic": "Human Eye",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the audible range of frequency for a normal human ear is:",
+      "subject": "Physical Science",
+      "topic": "Sound",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "an electric fuse works on the principle of:",
+      "subject": "Physical Science",
+      "topic": "Magnetic Effects of Current",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the reaction fe + cuso₄ → feso₄ + cu is an example of:",
+      "subject": "Physical Science",
+      "topic": "Chemical Reactions",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "when dilute hydrochloric acid is added to zinc granules, the gas evolved is:",
+      "subject": "Physical Science",
+      "topic": "Acids, Bases and Salts",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "which of the following oxides is amphoteric?",
+      "subject": "Physical Science",
+      "topic": "Metals and Non-metals",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the number of structural isomers of butane, c₄h₁₀, is:",
+      "subject": "Physical Science",
+      "topic": "Carbon Compounds",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "in the modern periodic table, moving across a period from left to right:",
+      "subject": "Physical Science",
+      "topic": "Periodic Classification",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the organelle that releases most of the energy of a cell through aerobic respiration is the:",
+      "subject": "Life Science",
+      "topic": "Cell",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "during photosynthesis the oxygen released comes from:",
+      "subject": "Life Science",
+      "topic": "Photosynthesis",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "when a sprinter's muscles work with insufficient oxygen, the substance that accumulates in them is:",
+      "subject": "Life Science",
+      "topic": "Respiration",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "in a plant, water absorbed by the roots reaches the leaves mainly through:",
+      "subject": "Life Science",
+      "topic": "Life Processes - Transportation",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the substance that emulsifies fats in the small intestine is:",
+      "subject": "Life Science",
+      "topic": "Life Processes - Digestion",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the structural and functional unit of the human kidney is the:",
+      "subject": "Life Science",
+      "topic": "Excretion",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the part of the brain that controls involuntary actions such as heartbeat and breathing is the:",
+      "subject": "Life Science",
+      "topic": "Control and Coordination",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "insulin is secreted by:",
+      "subject": "Life Science",
+      "topic": "Hormones",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "in the human female, the sperm and the ovum normally meet and fuse in the:",
+      "subject": "Life Science",
+      "topic": "Reproduction",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "in double fertilisation of angiosperms, the fusion of one male gamete with the two polar nuclei forms:",
+      "subject": "Life Science",
+      "topic": "Reproduction in Plants",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "in mendel's monohybrid cross, the genotypic ratio of the f₂ generation is:",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the wings of a butterfly and the wings of a bird are examples of:",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "in a food chain, if the producers contain 10,000 j of energy, the energy reaching the secondary consumers is about:",
+      "subject": "Life Science",
+      "topic": "Our Environment",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "the depletion of the ozone layer is mainly caused by:",
+      "subject": "Life Science",
+      "topic": "Management of Natural Resources",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        22
+      ]
+    },
+    {
+      "fp": "malaria in humans is spread by the bite of:",
+      "subject": "Life Science",
+      "topic": "Human Health and Diseases",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        22
       ]
     }
   ]
