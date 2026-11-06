@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-05",
-  "last_set": 22,
+  "updated": "2026-11-06",
+  "last_set": 23,
   "max_repeats_allowed": 3,
   "note": "Fingerprints of every question used so far. A question may appear at most 3 times across sets.",
   "questions": [
@@ -9902,6 +9902,456 @@
       "count": 1,
       "sets": [
         22
+      ]
+    },
+    {
+      "fp": "two positive integers a and b are such that a = 3b. then lcm(a, b) ÷ hcf(a, b) equals",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the number 3 − √5 lies between",
+      "subject": "Mathematics",
+      "topic": "Real Numbers",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "if α and β are the zeroes of x² − 3x − 10, the quadratic polynomial whose zeroes are 1/α and 1/β is",
+      "subject": "Mathematics",
+      "topic": "Polynomials",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "one zero of p(x) = x³ − 4x² + x + 6 is 3. the sum of its other two zeroes is",
+      "subject": "Mathematics",
+      "topic": "Polynomials",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the roots of x² − 6x + k = 0 are in the ratio 1 : 2. then k equals",
+      "subject": "Mathematics",
+      "topic": "Quadratic Equations",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "in an ap the 5th term is 19 and the 12th term is 40. its common difference is",
+      "subject": "Mathematics",
+      "topic": "Arithmetic Progressions",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the point (−4, 6) divides the line segment joining a(−6, 10) and b(3, −8) internally in the ratio",
+      "subject": "Mathematics",
+      "topic": "Coordinate Geometry",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the value of sin²30° + cos²60° + tan²45° is",
+      "subject": "Mathematics",
+      "topic": "Trigonometry",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "if 3 tan θ = 4 and θ is acute, then the value of (1 − sin θ)/(1 + sin θ) is",
+      "subject": "Mathematics",
+      "topic": "Trigonometry",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a ladder 10 m long rests against a vertical wall, making an angle of 60° with the ground. the height of the top of the ladder above the ground is",
+      "subject": "Mathematics",
+      "topic": "Heights and Distances",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "pa and pb are the tangents drawn from an external point p to a circle with centre o. if ∠apb = 60°, then ∠oab equals",
+      "subject": "Mathematics",
+      "topic": "Circles",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the total surface area of a solid hemisphere of radius 7 cm is (take π = 22/7)",
+      "subject": "Mathematics",
+      "topic": "Surface Areas and Volumes",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "for a distribution the mean is 25 and the mode is 22. using the empirical relation, the median is",
+      "subject": "Mathematics",
+      "topic": "Statistics",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a bag contains 5 red and 3 black balls. two balls are drawn one after another without replacement. the probability that both are red is",
+      "subject": "Mathematics",
+      "topic": "Probability",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the sum of the digits of a two-digit number is 12. when the digits are reversed, the number increases by 18. the number is",
+      "subject": "Mathematics",
+      "topic": "Pair of Linear Equations",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a ball is thrown vertically upwards with a speed of 20 m/s. taking g = 10 m/s², the total time it takes to return to the thrower's hand is",
+      "subject": "Physical Science",
+      "topic": "Motion",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a constant force of 20 n acts for 5 s on a body of mass 4 kg initially at rest. the final speed of the body is",
+      "subject": "Physical Science",
+      "topic": "Force and Motion",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "at a height equal to half the radius of the earth above its surface, the acceleration due to gravity becomes (g is its value at the surface)",
+      "subject": "Physical Science",
+      "topic": "Gravitation",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a body falls freely from rest from a height h. at the height h/2 above the ground, the ratio of its kinetic energy to its potential energy is",
+      "subject": "Physical Science",
+      "topic": "Work and Energy",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the resistance of a 100 w, 220 v electric bulb, when it glows at its rated power, is",
+      "subject": "Physical Science",
+      "topic": "Electricity",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a straight wire of length 0.5 m carrying a current of 2 a is placed at right angles to a uniform magnetic field of 0.4 t. the force on the wire is",
+      "subject": "Physical Science",
+      "topic": "Magnetic Effects of Current",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "an object is placed 12 cm in front of a concave mirror of focal length 15 cm. the image formed is",
+      "subject": "Physical Science",
+      "topic": "Light - Reflection",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "taking the refractive index of glass as 1.5, the critical angle for a glass-air interface is nearly",
+      "subject": "Physical Science",
+      "topic": "Light - Refraction",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the persistence of vision for the human eye is about",
+      "subject": "Physical Science",
+      "topic": "Human Eye",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a person hears the echo of his clap 0.8 s after clapping. taking the speed of sound as 340 m/s, the distance of the reflecting surface is",
+      "subject": "Physical Science",
+      "topic": "Sound",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "when the equation c₃h₈ + o₂ → co₂ + h₂o is balanced, the coefficient of o₂ is",
+      "subject": "Physical Science",
+      "topic": "Chemical Reactions",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the ph of a 0.001 m aqueous solution of hcl at 25 °c is",
+      "subject": "Physical Science",
+      "topic": "Acids, Bases and Salts",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the iupac name of ch₃–ch(ch₃)–ch₂–oh is",
+      "subject": "Physical Science",
+      "topic": "Carbon Compounds",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "which of the following elements has the largest atomic radius?",
+      "subject": "Physical Science",
+      "topic": "Periodic Classification",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the total number of covalent bonds in one molecule of ethanoic acid (ch₃cooh) is",
+      "subject": "Physical Science",
+      "topic": "Carbon Compounds",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a plant cell placed in a concentrated sugar solution shows",
+      "subject": "Life Science",
+      "topic": "Cell - Structure and Function",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the fluid mosaic model describes the structure of the",
+      "subject": "Life Science",
+      "topic": "Cell - Structure and Function",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the photolysis of water during the light reaction of photosynthesis produces",
+      "subject": "Life Science",
+      "topic": "Photosynthesis",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "in a eukaryotic cell, the krebs cycle of aerobic respiration takes place in the",
+      "subject": "Life Science",
+      "topic": "Life Processes - Respiration",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the pulmonary artery carries",
+      "subject": "Life Science",
+      "topic": "Life Processes - Transportation",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "which of the following digestive enzymes works in an alkaline medium?",
+      "subject": "Life Science",
+      "topic": "Life Processes - Digestion",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the urine of a healthy person does not normally contain glucose because",
+      "subject": "Life Science",
+      "topic": "Excretion",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the human body has how many pairs of spinal nerves?",
+      "subject": "Life Science",
+      "topic": "Control and Coordination",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a deficiency of iodine in the diet causes the thyroid gland to enlarge, a condition called",
+      "subject": "Life Science",
+      "topic": "Hormones",
+      "board": "ICSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the hormone secreted by the corpus luteum that maintains the thickened lining of the uterus is",
+      "subject": "Life Science",
+      "topic": "Reproduction",
+      "board": "WBBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "vegetative propagation through leaf buds occurs in",
+      "subject": "Life Science",
+      "topic": "Reproduction in Plants",
+      "board": "Maharashtra",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "a colour-blind man marries a woman who is homozygous for normal vision. the probability that a son of this couple is colour-blind is",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "CBSE",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "which of the following is the classic example of adaptive radiation?",
+      "subject": "Life Science",
+      "topic": "Heredity and Evolution",
+      "board": "Karnataka",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the progressive increase in the concentration of a non-degradable pesticide at each successive trophic level of a food chain is called",
+      "subject": "Life Science",
+      "topic": "Our Environment",
+      "board": "Tamil Nadu",
+      "count": 1,
+      "sets": [
+        23
+      ]
+    },
+    {
+      "fp": "the presence of coliform bacteria in a water sample indicates",
+      "subject": "Life Science",
+      "topic": "Management of Natural Resources",
+      "board": "UP",
+      "count": 1,
+      "sets": [
+        23
       ]
     }
   ]
